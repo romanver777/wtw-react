@@ -1,8 +1,11 @@
 {
+  "parser": "@typescript-eslint/parser",
   "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended"
+    "plugin:@typescript-eslint/recommended", 
+    "plugin:react/recommended",
+    "eslint:recommended", 
+    "prettier", 
+    "prettier/@typescript-eslint"
   ],
   "settings": {
     "react": {
@@ -10,9 +13,16 @@
     }
   },
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {"endOfLine": 0}
+    ],
     "@typescript-eslint/explicit-function-return-type": 0,
     "react/prop-types": 0
   },
+  "plugins": [
+    "prettier"
+  ],
   "parserOptions": {
     "sourceType": "module",
     "parser": "babel-eslint",

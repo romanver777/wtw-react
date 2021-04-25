@@ -1,11 +1,11 @@
 {
-  "parser": "@typescript-eslint/parser",
+  // "parser": "@typescript-eslint/parser",
   "extends": [
     "plugin:@typescript-eslint/recommended", 
     "plugin:react/recommended",
     "eslint:recommended", 
-    "prettier", 
-    "prettier/@typescript-eslint"
+    "prettier"
+    // "prettier/@typescript-eslint"
   ],
   "settings": {
     "react": {
@@ -15,7 +15,7 @@
   "rules": {
     "prettier/prettier": [
       "error",
-      {"endOfLine": 0}
+      {"endOfLine": "auto"}
     ],
     "@typescript-eslint/explicit-function-return-type": 0,
     "react/prop-types": 0
@@ -35,5 +35,9 @@
         "@typescript-eslint/no-var-requires": ["off"]
       }
     }
-  ]
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }

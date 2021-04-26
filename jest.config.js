@@ -5,4 +5,5 @@ module.exports = {
   transform: {
     "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
   },
+  setupFiles: ['<rootDir>/enzyme.config.js'],
 };

@@ -8,6 +8,11 @@
     // "prettier/@typescript-eslint"
   ],
   "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    },
     "react": {
       "version": "detect"
     }

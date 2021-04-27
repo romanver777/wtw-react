@@ -1,4 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-render(<div>Работает! Ура!</div>, document.getElementById("root"));
+import "./style/style.css";
+import Main from "./components/main/main";
+
+render(<Main />, document.getElementById("root"));

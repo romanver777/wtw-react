@@ -1,0 +1,555 @@
+{
+  "films": [
+    {
+      "filmId": 1302121,
+      "nameRu": "Соединённые Штаты против Билли Холидей",
+      "nameEn": "The United States vs. Billie Holiday",
+      "year": "2021",
+      "filmLength": "2:10",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "биография"
+        },
+        {
+          "genre": "музыка"
+        }
+      ],
+      "rating": "5.8",
+      "ratingVoteCount": 586,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1302121.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1171895,
+      "nameRu": "Неуязвимый (сериал)",
+      "nameEn": "Invincible",
+      "year": "2021-...",
+      "filmLength": null,
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "ужасы"
+        },
+        {
+          "genre": "фантастика"
+        }
+      ],
+      "rating": "8.1",
+      "ratingVoteCount": 1549,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1245486,
+      "nameRu": "Невероятные (сериал)",
+      "nameEn": "The Nevers",
+      "year": "2021-...",
+      "filmLength": null,
+      "countries": [
+        {
+          "country": "Великобритания"
+        },
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "фэнтези"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "rating": "7.0",
+      "ratingVoteCount": 882,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245486.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1015471,
+      "nameRu": "Райя и последний дракон",
+      "nameEn": "Raya and the Last Dragon",
+      "year": "2021",
+      "filmLength": "1:47",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "мультфильм"
+        },
+        {
+          "genre": "фэнтези"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "rating": "7.6",
+      "ratingVoteCount": 43386,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1015471.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1015471.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 571335,
+      "nameRu": "Бесстыжие (сериал)",
+      "nameEn": "Shameless",
+      "year": "2011-2021",
+      "filmLength": "0:55",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "комедия"
+        }
+      ],
+      "rating": "8.6",
+      "ratingVoteCount": 207954,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/571335.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/571335.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1328036,
+      "nameRu": "Happy End (сериал)",
+      "nameEn": null,
+      "year": "2021-...",
+      "filmLength": "0:35",
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "комедия"
+        }
+      ],
+      "rating": "7.4",
+      "ratingVoteCount": 3282,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1328036.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1328036.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1045583,
+      "nameRu": "Конёк-Горбунок",
+      "nameEn": null,
+      "year": "2021",
+      "filmLength": "1:51",
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фэнтези"
+        },
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "rating": "6.8",
+      "ratingVoteCount": 100901,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1045583.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1045583.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1274271,
+      "nameRu": "Родные",
+      "nameEn": null,
+      "year": "2020",
+      "filmLength": "1:40",
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "драма"
+        }
+      ],
+      "rating": "6.4",
+      "ratingVoteCount": 20539,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1274271.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1274271.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 767379,
+      "nameRu": "Фарго (сериал)",
+      "nameEn": "Fargo",
+      "year": "2014-...",
+      "filmLength": "0:53",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "криминал"
+        }
+      ],
+      "rating": "8.4",
+      "ratingVoteCount": 119492,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/767379.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/767379.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1245524,
+      "nameRu": "Зависнуть в Палм-Спрингс",
+      "nameEn": "Palm Springs",
+      "year": "2020",
+      "filmLength": "1:30",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Гонконг"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "мелодрама"
+        },
+        {
+          "genre": "фантастика"
+        }
+      ],
+      "rating": "7.2",
+      "ratingVoteCount": 130542,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1245524.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245524.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 4430018,
+      "nameRu": "Абсолютное доказательство",
+      "nameEn": "Absolute Proof",
+      "year": "2021",
+      "filmLength": "2:00",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "документальный"
+        }
+      ],
+      "rating": null,
+      "ratingVoteCount": null,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/4430018.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/4430018.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1437860,
+      "nameRu": "Чикатило (сериал)",
+      "nameEn": null,
+      "year": "2020-2020",
+      "filmLength": "0:50",
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "детектив"
+        },
+        {
+          "genre": "драма"
+        }
+      ],
+      "rating": "5.9",
+      "ratingVoteCount": 7820,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1437860.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1437860.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1005008,
+      "nameRu": "Майор Гром",
+      "nameEn": null,
+      "year": "2017",
+      "filmLength": "0:25",
+      "countries": [
+        {
+          "country": "Россия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "короткометражка"
+        },
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "криминал"
+        }
+      ],
+      "rating": "7.0",
+      "ratingVoteCount": 29251,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1005008.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1005008.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1291310,
+      "nameRu": "В её глазах (мини-сериал)",
+      "nameEn": "Behind Her Eyes",
+      "year": "2021-2021",
+      "filmLength": "0:50",
+      "countries": [
+        {
+          "country": "Великобритания"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "детектив"
+        }
+      ],
+      "rating": "7.3",
+      "ratingVoteCount": 12949,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1291310.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1291310.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1038789,
+      "nameRu": "Охотник на монстров",
+      "nameEn": "Monster Hunter",
+      "year": "2020",
+      "filmLength": "1:43",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Китай"
+        },
+        {
+          "country": "Германия"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фэнтези"
+        },
+        {
+          "genre": "боевик"
+        },
+        {
+          "genre": "приключения"
+        }
+      ],
+      "rating": "5.6",
+      "ratingVoteCount": 24933,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1038789.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1038789.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1248786,
+      "nameRu": "Аферистка",
+      "nameEn": "I Care a Lot",
+      "year": "2020",
+      "filmLength": "1:58",
+      "countries": [
+        {
+          "country": "США"
+        },
+        {
+          "country": "Великобритания"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "комедия"
+        },
+        {
+          "genre": "криминал"
+        }
+      ],
+      "rating": "6.6",
+      "ratingVoteCount": 81569,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1248786.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1248786.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1193013,
+      "nameRu": "Грань времени",
+      "nameEn": "Synchronic",
+      "year": "2019",
+      "filmLength": "1:42",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "драма"
+        }
+      ],
+      "rating": "6.2",
+      "ratingVoteCount": 10361,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1193013.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1193013.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 958500,
+      "nameRu": "Охотник за разумом (сериал)",
+      "nameEn": "Mindhunter",
+      "year": "2017-2019",
+      "filmLength": "1:00",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "триллер"
+        },
+        {
+          "genre": "драма"
+        },
+        {
+          "genre": "криминал"
+        }
+      ],
+      "rating": "8.1",
+      "ratingVoteCount": 50186,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/958500.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/958500.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1347194,
+      "nameRu": "Звездный рубеж",
+      "nameEn": "Cosmic Sin",
+      "year": "2021",
+      "filmLength": "1:28",
+      "countries": [
+        {
+          "country": "США"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фантастика"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "rating": "3.4",
+      "ratingVoteCount": 524,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1347194.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1347194.jpg",
+      "ratingChange": null
+    },
+    {
+      "filmId": 1236082,
+      "nameRu": "Ассасин: Битва миров",
+      "nameEn": "Ci sha xiao shuo jia",
+      "year": "2021",
+      "filmLength": "2:10",
+      "countries": [
+        {
+          "country": "Китай"
+        }
+      ],
+      "genres": [
+        {
+          "genre": "фэнтези"
+        },
+        {
+          "genre": "боевик"
+        }
+      ],
+      "rating": "6.0",
+      "ratingVoteCount": 645,
+      "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1236082.jpg",
+      "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1236082.jpg",
+      "ratingChange": null
+    }
+  ]
+}

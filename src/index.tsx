@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 
 import "./style/style.css";
-import Main from "./components/main/main";
+import App from "./components/app/app";
+import data from "./mocks/films.json";
 
-render(<Main />, document.getElementById("root"));
+render(<App films={data.films} />, document.getElementById("root"));

@@ -1,23 +1,20 @@
-import React, { ReactElement } from "react";
+import React from "react";
 
-import { PropType } from "../app/app";
-
+import { FilmsType } from "../../types/types";
 import MovieCard from "../movie-card/movie-card";
 import Catalog from "../catalog/catalog";
 import Footer from "../footer/footer";
 
-const Main: React.FC<PropType> = ({ films }: PropType): ReactElement => {
-  console.log("films-----", films);
-
+const PageMain: React.FC<FilmsType> = ({ films }) => {
   return (
     <React.Fragment>
       <MovieCard />
       <div className="page-content">
-        <Catalog />
+        <Catalog films={films} />
         <Footer />
       </div>
     </React.Fragment>
   );
 };
 
-export default Main;
+export default PageMain;

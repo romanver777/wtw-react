@@ -8,7 +8,7 @@ import Footer from "../footer/footer";
 const PageMain: React.FC<FilmsType> = ({ films }) => {
   return (
     <React.Fragment>
-      <MovieCard />
+      <MovieCard film={films[0]} />
       <div className="page-content">
         <Catalog films={films} />
         <Footer />

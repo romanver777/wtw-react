@@ -25,7 +25,59 @@
     "ratingVoteCount": 586,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1302121.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1171895,
@@ -53,7 +105,59 @@
     "ratingVoteCount": 1549,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1245486,
@@ -84,7 +188,59 @@
     "ratingVoteCount": 882,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245486.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1015471,
@@ -112,7 +268,59 @@
     "ratingVoteCount": 43386,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1015471.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1015471.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 571335,
@@ -137,7 +345,59 @@
     "ratingVoteCount": 207954,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/571335.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/571335.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1328036,
@@ -162,7 +422,59 @@
     "ratingVoteCount": 3282,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1328036.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1328036.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1045583,
@@ -190,7 +502,59 @@
     "ratingVoteCount": 100901,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1045583.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1045583.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1274271,
@@ -215,7 +579,59 @@
     "ratingVoteCount": 20539,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1274271.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1274271.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 767379,
@@ -243,7 +659,59 @@
     "ratingVoteCount": 119492,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/767379.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/767379.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1245524,
@@ -274,7 +742,59 @@
     "ratingVoteCount": 130542,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1245524.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245524.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 4430018,
@@ -296,7 +816,59 @@
     "ratingVoteCount": null,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/4430018.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/4430018.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1437860,
@@ -324,7 +896,59 @@
     "ratingVoteCount": 7820,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1437860.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1437860.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1005008,
@@ -352,7 +976,59 @@
     "ratingVoteCount": 29251,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1005008.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1005008.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1291310,
@@ -380,7 +1056,59 @@
     "ratingVoteCount": 12949,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1291310.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1291310.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1038789,
@@ -414,7 +1142,59 @@
     "ratingVoteCount": 24933,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1038789.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1038789.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1248786,
@@ -445,7 +1225,59 @@
     "ratingVoteCount": 81569,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1248786.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1248786.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1193013,
@@ -470,7 +1302,59 @@
     "ratingVoteCount": 10361,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1193013.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1193013.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 958500,
@@ -498,7 +1382,59 @@
     "ratingVoteCount": 50186,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/958500.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/958500.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1347194,
@@ -523,7 +1459,59 @@
     "ratingVoteCount": 524,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1347194.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1347194.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   },
   {
     "filmId": 1236082,
@@ -548,6 +1536,58 @@
     "ratingVoteCount": 645,
     "posterUrl": "https://kinopoiskapiunofficial.tech/images/posters/kp/1236082.jpg",
     "posterUrlPreview": "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1236082.jpg",
-    "ratingChange": null
+    "ratingChange": null,
+    "reviews": [
+      {
+          "reviewId": 3016116,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T19:01:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "SlavaLim",
+          "reviewTitle": "В этом плоде найдется и вкус и приятное послевкусие.",
+          "reviewDescription": "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM."
+      },
+      {
+          "reviewId": 3015986,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-04-12T10:26:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "DIMI25",
+          "reviewTitle": "Странные плоды",
+          "reviewDescription": "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,"
+      },
+      {
+          "reviewId": 3009013,
+          "reviewType": "POSITIVE",
+          "reviewData": "2021-03-22T12:29:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "an.varuhin",
+          "reviewTitle": "Следуя трендам",
+          "reviewDescription": "Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты"
+      },
+      {
+          "reviewId": 3004480,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-10T15:04:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Ruslan Avdonin",
+          "reviewTitle": "Странные плоды мейнстрима.",
+          "reviewDescription": "За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным"
+      },
+      {
+          "reviewId": 3001374,
+          "reviewType": "NEUTRAL",
+          "reviewData": "2021-03-03T19:48:00",
+          "userPositiveRating": null,
+          "userNegativeRating": null,
+          "reviewAutor": "Egorche23",
+          "reviewTitle": null,
+          "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ]
   }
 ]

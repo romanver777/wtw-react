@@ -1,4 +1,4 @@
-export const genres = [
+export const genres: Array<string> = [
   "All genres",
   "Comedies",
   "Documentary",
@@ -9,3 +9,7 @@ export const genres = [
   "Sci-Fi",
   "Thrillers",
 ];
+
+export const tabsName: Array<string> = ["Overview", "Details", "Reviews"];
+
+export const similarMovies = "Вам может понравиться";

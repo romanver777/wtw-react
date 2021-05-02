@@ -11,6 +11,16 @@ export interface MovieType {
   posterUrl: string;
   posterUrlPreview: string;
   ratingChange: null;
+  reviews: {
+    reviewAutor: string;
+    reviewData: string;
+    reviewDescription: string;
+    reviewId: number;
+    reviewTitle: string;
+    reviewType: string;
+    userNegativeRating: null;
+    userPositiveRating: null;
+  }[];
 }
 
 export interface FilmsType {
@@ -19,4 +29,15 @@ export interface FilmsType {
 
 export interface FilmType {
   film: MovieType;
+}
+
+export interface ReviewType {
+  reviewAutor: string;
+  reviewData: string;
+  reviewDescription: string;
+  reviewId: number;
+  reviewTitle: string;
+  reviewType: string;
+  userNegativeRating: null;
+  userPositiveRating: null;
 }

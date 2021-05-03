@@ -12,7 +12,7 @@ const Tabs: React.FC<FilmType> = ({ film }) => {
   const switchTabs = (tab: string) => {
     switch (tab) {
       case tabsName[0]:
-        return <Overview />;
+        return <Overview film={film} />;
         break;
       case tabsName[1]:
         return <Details />;
@@ -21,7 +21,7 @@ const Tabs: React.FC<FilmType> = ({ film }) => {
         return <Reviews reviews={film.reviews} />;
         break;
       default:
-        return <Overview />;
+        return <Overview film={film} />;
     }
   };
 

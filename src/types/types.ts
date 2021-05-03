@@ -4,6 +4,7 @@ export interface MovieType {
   nameEn: string | null;
   year: string;
   filmLength: string | null;
+  description: string;
   countries: { country: string }[];
   genres: { genre: string }[];
   rating: string | null;
@@ -20,6 +21,15 @@ export interface MovieType {
     reviewType: string;
     userNegativeRating: null;
     userPositiveRating: null;
+  }[];
+  staff: {
+    staffId: number;
+    nameRu: string;
+    nameEn: string;
+    description: null;
+    posterUrl: string;
+    professionText: string;
+    professionKey: string;
   }[];
 }
 

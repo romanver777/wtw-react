@@ -10,6 +10,6 @@ export const genres: Array<string> = [
   "Thrillers",
 ];
 
-export const tabsName: Array<string> = ["Overview", "Details", "Reviews"];
+export const tabsName: Array<string> = ["Описание", "Информация", "Отзывы"];
 
 export const similarMovies = "Вам может понравиться";

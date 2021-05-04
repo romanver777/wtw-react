@@ -6,5 +6,15 @@ export const convertRatingLevel = (rt: string | null): string => {
   if (rating >= 6 && rating < 7) return "Очень хорошо";
   if (rating >= 7 && rating < 8) return "Отлично";
   if (rating >= 8) return "Превосходно";
-  if (rating === 0) return "-";
+  return "-";
+};
+
+export const convertDateTime = (date: string): string => {
+  return new Date(date).toLocaleString("ru-RU", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  });
 };

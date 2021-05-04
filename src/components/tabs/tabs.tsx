@@ -15,7 +15,7 @@ const Tabs: React.FC<FilmType> = ({ film }) => {
         return <Overview film={film} />;
         break;
       case tabsName[1]:
-        return <Details />;
+        return <Details film={film} />;
         break;
       case tabsName[2]:
         return <Reviews reviews={film.reviews} />;

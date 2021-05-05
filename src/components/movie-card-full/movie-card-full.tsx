@@ -1,7 +1,11 @@
 import React from "react";
 
+import { page } from "../../helpers/const";
 import { FilmType } from "../../types/types";
+
 import Header from "../header/header";
+import Logo from "../logo/logo";
+import UserBlock from "../user-block/user-block";
 import Tabs from "../tabs/tabs";
 
 const MovieCardFull: React.FC<FilmType> = ({ film }) => {
@@ -14,7 +18,10 @@ const MovieCardFull: React.FC<FilmType> = ({ film }) => {
 
         <h1 className="visually-hidden">WTW</h1>
 
-        <Header />
+        <Header page={page.movieCard}>
+          <Logo />
+          <UserBlock />
+        </Header>
 
         <div className="movie-card__wrap">
           <div className="movie-card__desc">

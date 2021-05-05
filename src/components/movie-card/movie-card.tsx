@@ -1,7 +1,11 @@
 import React, { ReactElement } from "react";
 
+import { page } from "../../helpers/const";
 import { FilmType } from "../../types/types";
 import Header from "../header/header";
+import Logo from "../logo/logo";
+import UserBLock from "../user-block/user-block";
+import UserBlock from "../user-block/user-block";
 
 const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
   return (
@@ -12,7 +16,10 @@ const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
 
       <h1 className="visually-hidden">WTW</h1>
 
-      <Header />
+      <Header page={page.MovieCard}>
+        <Logo />
+        <UserBLock />
+      </Header>
 
       <div className="movie-card__wrap">
         <div className="movie-card__info">

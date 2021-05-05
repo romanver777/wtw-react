@@ -1,6 +1,6 @@
 import React from "react";
 
-import { page } from "../../helpers/const";
+import { PAGE } from "../../helpers/const";
 import { FilmType } from "../../types/types";
 
 import Header from "../header/header";
@@ -18,7 +18,7 @@ const MovieCardFull: React.FC<FilmType> = ({ film }) => {
 
         <h1 className="visually-hidden">WTW</h1>
 
-        <Header page={page.movieCard}>
+        <Header page={PAGE.MOVIE_CARD}>
           <Logo />
           <UserBlock />
         </Header>

@@ -2,22 +2,22 @@ import React from "react";
 import { useState } from "react";
 
 import { FilmType } from "../../types/types";
-import { tabsName } from "../../helpers/const";
+import { TABSNAME } from "../../helpers/const";
 import Overview from "../overview/overview";
 import Details from "../details/details";
 import Reviews from "../reviews/reviews";
 
 const Tabs: React.FC<FilmType> = ({ film }) => {
-  const [activeTab, setActiveTab] = useState(tabsName[0]);
+  const [activeTab, setActiveTab] = useState(TABSNAME[0]);
   const switchTabs = (tab: string) => {
     switch (tab) {
-      case tabsName[0]:
+      case TABSNAME[0]:
         return <Overview film={film} />;
         break;
-      case tabsName[1]:
+      case TABSNAME[1]:
         return <Details film={film} />;
         break;
-      case tabsName[2]:
+      case TABSNAME[2]:
         return <Reviews reviews={film.reviews} />;
         break;
       default:
@@ -29,7 +29,7 @@ const Tabs: React.FC<FilmType> = ({ film }) => {
     <div className="movie-card__desc">
       <nav className="movie-nav movie-card__nav">
         <ul className="movie-nav__list">
-          {tabsName.map((tab, ind) => {
+          {TABSNAME.map((tab, ind) => {
             return (
               <li
                 className={

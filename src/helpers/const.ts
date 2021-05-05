@@ -1,4 +1,4 @@
-export const genres: Array<string> = [
+export const GENRES: Array<string> = [
   "Все жанры",
   "Комедии",
   "Документальное",
@@ -10,16 +10,22 @@ export const genres: Array<string> = [
   "Триллеры",
 ];
 
-export const tabsName: Array<string> = ["Описание", "Информация", "Отзывы"];
+export const TABSNAME: Array<string> = ["Описание", "Информация", "Отзывы"];
 
-export const similarMovies = "Вам может понравиться";
-
-export const page: { [key: string]: string } = {
-  movieCard: "movie-card",
-  userPage: "user-page",
+export const PAGE: { [key: string]: string } = {
+  MOVIE_CARD: "movie-card",
+  USER_PAGE: "user-page",
+  LOGO_LIGHT: "logo__link--light",
 };
 
-export const userPageTitle = {
-  signIn: "Выполните вход",
-  myList: "Мой список",
+export const USER_PAGE_TITLE = {
+  SIGN_IN: "Выполните вход",
+  MY_LIST: "Мой список",
+  SIMILAR_MOVIES: "Вам может понравиться",
+};
+
+export const APP_ROUTE = {
+  ROOT: "/",
+  FILM: "/film/:id",
+  LOGIN: "/login",
 };

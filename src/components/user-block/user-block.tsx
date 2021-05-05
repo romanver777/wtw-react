@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const UserBLock: React.FC = () => {
+import { APP_ROUTE } from "../../helpers/const";
+
+const UserBlock: React.FC = () => {
   const isAuth = false;
   return (
     <div className="user-block">
@@ -9,12 +12,12 @@ const UserBLock: React.FC = () => {
           <img src="img/avatar.jpg" alt="User avatar" width="63" height="63" />
         </div>
       ) : (
-        <a href="sign-in.html" className="user-block__link">
+        <Link to={APP_ROUTE.LOGIN} className="user-block__link">
           Sign in
-        </a>
+        </Link>
       )}
     </div>
   );
 };
 
-export default UserBLock;
+export default UserBlock;

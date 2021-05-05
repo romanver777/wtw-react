@@ -1,10 +1,9 @@
 import React, { ReactElement } from "react";
 
-import { page } from "../../helpers/const";
+import { PAGE } from "../../helpers/const";
 import { FilmType } from "../../types/types";
 import Header from "../header/header";
 import Logo from "../logo/logo";
-import UserBLock from "../user-block/user-block";
 import UserBlock from "../user-block/user-block";
 
 const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
@@ -16,9 +15,9 @@ const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
 
       <h1 className="visually-hidden">WTW</h1>
 
-      <Header page={page.MovieCard}>
+      <Header page={PAGE.MOVIE_CARD}>
         <Logo />
-        <UserBLock />
+        <UserBlock />
       </Header>
 
       <div className="movie-card__wrap">

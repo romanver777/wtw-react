@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
+import { APP_ROUTE } from "../../helpers/const";
 import { FilmType } from "../../types/types";
 
 const SmallMovieCard: React.FC<FilmType> = ({ film }) => {
@@ -9,9 +11,9 @@ const SmallMovieCard: React.FC<FilmType> = ({ film }) => {
         <img src={film.posterUrl} alt={film.nameRu} />
       </div>
       <h3 className="small-movie-card__title">
-        <a className="small-movie-card__link" href="movie-page.html">
+        <Link className="small-movie-card__link" to={APP_ROUTE.FILM}>
           {film.nameRu}
-        </a>
+        </Link>
       </h3>
     </article>
   );

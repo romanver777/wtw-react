@@ -1,18 +1,27 @@
 import React from "react";
-import { useState } from "react";
+import { connect } from "react-redux";
 
 import { GENRES } from "../../helpers/const";
+import { ActionCreator } from "../../reducer";
 
-const GenresList: React.FC = () => {
-  const [activeLink, setActiveLink] = useState(GENRES[0]);
+interface StateProps {
+  genre: string;
+}
 
+interface DispatchProps {
+  setGenre: (genre: string) => void;
+}
+
+type Props = StateProps & DispatchProps;
+
+const GenresList = (props: Props): JSX.Element => {
   return (
     <ul className="catalog__genres-list">
-      {GENRES.map((genre, ind) => {
+      {GENRES.map((item, ind) => {
         return (
           <li
             className={
-              activeLink === genre
+              item === props.genre
                 ? "catalog__genres-item catalog__genres-item--active"
                 : "catalog__genres-item"
             }
@@ -21,9 +30,9 @@ const GenresList: React.FC = () => {
             <a
               href="#"
               className="catalog__genres-link"
-              onClick={() => setActiveLink(genre)}
+              onClick={() => props.setGenre(item)}
             >
-              {genre}
+              {item}
             </a>
           </li>
         );
@@ -32,4 +41,13 @@ const GenresList: React.FC = () => {
   );
 };
 
-export default GenresList;
+const mapStateToProps = (state: StateProps) => ({
+  genre: state.genre,
+});
+
+const mapDispatchToProps = {
+  setGenre: (genre: string) => ActionCreator.setGenre(genre),
+};
+
+export { GenresList };
+export default connect(mapStateToProps, mapDispatchToProps)(GenresList);

@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
 
 import { APP_ROUTE } from "../../helpers/const";
 import { FilmsType } from "../../types/types";
@@ -7,7 +8,12 @@ import PageMain from "../page-main/page-main";
 import PageMovie from "../page-movie/page-movie";
 import SignIn from "../sign-in/sign-in";
 
-const App: React.FC<FilmsType> = ({ films }) => {
+interface StateProps {
+  films: FilmsType;
+  genre: string;
+}
+
+const App: React.FC<StateProps> = ({ films }) => {
   return (
     <Switch>
       <Route exact path={APP_ROUTE.ROOT}>
@@ -23,4 +29,9 @@ const App: React.FC<FilmsType> = ({ films }) => {
   );
 };
 
-export default App;
+const mapStateToProps = (state: StateProps) => ({
+  films: state.films,
+});
+
+export { App };
+export default connect(mapStateToProps)(App);

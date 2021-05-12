@@ -1,16 +1,26 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import { FilmsType } from "../../types/types";
 import SmallMovieCard from "../small-movie-card/small-movie-card";
 
-const MoviesList: React.FC<FilmsType> = ({ films }) => {
+interface StateProps {
+  films: FilmsType;
+}
+
+const MoviesList: React.FC<StateProps> = ({ films }) => {
   return (
     <div className="catalog__movies-list">
-      {films.map((film) => (
-        <SmallMovieCard film={film} key={film.filmId} />
+      {films.map((item) => (
+        <SmallMovieCard film={item} key={item.filmId} />
       ))}
     </div>
   );
 };
 
-export default MoviesList;
+const mapStateToProps = (state: StateProps) => ({
+  films: state.films,
+});
+
+export { MoviesList };
+export default connect(mapStateToProps)(MoviesList);

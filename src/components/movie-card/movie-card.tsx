@@ -16,7 +16,7 @@ const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
       <h1 className="visually-hidden">WTW</h1>
 
       <Header page={PAGE.MOVIE_CARD}>
-        <Logo />
+        <Logo clName="" />
         <UserBlock />
       </Header>
 

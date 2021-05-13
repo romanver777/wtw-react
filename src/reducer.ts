@@ -1,44 +1,42 @@
 import movies from "./mocks/films.json";
-import { FilmsType } from "./types/types";
-import { GENRES } from "./helpers/const";
+import { MovieType } from "./types/types";
+import { ALL_GENRES } from "./helpers/const";
 
-interface InitStateType {
-  films: FilmsType;
-  genre: string;
+interface InitStateInterface {
+  films: MovieType[];
+  activeGenre: string;
 }
 
-interface ActionType {
-  SET_GENRE: string;
-  GET_FILMS_BY_GENRE: string;
+interface ActionCreatorInterface {
+  type: string;
+  payload: string | MovieType[] | MovieType;
 }
 
-const InitialState: InitStateType = {
+const InitialState: InitStateInterface = {
   films: [...movies],
-  genre: GENRES[0],
+  activeGenre: ALL_GENRES,
 };
 
 const ActionType = {
   SET_GENRE: `SET_GENRE`,
-  GET_FILMS_BY_GENRE: `GET_FILMS_BY_GENRE`,
 };
 
 const ActionCreator = {
-  setGenre: (genre: string) => ({
+  setGenre: (genre: string): ActionCreatorInterface => ({
     type: ActionType.SET_GENRE,
     payload: genre,
   }),
-  getFIlmsByGenre: (genre, films) => ({
-    type: ActionCreator.GET_FILMS_BY_GENRE,
-    payload: [],
-  }),
 };
 
-const reducer = (state = InitialState, action): InitStateType => {
+const reducer = (
+  state = InitialState,
+  action: ActionCreatorInterface
+): InitStateInterface => {
   switch (action.type) {
     case ActionType.SET_GENRE:
       return {
         ...state,
-        genre: action.payload,
+        activeGenre: action.payload as string,
       };
     default:
       return state;

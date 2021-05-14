@@ -13,23 +13,24 @@ interface StateProps {
 
 interface OwnProps {
   allGenres: string[];
+  activeGenre: string;
 }
 
 interface DispatchProps {
   setGenre: (genre: string) => void;
 }
 
-type Props = StateProps & DispatchProps & OwnProps;
+type Props = DispatchProps & OwnProps;
 
 const GenresList = (props: Props): JSX.Element => {
-  const { allGenres } = props;
+  const { allGenres, activeGenre } = props;
   return (
     <ul className="catalog__genres-list">
       {allGenres.map((item, ind) => {
         return (
           <li
             className={
-              item.toLowerCase() === props.activeGenre.toLowerCase()
+              item.toLowerCase() === activeGenre.toLowerCase()
                 ? "catalog__genres-item catalog__genres-item--active"
                 : "catalog__genres-item"
             }

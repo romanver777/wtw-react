@@ -10,7 +10,12 @@ interface StateProps {
   activeGenre: string;
 }
 
-const MoviesList: React.FC<StateProps> = ({ films }) => {
+interface OwnProps {
+  films: MovieType[];
+}
+
+const MoviesList = (props: OwnProps): JSX.Element => {
+  const { films } = props;
   return (
     <div className="catalog__movies-list">
       {films.map((item) => (

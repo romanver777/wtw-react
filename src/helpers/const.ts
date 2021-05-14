@@ -1,5 +1,7 @@
 export const ALL_GENRES = `все жанры`;
 
+export const MOVIES_PER_MAIN_PAGE = 8;
+
 export const TABSNAME: Array<string> = ["Описание", "Информация", "Отзывы"];
 
 export const PAGE: { [key: string]: string } = {

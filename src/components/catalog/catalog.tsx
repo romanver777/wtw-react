@@ -1,23 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
+import { connect } from "react-redux";
 
+import { MovieType } from "../../types/types";
+import { MOVIES_PER_MAIN_PAGE } from "../../helpers/const";
+import {
+  getAllGenres,
+  getMoviesByGenre,
+  getMaxPagesCount,
+} from "../../helpers/helpers";
 import GenresList from "../genres-list/genres-list";
 import MoviesList from "../movies-list/movies-list";
+import ShowMore from "../show-more/show-more";
 
-const Catalog: React.FC = () => {
+interface StateProps {
+  films: MovieType[];
+  activeGenre: string;
+}
+
+interface OwnProps {
+  genresList: string[];
+  filteredFilms: MovieType[];
+}
+
+type Props = StateProps & OwnProps;
+
+const Catalog = (props: Props): JSX.Element => {
+  const [prevFilmsList, setFilmsList] = useState(props.filteredFilms);
+  const [maxPagesNumber, setMaxPagesNumber] = useState(
+    getMaxPagesCount(prevFilmsList, MOVIES_PER_MAIN_PAGE)
+  );
+  const [startPagesNumber, setStartPagesNumber] = useState(1);
+
+  const handleClick = () => setStartPagesNumber(startPagesNumber + 1);
+
+  if (props.filteredFilms !== prevFilmsList) {
+    setFilmsList(props.filteredFilms);
+
+    if (
+      getMaxPagesCount(props.filteredFilms, MOVIES_PER_MAIN_PAGE) !==
+      maxPagesNumber
+    )
+      setMaxPagesNumber(
+        getMaxPagesCount(props.filteredFilms, MOVIES_PER_MAIN_PAGE)
+      );
+    if (startPagesNumber > 1) setStartPagesNumber(1);
+  }
+
+  const sliceFilteredfilms = (filteredFilms: MovieType[], endNumber: number) =>
+    filteredFilms.slice(0, endNumber);
+
   return (
     <section className="catalog">
       <h2 className="catalog__title visually-hidden">Catalog</h2>
-
-      <GenresList />
-      <MoviesList />
-
-      <div className="catalog__more">
-        <button className="catalog__button" type="button">
-          Show more
-        </button>
-      </div>
+      <GenresList
+        genresList={props.genresList}
+        activeGenre={props.activeGenre}
+      />
+      <MoviesList
+        filteredFilms={sliceFilteredfilms(
+          props.filteredFilms,
+          startPagesNumber * MOVIES_PER_MAIN_PAGE
+        )}
+      />
+      {startPagesNumber !== maxPagesNumber ? (
+        <ShowMore onHandleClick={() => handleClick()} />
+      ) : null}
     </section>
   );
 };
 
-export default Catalog;
+const mapStateToProps = (state: StateProps) => ({
+  films: state.films,
+  activeGenre: state.activeGenre,
+  genresList: getAllGenres(state.films),
+  filteredFilms: getMoviesByGenre(state.films, state.activeGenre),
+});
+
+export { Catalog };
+export default connect(mapStateToProps)(Catalog);

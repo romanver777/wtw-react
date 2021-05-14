@@ -46,7 +46,12 @@ export const getAllGenres = (movies: MovieType[]): string[] => {
       genres.add(it.genre);
     });
   });
-  const arr = Array.from(genres);
+  const arr = Array.from(genres) as string[];
   arr.unshift(ALL_GENRES);
   return arr.map((item) => convertFirstLetterToUp(item));
 };
+
+export const getMaxPagesCount = (
+  films: MovieType[],
+  moviesPerPage: number
+): number => Math.ceil(films.length / moviesPerPage);

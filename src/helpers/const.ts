@@ -18,6 +18,7 @@ export const USER_PAGE_TITLE = {
 
 export const APP_ROUTE = {
   ROOT: "/",
-  FILM: "/film/:id",
+  FILM: "/film/",
+  FILM_ID: "/film/:id",
   LOGIN: "/login",
 };

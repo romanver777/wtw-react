@@ -18,11 +18,17 @@ interface StateProps {
 }
 
 interface OwnProps {
+  films: MovieType[];
+}
+
+interface MapProps {
+  ffilms: MovieType[];
+  activeGenre: string;
   genresList: string[];
   filteredFilms: MovieType[];
 }
 
-type Props = StateProps & OwnProps;
+type Props = MapProps;
 
 const Catalog = (props: Props): JSX.Element => {
   const [prevFilmsList, setFilmsList] = useState(props.filteredFilms);
@@ -69,8 +75,8 @@ const Catalog = (props: Props): JSX.Element => {
   );
 };
 
-const mapStateToProps = (state: StateProps) => ({
-  films: state.films,
+const mapStateToProps = (state: StateProps, ownProps: OwnProps) => ({
+  ffilms: ownProps.films,
   activeGenre: state.activeGenre,
   genresList: getAllGenres(state.films),
   filteredFilms: getMoviesByGenre(state.films, state.activeGenre),

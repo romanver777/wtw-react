@@ -27,15 +27,13 @@ const MovieCardFull: React.FC<FilmType> = ({ film }) => {
           <div className="movie-card__desc">
             <h2 className="movie-card__title">{film.nameRu}</h2>
             <p className="movie-card__meta">
-              <span className="movie-card__genre">
-                {film.genres.map((item, ind) => {
-                  return (
-                    <span className="movie-card__genre" key={ind}>
-                      {item.genre}
-                    </span>
-                  );
-                })}
-              </span>
+              {film.genres.map((item, ind) => {
+                return (
+                  <span className="movie-card__genre" key={ind}>
+                    {item.genre}
+                  </span>
+                );
+              })}
               <span className="movie-card__year">{film.year}</span>
             </p>
 

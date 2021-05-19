@@ -35,6 +35,11 @@ export const getMoviesByGenre = (
   }
 };
 
+export const getMovieById = (
+  movies: MovieType[],
+  id: string
+): MovieType | undefined => movies.find((el) => el.filmId == +id);
+
 const convertFirstLetterToUp = (str: string): string =>
   str[0].toUpperCase() + str.substring(1);
 

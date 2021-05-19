@@ -11,7 +11,10 @@ const SmallMovieCard: React.FC<FilmType> = ({ film }) => {
         <img src={film.posterUrl} alt={film.nameRu} />
       </div>
       <h3 className="small-movie-card__title">
-        <Link className="small-movie-card__link" to={APP_ROUTE.FILM}>
+        <Link
+          className="small-movie-card__link"
+          to={`${APP_ROUTE.FILM}${film.filmId}`}
+        >
           {film.nameRu}
         </Link>
       </h3>

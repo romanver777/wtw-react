@@ -214,6 +214,62 @@
           "reviewTitle": null,
           "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
       }
+    ],
+    "staff": [
+      {
+        "staffId": 1210,
+        "nameRu": "Ли Дэниелс",
+        "nameEn": "Lee Daniels",
+        "description": null,
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        "professionText": "Режиссеры",
+        "professionKey": "DIRECTOR"
+      },
+      {
+        "staffId": 4173614,
+        "nameRu": "Андра Дэй",
+        "nameEn": "Andra Day",
+        "description": "Billie Holiday",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 223311,
+        "nameRu": "Гаррет Хедлунд",
+        "nameEn": "Garrett Hedlund",
+        "description": "Harry Anslinger",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/223311.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 295,
+        "nameRu": "Наташа Лионн",
+        "nameEn": "Natasha Lyonne",
+        "description": "Tallulah Bankhead",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/295.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 740110,
+        "nameRu": "Тайлер Джеймс Уильямс",
+        "nameEn": "Tyler James Williams",
+        "description": "Lester «Prez» Young",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/740110.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 2946565,
+        "nameRu": "Треванте Роудс",
+        "nameEn": "Trevante Rhodes",
+        "description": "Jimmy Fletcher",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/2946565.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      }
     ]
   },
   {
@@ -296,6 +352,62 @@
           "reviewAutor": "Egorche23",
           "reviewTitle": null,
           "reviewDescription": "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба"
+      }
+    ],
+    "staff": [
+      {
+        "staffId": 1210,
+        "nameRu": "Ли Дэниелс",
+        "nameEn": "Lee Daniels",
+        "description": null,
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        "professionText": "Режиссеры",
+        "professionKey": "DIRECTOR"
+      },
+      {
+        "staffId": 4173614,
+        "nameRu": "Андра Дэй",
+        "nameEn": "Andra Day",
+        "description": "Billie Holiday",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 223311,
+        "nameRu": "Гаррет Хедлунд",
+        "nameEn": "Garrett Hedlund",
+        "description": "Harry Anslinger",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/223311.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 295,
+        "nameRu": "Наташа Лионн",
+        "nameEn": "Natasha Lyonne",
+        "description": "Tallulah Bankhead",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/295.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 740110,
+        "nameRu": "Тайлер Джеймс Уильямс",
+        "nameEn": "Tyler James Williams",
+        "description": "Lester «Prez» Young",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/740110.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
+      },
+      {
+        "staffId": 2946565,
+        "nameRu": "Треванте Роудс",
+        "nameEn": "Trevante Rhodes",
+        "description": "Jimmy Fletcher",
+        "posterUrl": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/2946565.jpg",
+        "professionText": "Актеры",
+        "professionKey": "ACTOR"
       }
     ]
   },

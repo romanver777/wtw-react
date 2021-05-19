@@ -10,7 +10,7 @@ const PageMain: React.FC<FilmsType> = ({ films }) => {
     <React.Fragment>
       <MovieCard film={films[0]} />
       <div className="page-content">
-        <Catalog />
+        <Catalog films={films} />
         <Footer />
       </div>
     </React.Fragment>

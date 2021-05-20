@@ -1,16 +1,15 @@
 import React from "react";
 
-import { FilmsType } from "../../types/types";
 import MovieCard from "../movie-card/movie-card";
 import Catalog from "../catalog/catalog";
 import Footer from "../footer/footer";
 
-const PageMain: React.FC<FilmsType> = ({ films }) => {
+const PageMain = (): JSX.Element => {
   return (
     <React.Fragment>
-      <MovieCard film={films[0]} />
+      <MovieCard />
       <div className="page-content">
-        <Catalog films={films} />
+        <Catalog />
         <Footer />
       </div>
     </React.Fragment>

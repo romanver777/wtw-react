@@ -9,7 +9,10 @@ import App from "./components/app/app";
 import { reducer } from "./reducer";
 import history from "./history";
 
-const store = createStore(reducer);
+const store = createStore(
+  reducer,
+  (window as any).__REDUX_DEVTOOLS_EXTENSION__?.()
+);
 
 render(
   <Provider store={store}>

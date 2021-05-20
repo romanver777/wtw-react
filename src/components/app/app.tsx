@@ -1,23 +1,24 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 
 import { APP_ROUTE } from "../../helpers/const";
-import { MovieType } from "../../types/types";
+// import { MovieType } from "../../types/types";
 import PageMain from "../page-main/page-main";
 import PageMovie from "../page-movie/page-movie";
 import SignIn from "../sign-in/sign-in";
 
-interface StateProps {
-  films: MovieType[];
-}
+// interface StateProps {
+//   films: MovieType[];
+// }
 
-const App: React.FC<StateProps> = ({ films }) => {
+// const App: React.FC<StateProps> = ({ films }) => {
+const App = (): JSX.Element => {
   return (
     <Switch>
-      <Route exact path={APP_ROUTE.ROOT}>
-        <PageMain films={films} />
-      </Route>
+      <Route exact path={APP_ROUTE.ROOT} component={PageMain} />
+      {/* <PageMain films={films} />
+      </Route> */}
       <Route path={APP_ROUTE.FILM_ID} component={PageMovie} />
       <Route path={APP_ROUTE.LOGIN}>
         <SignIn />
@@ -26,9 +27,10 @@ const App: React.FC<StateProps> = ({ films }) => {
   );
 };
 
-const mapStateToProps = (state: StateProps) => ({
-  films: state.films,
-});
+// const mapStateToProps = (state: StateProps) => ({
+//   films: state.films,
+// });
 
-export { App };
-export default connect(mapStateToProps)(App);
+export default App;
+// export { App };
+// export default connect(mapStateToProps)(App);

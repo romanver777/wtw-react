@@ -1,12 +1,25 @@
-import React, { ReactElement } from "react";
+import React from "react";
+import { connect } from "react-redux";
 
 import { PAGE } from "../../helpers/const";
-import { FilmType } from "../../types/types";
+import { MovieType } from "../../types/types";
 import Header from "../header/header";
 import Logo from "../logo/logo";
 import UserBlock from "../user-block/user-block";
 
-const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
+interface StateProps {
+  films: MovieType[];
+}
+
+interface MapProps {
+  film: MovieType;
+}
+
+type Props = MapProps;
+
+const MovieCard = (props: Props): JSX.Element => {
+  const { film } = props;
+
   return (
     <section className="movie-card">
       <div className="movie-card__bg">
@@ -71,4 +84,9 @@ const MovieCard: React.FC<FilmType> = ({ film }): ReactElement => {
   );
 };
 
-export default MovieCard;
+const mapStateToProps = (state: StateProps) => ({
+  film: state.films[0],
+});
+
+export { MovieCard };
+export default connect(mapStateToProps)(MovieCard);

@@ -2,9 +2,16 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
+import { MovieType } from "../../types/types";
+import { getAllGenres } from "../../helpers/helpers";
 import { ActionCreator } from "../../reducer";
 
-interface OwnProps {
+interface StateProps {
+  films: MovieType[];
+  activeGenre: string;
+}
+
+interface MapProps {
   genresList: string[];
   activeGenre: string;
 }
@@ -13,10 +20,11 @@ interface DispatchProps {
   setGenre: (genre: string) => void;
 }
 
-type Props = DispatchProps & OwnProps;
+type Props = MapProps & DispatchProps;
 
 const GenresList = (props: Props): JSX.Element => {
-  const { genresList, activeGenre } = props;
+  const { genresList, activeGenre, setGenre } = props;
+
   return (
     <ul className="catalog__genres-list">
       {genresList.map((item, ind) => {
@@ -34,7 +42,7 @@ const GenresList = (props: Props): JSX.Element => {
               className="catalog__genres-link"
               onClick={(e) => {
                 e.preventDefault();
-                props.setGenre(item);
+                setGenre(item);
               }}
             >
               {item}
@@ -46,9 +54,14 @@ const GenresList = (props: Props): JSX.Element => {
   );
 };
 
+const mapStateToProps = (state: StateProps) => ({
+  genresList: getAllGenres(state.films),
+  activeGenre: state.activeGenre,
+});
+
 const mapDispatchToProps = {
   setGenre: (genre: string) => ActionCreator.setGenre(genre),
 };
 
 export { GenresList };
-export default connect(null, mapDispatchToProps)(GenresList);
+export default connect(mapStateToProps, mapDispatchToProps)(GenresList);

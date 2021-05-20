@@ -18,10 +18,7 @@ const App: React.FC<StateProps> = ({ films }) => {
       <Route exact path={APP_ROUTE.ROOT}>
         <PageMain films={films} />
       </Route>
-      <Route
-        path={APP_ROUTE.FILM_ID}
-        render={(props) => <PageMovie {...props} />}
-      />
+      <Route path={APP_ROUTE.FILM_ID} component={PageMovie} />
       <Route path={APP_ROUTE.LOGIN}>
         <SignIn />
       </Route>

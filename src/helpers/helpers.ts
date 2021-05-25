@@ -40,7 +40,7 @@ export const getMovieById = (
   id: string
 ): MovieType | undefined => movies.find((el) => el.filmId == +id);
 
-const convertFirstLetterToUp = (str: string): string =>
+export const convertFirstLetterToUp = (str: string): string =>
   str[0].toUpperCase() + str.substring(1);
 
 export const getAllGenres = (movies: MovieType[]): string[] => {

@@ -6,3 +6,4 @@ build
 stories
 storybook-static
 webpack.config.js
+coverage

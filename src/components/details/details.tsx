@@ -15,12 +15,9 @@ const Details: React.FC<FilmType> = ({ film }) => {
         <p className="movie-card__details-item">
           <strong className="movie-card__details-name">В ролях</strong>
           <span className="movie-card__details-value">
-            {film.staff.map((item, ind) => {
-              return ind > 0 && ind < film.staff.length - 1
-                ? item.nameRu + ", "
-                : ind == film.staff.length - 1
-                ? item.nameRu + " "
-                : null;
+            {film.staff.slice(1).map((item, ind) => {
+              if (ind < film.staff.length - 2) return item.nameRu + ", ";
+              return item.nameRu + " ";
             })}
           </span>
         </p>

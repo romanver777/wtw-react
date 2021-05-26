@@ -7,7 +7,6 @@ export const TABSNAME: Array<string> = ["Описание", "Информаци�
 export const PAGE: { [key: string]: string } = {
   MOVIE_CARD: "movie-card",
   USER_PAGE: "user-page",
-  LOGO_LIGHT: "logo__link--light",
 };
 
 export const USER_PAGE_TITLE = {
@@ -21,4 +20,9 @@ export const APP_ROUTE = {
   FILM: "/film/",
   FILM_ID: "/film/:id",
   LOGIN: "/login",
+};
+
+export const LOGO_POSITION = {
+  HEADER: "",
+  FOOTER: "logo__link--light",
 };

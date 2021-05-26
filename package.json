@@ -22,6 +22,9 @@
       "pre-push": "npm test && npm run lint"
     }
   },
+  "jest": {
+    "verbose": true
+  },
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",

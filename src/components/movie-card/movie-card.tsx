@@ -8,7 +8,7 @@ import Logo from "../logo/logo";
 import UserBlock from "../user-block/user-block";
 
 interface StateProps {
-  films: MovieType[];
+  awaitFilm: MovieType;
 }
 
 interface MapProps {
@@ -85,7 +85,7 @@ const MovieCard = (props: Props): JSX.Element => {
 };
 
 const mapStateToProps = (state: StateProps) => ({
-  film: state.films[0],
+  film: state.awaitFilm,
 });
 
 export { MovieCard };

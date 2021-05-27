@@ -1,18 +1,28 @@
 import React from "react";
 import { render } from "react-dom";
 import { Router } from "react-router-dom";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
+import thunk from "redux-thunk";
+import { compose } from "recompose";
 
 import "./style/style.css";
 import App from "./components/app/app";
-import { reducer } from "./reducer";
+import { reducer, Operation } from "./reducer";
 import history from "./history";
+import createApi from "./api";
 
 const store = createStore(
   reducer,
-  (window as any).__REDUX_DEVTOOLS_EXTENSION__?.()
+  compose(
+    applyMiddleware(thunk.withExtraArgument(createApi())),
+    (window as any).__REDUX_DEVTOOLS_EXTENSION__?.()
+  )
 );
+
+store.dispatch(Operation.loadTk());
+store.dispatch(Operation.loadFilms());
+store.dispatch(Operation.loadAwaitFilm());
 
 render(
   <Provider store={store}>

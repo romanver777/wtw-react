@@ -1,13 +1,18 @@
 import React, { useState } from "react";
-import { connect, ConnectedComponent } from "react-redux";
+import { connect } from "react-redux";
 
 import { MovieType } from "../types/types";
 import { getMoviesByGenre } from "../helpers/helpers";
-import { MOVIES_PER_MAIN_PAGE } from "../helpers/const";
+import { MOVIES_PER_MAIN_PAGE, PAGE_NAME } from "../helpers/const";
 
 interface StateProps {
   films: MovieType[];
+  currentFilm: MovieType;
   activeGenre: string;
+}
+
+interface OwnProps {
+  pageName: string;
 }
 
 interface WrapComponentProps {
@@ -26,12 +31,11 @@ const withShowMore = <P extends WrapComponentProps>(
   const Hoc = (props: WrapComponentProps) => {
     const [prevFilmsList, setFilmsList] = useState(props.filteredFilms);
     const [clickCount, setClickCount] = useState(1);
-
+    console.log(props);
     const handleClick = () => setClickCount(clickCount + 1);
 
     if (props.filteredFilms !== prevFilmsList) {
       setFilmsList(props.filteredFilms);
-
       if (clickCount > 1) setClickCount(1);
     }
 
@@ -50,9 +54,19 @@ const withShowMore = <P extends WrapComponentProps>(
     );
   };
 
-  const mapStateToProps = (state: StateProps) => ({
-    filteredFilms: getMoviesByGenre(state.films, state.activeGenre),
-  });
+  const mapStateToProps = (state: StateProps, ownProps: OwnProps) => {
+    if (ownProps.pageName === PAGE_NAME[0]) {
+      return {
+        filteredFilms: getMoviesByGenre(state.films, state.activeGenre),
+      };
+    }
+    return {
+      filteredFilms: getMoviesByGenre(
+        state.films,
+        state.currentFilm.genres[0].genre
+      ),
+    };
+  };
 
   return connect(mapStateToProps)(Hoc);
 };

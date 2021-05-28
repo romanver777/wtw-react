@@ -1,5 +1,5 @@
 // import movies from "./mocks/films.json";
-import { MovieType } from "./types/types";
+import { MovieType, ReviewType, StaffType } from "./types/types";
 import { ALL_GENRES } from "./helpers/const";
 import { getAllGenres, getRandomNumber } from "./helpers/helpers";
 import { ThunkAction, ThunkDispatch } from "redux-thunk";
@@ -9,22 +9,34 @@ import { AxiosInstance } from "axios";
 interface InitStateInterface {
   films: null | MovieType[];
   awaitFilm: null | MovieType;
+  currentFilm: null | MovieType;
   activeGenre: string;
   genresList: null | string[];
   tk: null | string;
+  reviews: null | ReviewType[];
+  staff: null | StaffType[];
 }
 
 interface ActionCreatorInterface {
   type: string;
-  payload: string | string[] | MovieType[] | MovieType;
+  payload:
+    | string
+    | string[]
+    | MovieType[]
+    | MovieType
+    | ReviewType[]
+    | StaffType[];
 }
 
 const InitialState: InitStateInterface = {
   films: null,
   awaitFilm: null,
+  currentFilm: null,
   activeGenre: ALL_GENRES,
   genresList: null,
   tk: null,
+  reviews: null,
+  staff: null,
 };
 
 const ActionType = {
@@ -33,6 +45,9 @@ const ActionType = {
   SET_TK: `SET_TK`,
   SET_FILMS: `SET_FILMS`,
   SET_AWAIT_FILM: `SET_AWAIT_FILM`,
+  SET_CURRENT_FILM: `SET_CURRENT_FILM`,
+  SET_REVIEWS: `SET_REVIEWS`,
+  SET_STAFF: `SET_STAFF`,
 };
 
 const ActionCreator = {
@@ -55,6 +70,18 @@ const ActionCreator = {
   setAwaitFilm: (awaitFilm: MovieType): ActionCreatorInterface => ({
     type: ActionType.SET_AWAIT_FILM,
     payload: awaitFilm,
+  }),
+  setCurrentFilm: (film: MovieType): ActionCreatorInterface => ({
+    type: ActionType.SET_CURRENT_FILM,
+    payload: film,
+  }),
+  setReviews: (reviews: ReviewType[]): ActionCreatorInterface => ({
+    type: ActionType.SET_REVIEWS,
+    payload: reviews,
+  }),
+  setStaff: (staff: StaffType[]): ActionCreatorInterface => ({
+    type: ActionType.SET_STAFF,
+    payload: staff,
   }),
 };
 
@@ -87,6 +114,21 @@ const reducer = (
       return {
         ...state,
         awaitFilm: action.payload as MovieType,
+      };
+    case ActionType.SET_CURRENT_FILM:
+      return {
+        ...state,
+        currentFilm: action.payload as MovieType,
+      };
+    case ActionType.SET_REVIEWS:
+      return {
+        ...state,
+        reviews: action.payload as ReviewType[],
+      };
+    case ActionType.SET_STAFF:
+      return {
+        ...state,
+        staff: action.payload as StaffType[],
       };
     default:
       return state;
@@ -151,6 +193,44 @@ const Operation = {
           );
         })
         .catch((error) => console.log(error)),
+  loadReviews:
+    (
+      id: number
+    ): ThunkAction<
+      TPromise, // thunk return type
+      TAppState, // state type
+      any, // extra argument, (not used)
+      ActionCreatorInterface // action type
+    > =>
+    (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
+      api.kp
+        .get(`/v1/reviews?filmId=${id}&page=1`, {
+          headers: {
+            "X-API-KEY": getState().tk,
+          },
+        })
+        .then((response) =>
+          dispatch(ActionCreator.setReviews(response.data.reviews))
+        )
+        .catch((error) => console.log(error.toJSON())),
+  loadStaff:
+    (
+      id: number
+    ): ThunkAction<
+      TPromise, // thunk return type
+      TAppState, // state type
+      any, // extra argument, (not used)
+      ActionCreatorInterface // action type
+    > =>
+    (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
+      api.kp
+        .get(`/v1/staff?filmId=${id}`, {
+          headers: {
+            "X-API-KEY": getState().tk,
+          },
+        })
+        .then((response) => dispatch(ActionCreator.setStaff(response.data)))
+        .catch((error) => console.log(error.toJSON())),
 };
 
 export { reducer, ActionCreator, Operation };

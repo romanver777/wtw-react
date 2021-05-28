@@ -1,6 +1,10 @@
 export const ALL_GENRES = `все жанры`;
 
+export const PAGE_NAME = ["main", "movie"];
+
 export const MOVIES_PER_MAIN_PAGE = 8;
+
+export const STAFF_PER_PAGE = 10;
 
 export const TABSNAME: Array<string> = ["Описание", "Информация", "Отзывы"];
 
@@ -25,4 +29,9 @@ export const APP_ROUTE = {
 export const LOGO_POSITION = {
   HEADER: "",
   FOOTER: "logo__link--light",
+};
+
+export const URL = {
+  KP_BASE: "https://kinopoiskapiunofficial.tech/api/",
+  MAIN_BASE: "https://run.mocky.io/v3/",
 };

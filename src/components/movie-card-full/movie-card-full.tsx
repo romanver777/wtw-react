@@ -1,14 +1,20 @@
 import React from "react";
 
-import { PAGE, LOGO_POSITION } from "../../helpers/const";
-import { FilmType } from "../../types/types";
+import { PAGE, LOGO_POSITION, TABSNAME } from "../../helpers/const";
+import { MovieType, ReviewType, StaffType } from "../../types/types";
 
 import Header from "../header/header";
 import Logo from "../logo/logo";
 import UserBlock from "../user-block/user-block";
 import Tabs from "../tabs/tabs";
 
-const MovieCardFull: React.FC<FilmType> = ({ film }) => {
+interface PropsType {
+  film: MovieType;
+  reviews: ReviewType[];
+  staff: StaffType[];
+}
+
+const MovieCardFull: React.FC<PropsType> = ({ film, reviews, staff }) => {
   return (
     <section className="movie-card movie-card--full">
       <div className="movie-card__hero">
@@ -74,7 +80,12 @@ const MovieCardFull: React.FC<FilmType> = ({ film }) => {
               height="327"
             />
           </div>
-          <Tabs film={film} />
+          <Tabs
+            film={film}
+            reviews={reviews}
+            staff={staff}
+            initTab={TABSNAME[0]}
+          />
         </div>
       </div>
     </section>

@@ -1,32 +1,35 @@
 // import movies from "./mocks/films.json";
 import { MovieType } from "./types/types";
 import { ALL_GENRES } from "./helpers/const";
-import { getRandomNumber } from "./helpers/helpers";
+import { getAllGenres, getRandomNumber } from "./helpers/helpers";
 import { ThunkAction, ThunkDispatch } from "redux-thunk";
 import { AnyAction } from "redux";
 import { AxiosInstance } from "axios";
 
 interface InitStateInterface {
-  films: MovieType[];
-  awaitFilm: MovieType;
+  films: null | MovieType[];
+  awaitFilm: null | MovieType;
   activeGenre: string;
+  genresList: null | string[];
   tk: null | string;
 }
 
 interface ActionCreatorInterface {
   type: string;
-  payload: string | MovieType[] | MovieType;
+  payload: string | string[] | MovieType[] | MovieType;
 }
 
 const InitialState: InitStateInterface = {
-  films: [] as MovieType[],
-  awaitFilm: {} as MovieType,
+  films: null,
+  awaitFilm: null,
   activeGenre: ALL_GENRES,
+  genresList: null,
   tk: null,
 };
 
 const ActionType = {
   SET_GENRE: `SET_GENRE`,
+  SET_GENRES_LIST: `SET_GENRES_LIST`,
   SET_TK: `SET_TK`,
   SET_FILMS: `SET_FILMS`,
   SET_AWAIT_FILM: `SET_AWAIT_FILM`,
@@ -36,6 +39,10 @@ const ActionCreator = {
   setGenre: (genre: string): ActionCreatorInterface => ({
     type: ActionType.SET_GENRE,
     payload: genre,
+  }),
+  setGenresList: (list: string[]): ActionCreatorInterface => ({
+    type: ActionType.SET_GENRES_LIST,
+    payload: list,
   }),
   setTk: (tk: string): ActionCreatorInterface => ({
     type: ActionType.SET_TK,
@@ -60,6 +67,11 @@ const reducer = (
       return {
         ...state,
         activeGenre: action.payload as string,
+      };
+    case ActionType.SET_GENRES_LIST:
+      return {
+        ...state,
+        genresList: action.payload as string[],
       };
     case ActionType.SET_TK:
       return {
@@ -113,9 +125,12 @@ const Operation = {
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
       api.main
         .get("/e8bda8ad-de3b-4feb-ad2f-63e300f795b8")
-        .then((response) =>
-          dispatch(ActionCreator.setFilms(response.data.films))
-        )
+        .then((response) => {
+          dispatch(ActionCreator.setFilms(response.data.films));
+          dispatch(
+            ActionCreator.setGenresList(getAllGenres(response.data.films))
+          );
+        })
         .catch((error) => console.log(error)),
   loadAwaitFilm:
     (): ThunkAction<

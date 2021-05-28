@@ -17,11 +17,11 @@ type PropsType = StateProps;
 
 const App = (props: PropsType): JSX.Element => {
   const { films, awaitFilm } = props;
-  console.log("af", awaitFilm);
+
   return (
     <React.Fragment>
-      {!films.length && <div>Loading...</div>}
-      {films && !!films.length && (
+      {!films && !awaitFilm && <div>Loading...</div>}
+      {films && !!films.length && awaitFilm && (
         <Switch>
           <Route exact path={APP_ROUTE.ROOT} component={PageMain} />
           <Route path={APP_ROUTE.FILM_ID} component={PageMovie} />

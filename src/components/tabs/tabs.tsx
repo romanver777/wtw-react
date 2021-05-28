@@ -1,29 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
-import { FilmType } from "../../types/types";
+import { MovieType, ReviewType, StaffType } from "../../types/types";
 import { TABSNAME } from "../../helpers/const";
 import Overview from "../overview/overview";
 import Details from "../details/details";
 import Reviews from "../reviews/reviews";
 
-const Tabs: React.FC<FilmType> = ({ film }) => {
-  const [activeTab, setActiveTab] = useState(TABSNAME[0]);
+interface PropsType {
+  film: MovieType;
+  reviews: ReviewType[];
+  staff: StaffType[];
+  initTab: string;
+}
+
+const Tabs: React.FC<PropsType> = ({ film, reviews, staff, initTab }) => {
+  const [activeTab, setActiveTab] = useState(initTab);
+  const [prevFilm, setPrevFilm] = useState(film);
   const switchTabs = (tab: string) => {
     switch (tab) {
       case TABSNAME[0]:
-        return <Overview film={film} />;
+        return <Overview film={film} staff={staff} />;
         break;
       case TABSNAME[1]:
-        return <Details film={film} />;
+        return <Details film={film} staff={staff} />;
         break;
       case TABSNAME[2]:
-        return <Reviews reviews={film.reviews} />;
+        return <Reviews reviews={reviews} />;
         break;
       default:
-        return <Overview film={film} />;
+        return <Overview film={film} staff={staff} />;
     }
   };
+
+  useEffect(() => {
+    if (prevFilm != film) {
+      setPrevFilm(film);
+      setActiveTab(initTab);
+    }
+  });
 
   return (
     <div className="movie-card__desc">

@@ -1,22 +1,27 @@
 import React from "react";
 
-import { FilmType } from "../../types/types";
+import { MovieType, StaffType } from "../../types/types";
+import { STAFF_PER_PAGE } from "../../helpers/const";
 
-const Details: React.FC<FilmType> = ({ film }) => {
+interface PropsType {
+  film: MovieType;
+  staff: StaffType[];
+}
+
+const Details: React.FC<PropsType> = ({ film, staff }) => {
   return (
     <div className="movie-card__text movie-card__row">
       <div className="movie-card__text-col">
         <p className="movie-card__details-item">
           <strong className="movie-card__details-name">Режиссер</strong>
-          <span className="movie-card__details-value">
-            {film.staff[0].nameRu}
-          </span>
+          <span className="movie-card__details-value">{staff[0].nameRu}</span>
         </p>
         <p className="movie-card__details-item">
           <strong className="movie-card__details-name">В ролях</strong>
           <span className="movie-card__details-value">
-            {film.staff.slice(1).map((item, ind) => {
-              if (ind < film.staff.length - 2) return item.nameRu + ", ";
+            {staff.slice(1, STAFF_PER_PAGE).map((item, ind) => {
+              if (ind < staff.slice(1, STAFF_PER_PAGE).length - 1)
+                return item.nameRu + ", ";
               return item.nameRu + " ";
             })}
           </span>

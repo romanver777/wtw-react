@@ -33,6 +33,27 @@ export interface MovieType {
   }[];
 }
 
+export interface ReviewType {
+  reviewAutor: string;
+  reviewData: string;
+  reviewDescription: string;
+  reviewId: number;
+  reviewTitle: string;
+  reviewType: string;
+  userNegativeRating: null;
+  userPositiveRating: null;
+}
+
+export interface StaffType {
+  staffId: number;
+  nameRu: string;
+  nameEn: string;
+  description: null;
+  posterUrl: string;
+  professionText: string;
+  professionKey: string;
+}
+
 export interface FilmsType {
   films: MovieType[];
 }

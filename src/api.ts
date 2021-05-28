@@ -1,4 +1,5 @@
 import axios, { AxiosInstance } from "axios";
+import { URL } from "./helpers/const";
 
 type TInstance = {
   main: AxiosInstance;
@@ -7,12 +8,12 @@ type TInstance = {
 
 const createApi = (): TInstance => {
   const main = axios.create({
-    baseURL: "https://run.mocky.io/v3/",
-    timeout: 5000,
+    baseURL: URL.MAIN_BASE,
+    timeout: 10000,
   });
   const kp = axios.create({
-    baseURL: "https://kinopoiskapiunofficial.tech/api/v2.2/films/",
-    timeout: 5000,
+    baseURL: URL.KP_BASE,
+    timeout: 10000,
   });
   return { main, kp };
 };

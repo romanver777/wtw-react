@@ -3,11 +3,11 @@ import React from "react";
 import { ReviewType } from "../../types/types";
 import { convertDateTime } from "../../helpers/helpers";
 
-interface ReviewsType {
+interface PropsType {
   reviews: ReviewType[];
 }
 
-const Reviews: React.FC<ReviewsType> = ({ reviews }) => {
+const Reviews: React.FC<PropsType> = ({ reviews }) => {
   return (
     <div className="movie-card__reviews movie-card__row">
       <div className="movie-card__reviews-col">

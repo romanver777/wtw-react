@@ -1,9 +1,15 @@
 import React from "react";
 
-import { FilmType } from "../../types/types";
+import { MovieType, StaffType } from "../../types/types";
 import { convertRatingLevel } from "../../helpers/helpers";
+import { STAFF_PER_PAGE } from "../../helpers/const";
 
-const Overview: React.FC<FilmType> = ({ film }) => {
+interface PropsType {
+  film: MovieType;
+  staff: StaffType[];
+}
+
+const Overview: React.FC<PropsType> = ({ film, staff }) => {
   return (
     <React.Fragment>
       <div className="movie-rating">
@@ -21,14 +27,15 @@ const Overview: React.FC<FilmType> = ({ film }) => {
       <div className="movie-card__text">
         <p>{film.description}</p>
         <p className="movie-card__director">
-          <strong>Режиссер: {film.staff[0].nameRu}</strong>
+          <strong>Режиссер: {staff[0].nameRu}</strong>
         </p>
 
         <p className="movie-card__starring">
           <strong>
             В ролях:&nbsp;
-            {film.staff.slice(1).map((item, ind) => {
-              if (ind < film.staff.length - 2) return item.nameRu + ", ";
+            {staff.slice(1, STAFF_PER_PAGE).map((item, ind) => {
+              if (ind < staff.slice(1, STAFF_PER_PAGE).length - 1)
+                return item.nameRu + ", ";
               return item.nameRu + " " + "и другие";
             })}
           </strong>

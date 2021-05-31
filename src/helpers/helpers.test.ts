@@ -371,3 +371,11 @@ describe("func getMaxPagesCount", () => {
     expect(helpers.getMaxPagesCount(input, 5)).toBe(1);
   });
 });
+
+// getRandomNumber
+describe("gunc getRandomNumber", () => {
+  global.Math.random = () => 0.584381;
+  it("it should be 15 with 0.5 input random number ", () => {
+    expect(helpers.getRandomNumber(0, 30)).toBe(18);
+  });
+});

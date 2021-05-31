@@ -16,7 +16,7 @@ export const PAGE: { [key: string]: string } = {
 export const USER_PAGE_TITLE = {
   SIGN_IN: "Выполните вход",
   MY_LIST: "Мой список",
-  SIMILAR_MOVIES: "Вам может понравиться",
+  SIMILAR_MOVIES: "Похожие фильмы",
 };
 
 export const APP_ROUTE = {

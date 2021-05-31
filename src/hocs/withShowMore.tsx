@@ -31,7 +31,7 @@ const withShowMore = <P extends WrapComponentProps>(
   const Hoc = (props: WrapComponentProps) => {
     const [prevFilmsList, setFilmsList] = useState(props.filteredFilms);
     const [clickCount, setClickCount] = useState(1);
-    console.log(props);
+
     const handleClick = () => setClickCount(clickCount + 1);
 
     if (props.filteredFilms !== prevFilmsList) {

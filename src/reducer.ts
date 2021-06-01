@@ -10,6 +10,7 @@ interface InitStateInterface {
   films: null | MovieType[];
   awaitFilm: null | MovieType;
   currentFilm: null | MovieType;
+  hoveredFilm: null | MovieType;
   activeGenre: string;
   genresList: null | string[];
   tk: null | string;
@@ -20,6 +21,7 @@ interface InitStateInterface {
 interface ActionCreatorInterface {
   type: string;
   payload:
+    | null
     | string
     | string[]
     | MovieType[]
@@ -32,6 +34,7 @@ const InitialState: InitStateInterface = {
   films: null,
   awaitFilm: null,
   currentFilm: null,
+  hoveredFilm: null,
   activeGenre: ALL_GENRES,
   genresList: null,
   tk: null,
@@ -45,7 +48,8 @@ const ActionType = {
   SET_TK: `SET_TK`,
   SET_FILMS: `SET_FILMS`,
   SET_AWAIT_FILM: `SET_AWAIT_FILM`,
-  SET_CURRENT_FILM: `SET_CURRENT_FILM`,
+  SET_HOVERED_FILM: `SET_HOVERED_FILM`,
+  REMOVE_HOVERED_FILM: `REMOVE_HOVERED_FILM`,
   SET_REVIEWS: `SET_REVIEWS`,
   SET_STAFF: `SET_STAFF`,
 };
@@ -71,9 +75,13 @@ const ActionCreator = {
     type: ActionType.SET_AWAIT_FILM,
     payload: awaitFilm,
   }),
-  setCurrentFilm: (film: MovieType): ActionCreatorInterface => ({
-    type: ActionType.SET_CURRENT_FILM,
+  setHoveredFilm: (film: MovieType): ActionCreatorInterface => ({
+    type: ActionType.SET_HOVERED_FILM,
     payload: film,
+  }),
+  removeHoveredFilm: (): ActionCreatorInterface => ({
+    type: ActionType.REMOVE_HOVERED_FILM,
+    payload: null,
   }),
   setReviews: (reviews: ReviewType[]): ActionCreatorInterface => ({
     type: ActionType.SET_REVIEWS,
@@ -115,10 +123,15 @@ const reducer = (
         ...state,
         awaitFilm: action.payload as MovieType,
       };
-    case ActionType.SET_CURRENT_FILM:
+    case ActionType.SET_HOVERED_FILM:
       return {
         ...state,
-        currentFilm: action.payload as MovieType,
+        hoveredFilm: action.payload as MovieType,
+      };
+    case ActionType.REMOVE_HOVERED_FILM:
+      return {
+        ...state,
+        hoveredFilm: action.payload as null,
       };
     case ActionType.SET_REVIEWS:
       return {

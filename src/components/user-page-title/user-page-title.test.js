@@ -1,22 +1,34 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
-import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
+import { Router } from "react-router";
+import history from "../../history";
 import UserPageTitle from "./user-page-title";
 
 describe("UserPageTitle component", () => {
   const props = {
     title: "Some text",
   };
-  const Component = shallow(<UserPageTitle {...props} />);
+  const TRenderer = TestRenderer.create(
+    <Router history={history}>
+      <UserPageTitle {...props} />
+    </Router>
+  );
+  const root = TRenderer.root;
 
   it("renders correctly", () => {
-    expect(Component).toMatchSnapshot();
+    expect(TRenderer.toJSON()).toMatchSnapshot();
   });
-  it("renders h1 once", () => {
-    expect(Component.find("h1")).toHaveLength(1);
+  it("renders h1 with classNames", () => {
+    expect(root.findByType("h1").props.className).toEqual(
+      "page-title user-page__title"
+    );
   });
   it("renders h1 with props.text", () => {
-    expect(Component.find("h1.page-title.user-page__title").text()).toEqual(
-      props.title
-    );
+    // console.log(root.findByType("h1").props.children);
+    // console.log(props.title);
+    expect(root.findByType("h1").props.children).toEqual(props.title);
   });
 });

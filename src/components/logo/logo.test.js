@@ -1,23 +1,33 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
-import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
+import { Router } from "react-router";
+import history from "../../history";
 import Logo from "./logo";
 
 describe("Logo component", () => {
   const props = {
     clName: "newClassName",
   };
-  const LogoComp = shallow(<Logo {...props} />);
+  const TRenderer = TestRenderer.create(
+    <Router history={history}>
+      <Logo {...props} />
+    </Router>
+  );
+  const root = TRenderer.root;
 
   it("renders correctly", () => {
-    expect(LogoComp).toMatchSnapshot();
+    expect(TRenderer.toJSON()).toMatchSnapshot();
   });
   it("render div.logo once", () => {
-    expect(LogoComp.find("div.logo")).toHaveLength(1);
+    expect(root.findByProps({ className: "logo" }).children.length).toEqual(1);
   });
-  it("render .logo__link once", () => {
-    expect(LogoComp.find(".logo__link")).toHaveLength(1);
-  });
-  it("render .logo__link + props once", () => {
-    expect(LogoComp.find(`.${props.clName}`)).toHaveLength(1);
+  it("render .logo__link + props  once", () => {
+    expect(
+      root.findByProps({ className: `logo__link ${props.clName}` }).children
+        .length
+    ).toEqual(1);
   });
 });

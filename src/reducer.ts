@@ -1,5 +1,5 @@
 // import movies from "./mocks/films.json";
-import { MovieType, ReviewType, StaffType } from "./types/types";
+import { MovieType, ReviewType, StaffType, VideoType } from "./types/types";
 import { ALL_GENRES } from "./helpers/const";
 import { getAllGenres, getRandomNumber } from "./helpers/helpers";
 import { ThunkAction, ThunkDispatch } from "redux-thunk";
@@ -16,6 +16,7 @@ interface InitStateInterface {
   tk: null | string;
   reviews: null | ReviewType[];
   staff: null | StaffType[];
+  hoveredVideoData: null | VideoType;
 }
 
 interface ActionCreatorInterface {
@@ -27,7 +28,8 @@ interface ActionCreatorInterface {
     | MovieType[]
     | MovieType
     | ReviewType[]
-    | StaffType[];
+    | StaffType[]
+    | VideoType;
 }
 
 const InitialState: InitStateInterface = {
@@ -40,6 +42,7 @@ const InitialState: InitStateInterface = {
   tk: null,
   reviews: null,
   staff: null,
+  hoveredVideoData: null,
 };
 
 const ActionType = {
@@ -52,6 +55,8 @@ const ActionType = {
   REMOVE_HOVERED_FILM: `REMOVE_HOVERED_FILM`,
   SET_REVIEWS: `SET_REVIEWS`,
   SET_STAFF: `SET_STAFF`,
+  SET_HOVERED_VIDEO_DATA: `SET_HOVERED_VIDEO_DATA`,
+  REMOVE_HOVERED_VIDEO_DATA: `REMOVE_HOVERED_VIDEO_DATA`,
 };
 
 const ActionCreator = {
@@ -90,6 +95,14 @@ const ActionCreator = {
   setStaff: (staff: StaffType[]): ActionCreatorInterface => ({
     type: ActionType.SET_STAFF,
     payload: staff,
+  }),
+  setHoveredVideoData: (data: VideoType): ActionCreatorInterface => ({
+    type: ActionType.SET_HOVERED_VIDEO_DATA,
+    payload: data,
+  }),
+  removeHoveredVideoData: (): ActionCreatorInterface => ({
+    type: ActionType.REMOVE_HOVERED_VIDEO_DATA,
+    payload: null,
   }),
 };
 
@@ -143,6 +156,16 @@ const reducer = (
         ...state,
         staff: action.payload as StaffType[],
       };
+    case ActionType.SET_HOVERED_VIDEO_DATA:
+      return {
+        ...state,
+        hoveredVideoData: action.payload as VideoType,
+      };
+    case ActionType.REMOVE_HOVERED_VIDEO_DATA:
+      return {
+        ...state,
+        hoveredVideoData: action.payload as null,
+      }
     default:
       return state;
   }
@@ -243,6 +266,24 @@ const Operation = {
           },
         })
         .then((response) => dispatch(ActionCreator.setStaff(response.data)))
+        .catch((error) => console.log(error.toJSON())),
+  loadVideoData:
+    (
+      id: number
+    ): ThunkAction<
+      TPromise, // thunk return type
+      TAppState, // state type
+      any, // extra argument, (not used)
+      ActionCreatorInterface // action type
+    > =>
+    (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
+      api.kp
+        .get(`/v2.1/films/${id}/videos`, {
+          headers: {
+            "X-API-KEY": getState().tk,
+          },
+        })
+        .then((response) => dispatch(ActionCreator.setHoveredVideoData(response.data)))
         .catch((error) => console.log(error.toJSON())),
 };
 

@@ -1,4 +1,4 @@
-import { ALL_GENRES } from "../helpers/const";
+import { ALL_GENRES, URL } from "../helpers/const";
 import { MovieType } from "../types/types";
 
 export const convertRatingLevel = (rt: string | null): string => {
@@ -63,3 +63,6 @@ export const getMaxPagesCount = (
 
 export const getRandomNumber = (from: number, to: number): number =>
   Math.floor(Math.random() * (to - from + 1));
+
+export const convertUrl = (oldUrl: string): string =>
+  `https://youtube.com/embed/${oldUrl.replace(URL.PATTERN_YT, "")}?autoplay=1`;

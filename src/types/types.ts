@@ -62,13 +62,23 @@ export interface FilmType {
   film: MovieType;
 }
 
-export interface ReviewType {
-  reviewAutor: string;
-  reviewData: string;
-  reviewDescription: string;
-  reviewId: number;
-  reviewTitle: string;
-  reviewType: string;
-  userNegativeRating: null;
-  userPositiveRating: null;
+export interface VideoType {
+  trailers: [
+    {
+      url: string;
+      name: string;
+      site: string;
+      size: number;
+      type: string;
+    }
+  ];
+  teasers: [
+    {
+      url: string;
+      name: string;
+      site: string;
+      size: number;
+      type: string;
+    }
+  ];
 }

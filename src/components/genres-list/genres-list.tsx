@@ -44,7 +44,7 @@ const GenresList = (props: Props): JSX.Element => {
                   className="catalog__genres-link"
                   onClick={(e) => {
                     e.preventDefault();
-                    setGenre(item);
+                    if (activeGenre != item) setGenre(item);
                   }}
                 >
                   {item}

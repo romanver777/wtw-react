@@ -65,4 +65,7 @@ export const getRandomNumber = (from: number, to: number): number =>
   Math.floor(Math.random() * (to - from + 1));
 
 export const convertUrl = (oldUrl: string): string =>
-  `https://youtube.com/embed/${oldUrl.replace(URL.PATTERN_YT, "")}?autoplay=1`;
+  `https://youtube.com/embed/${oldUrl.replace(
+    URL.PATTERN_YT,
+    ""
+  )}?autoplay=1&mute=1&controls=0`;

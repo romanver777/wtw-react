@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
 import { MovieType } from "../types/types";
@@ -34,10 +34,12 @@ const withShowMore = <P extends WrapComponentProps>(
 
     const handleClick = () => setClickCount(clickCount + 1);
 
-    if (props.filteredFilms !== prevFilmsList) {
-      setFilmsList(props.filteredFilms);
-      if (clickCount > 1) setClickCount(1);
-    }
+    useEffect(() => {
+      if (props.filteredFilms !== prevFilmsList) {
+        setFilmsList(props.filteredFilms);
+        if (clickCount > 1) setClickCount(1);
+      }
+    });
 
     const visibleFilms = prevFilmsList.slice(
       0,

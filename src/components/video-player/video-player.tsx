@@ -5,6 +5,7 @@ import { convertUrl } from "../../helpers/helpers";
 
 interface Props {
   data: VideoType;
+  isFullScreen: boolean;
 }
 
 const style: { [key: string]: string | number } = {
@@ -15,16 +16,14 @@ const style: { [key: string]: string | number } = {
   top: 0,
 };
 
-const VideoPlayer: React.FC<Props> = ({ data }) => {
+const VideoPlayer: React.FC<Props> = ({ data, isFullScreen }) => {
   return (
-    data && (
-      <iframe
-        style={style}
-        src={convertUrl(data.trailers[0].url)}
-        frameBorder="10"
-        allowFullScreen
-      ></iframe>
-    )
+    <iframe
+      style={style}
+      src={convertUrl(data.trailers[0].url)}
+      frameBorder="10"
+      {...(isFullScreen ? "allowFullScreen" : null)}
+    ></iframe>
   );
 };
 

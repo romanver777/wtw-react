@@ -373,9 +373,20 @@ describe("func getMaxPagesCount", () => {
 });
 
 // getRandomNumber
-describe("gunc getRandomNumber", () => {
+describe("func getRandomNumber", () => {
   global.Math.random = () => 0.584381;
   it("it should be 15 with 0.5 input random number ", () => {
     expect(helpers.getRandomNumber(0, 30)).toBe(18);
+  });
+});
+
+// convertUrl
+describe("func convertUrl", () => {
+  const oldUrl = "https://www.youtube.com/watch?v=xFxgu0ScjJ0";
+  const newUrl =
+    "https://youtube.com/embed/xFxgu0ScjJ0?autoplay=1&mute=1&controls=0";
+
+  it("should be newUrl", () => {
+    expect(helpers.convertUrl(oldUrl)).toBe(newUrl);
   });
 });

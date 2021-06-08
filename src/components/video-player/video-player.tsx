@@ -22,7 +22,8 @@ const VideoPlayer: React.FC<Props> = ({ data, isFullScreen }) => {
       style={style}
       src={convertUrl(data.trailers[0].url)}
       frameBorder="10"
-      {...(isFullScreen ? "allowFullScreen" : null)}
+      // {...(isFullScreen ? "allowFullScreen" : null)}
+      allowFullScreen={isFullScreen}
     ></iframe>
   );
 };

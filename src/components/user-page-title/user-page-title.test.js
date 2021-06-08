@@ -27,8 +27,6 @@ describe("UserPageTitle component", () => {
     );
   });
   it("renders h1 with props.text", () => {
-    // console.log(root.findByType("h1").props.children);
-    // console.log(props.title);
     expect(root.findByType("h1").props.children).toEqual(props.title);
   });
 });

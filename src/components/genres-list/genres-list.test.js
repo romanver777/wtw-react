@@ -22,12 +22,12 @@ describe("GenresList component", () => {
   it("renders correctly", () => {
     expect(Trenderer.toJSON()).toMatchSnapshot();
   });
-  it.only("renders genres list", () => {
+  it("renders genres list", () => {
     const list = Trenderer.root.findAllByType("a").map((el) => el.children[0]);
 
     expect(list).toEqual(props.genresList);
   });
-  it.only("renders active genre", () => {
+  it("renders active genre", () => {
     const className = "catalog__genres-item catalog__genres-item--active";
 
     expect(

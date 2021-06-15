@@ -18,21 +18,17 @@ describe("Input component", () => {
     expect(Trenderer.toJSON()).toMatchSnapshot();
   });
   it("renders props type", () => {
-    console.log(Trenderer.root.findByType("input").props);
     expect(Trenderer.root.findByType("input").props.type).toEqual(props.type);
   });
   it("renders props placeholder", () => {
-    console.log(Trenderer.root.findByType("input").props);
     expect(Trenderer.root.findByType("input").props.placeholder).toEqual(
       props.placeholder
     );
   });
   it("renders props name", () => {
-    console.log(Trenderer.root.findByType("input").props);
     expect(Trenderer.root.findByType("input").props.name).toEqual(props.name);
   });
   it("renders props id", () => {
-    console.log(Trenderer.root.findByType("input").props);
     expect(Trenderer.root.findByType("input").props.id).toEqual(props.id);
   });
 });

@@ -20,8 +20,8 @@ const App = (props: PropsType): JSX.Element => {
 
   return (
     <React.Fragment>
-      {!films && !awaitFilm && <div>Loading...</div>}
-      {films && !!films.length && awaitFilm && (
+      {(!films || !awaitFilm) && <div>Loading...</div>}
+      {films && awaitFilm && (
         <Switch>
           <Route exact path={APP_ROUTE.ROOT} component={PageMain} />
           <Route path={APP_ROUTE.FILM_ID} component={PageMovie} />

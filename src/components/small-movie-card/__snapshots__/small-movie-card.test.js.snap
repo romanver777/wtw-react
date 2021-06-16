@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SmallMovieCard component with Video props renders correctly 1`] = `
+<article
+  className="small-movie-card catalog__movies-card"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="small-movie-card__image"
+  >
+    <img
+      alt="Невероятные (сериал)"
+      src="https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg"
+    />
+  </div>
+  <h3
+    className="small-movie-card__title"
+  >
+    <a
+      className="small-movie-card__link"
+      href="/film/1245486"
+      onClick={[Function]}
+    >
+      Невероятные (сериал)
+    </a>
+  </h3>
+  <iframe
+    allowFullScreen={false}
+    frameBorder="10"
+    src="https://youtube.com/embed/someUrl?autoplay=1&mute=1&controls=0"
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 4,
+      }
+    }
+  />
+</article>
+`;
+
+exports[`SmallMovieCard component with init props renders correctly 1`] = `
+<article
+  className="small-movie-card catalog__movies-card"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="small-movie-card__image"
+  >
+    <img
+      alt="Невероятные (сериал)"
+      src="https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg"
+    />
+  </div>
+  <h3
+    className="small-movie-card__title"
+  >
+    <a
+      className="small-movie-card__link"
+      href="/film/1245486"
+      onClick={[Function]}
+    >
+      Невероятные (сериал)
+    </a>
+  </h3>
+</article>
+`;

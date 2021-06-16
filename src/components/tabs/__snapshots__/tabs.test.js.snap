@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component with active tab - Details renders correctly 1`] = `
+<div
+  className="movie-card__desc"
+>
+  <nav
+    className="movie-nav movie-card__nav"
+  >
+    <ul
+      className="movie-nav__list"
+    >
+      <li
+        className="movie-nav__item"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Описание
+        </a>
+      </li>
+      <li
+        className="movie-nav__item movie-nav__item--active"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Информация
+        </a>
+      </li>
+      <li
+        className="movie-nav__item"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Отзывы
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="movie-card__text movie-card__row"
+  >
+    <div
+      className="movie-card__text-col"
+    >
+      <p
+        className="movie-card__details-item"
+      >
+        <strong
+          className="movie-card__details-name"
+        >
+          Режиссер
+        </strong>
+        <span
+          className="movie-card__details-value"
+        >
+          Ли Дэниелс
+        </span>
+      </p>
+      <p
+        className="movie-card__details-item"
+      >
+        <strong
+          className="movie-card__details-name"
+        >
+          В ролях
+        </strong>
+        <span
+          className="movie-card__details-value"
+        >
+          Андра Дэй, 
+          Гаррет Хедлунд, 
+          Наташа Лионн, 
+          Тайлер Джеймс Уильямс, 
+          Треванте Роудс 
+        </span>
+      </p>
+    </div>
+    <div
+      className="movie-card__text-col"
+    >
+      <p
+        className="movie-card__details-item"
+      >
+        <strong
+          className="movie-card__details-name"
+        >
+          Длительность
+        </strong>
+        <span
+          className="movie-card__details-value"
+        />
+      </p>
+      <p
+        className="movie-card__details-item"
+      >
+        <strong
+          className="movie-card__details-name"
+        >
+          Жанр
+        </strong>
+        <span
+          className="movie-card__details-value"
+        >
+          мультфильм, 
+        </span>
+        <span
+          className="movie-card__details-value"
+        >
+          ужасы, 
+        </span>
+        <span
+          className="movie-card__details-value"
+        >
+          фантастика
+        </span>
+      </p>
+      <p
+        className="movie-card__details-item"
+      >
+        <strong
+          className="movie-card__details-name"
+        >
+          Выход в прокат
+        </strong>
+        <span
+          className="movie-card__details-value"
+        >
+          2021-...
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tabs component with active tab - Overview renders correctly 1`] = `
+<div
+  className="movie-card__desc"
+>
+  <nav
+    className="movie-nav movie-card__nav"
+  >
+    <ul
+      className="movie-nav__list"
+    >
+      <li
+        className="movie-nav__item movie-nav__item--active"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Описание
+        </a>
+      </li>
+      <li
+        className="movie-nav__item"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Информация
+        </a>
+      </li>
+      <li
+        className="movie-nav__item"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Отзывы
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="movie-rating"
+  >
+    <div
+      className="movie-rating__score"
+    >
+      8.1
+    </div>
+    <p
+      className="movie-rating__meta"
+    >
+      <span
+        className="movie-rating__level"
+      >
+        Превосходно
+      </span>
+      <span
+        className="movie-rating__count"
+      >
+        1549
+         голосов
+      </span>
+    </p>
+  </div>
+  <div
+    className="movie-card__text"
+  >
+    <p />
+    <p
+      className="movie-card__director"
+    >
+      <strong>
+        Режиссер: 
+        Ли Дэниелс
+      </strong>
+    </p>
+    <p
+      className="movie-card__starring"
+    >
+      <strong>
+        В ролях: 
+        Андра Дэй, 
+        Гаррет Хедлунд, 
+        Наташа Лионн, 
+        Тайлер Джеймс Уильямс, 
+        Треванте Роудс и другие
+      </strong>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Tabs component with active tab - Reviews renders correctly 1`] = `
+<div
+  className="movie-card__desc"
+>
+  <nav
+    className="movie-nav movie-card__nav"
+  >
+    <ul
+      className="movie-nav__list"
+    >
+      <li
+        className="movie-nav__item"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Описание
+        </a>
+      </li>
+      <li
+        className="movie-nav__item"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Информация
+        </a>
+      </li>
+      <li
+        className="movie-nav__item movie-nav__item--active"
+      >
+        <a
+          className="movie-nav__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Отзывы
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="movie-card__reviews movie-card__row"
+  >
+    <div
+      className="movie-card__reviews-col"
+    >
+      <div
+        className="review"
+      >
+        <blockquote
+          className="review__quote"
+        >
+          <p
+            className="review__text"
+          >
+            Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. 
+Не относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.
+          </p>
+          <footer
+            className="review__details"
+          >
+            <cite
+              className="review__author"
+            >
+              SlavaLim
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-04-12T19:01:00"
+            >
+              12 апреля 2021 г., 19:01
+            </time>
+          </footer>
+        </blockquote>
+      </div>
+      <div
+        className="review"
+      >
+        <blockquote
+          className="review__quote"
+        >
+          <p
+            className="review__text"
+          >
+            В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.
+Билли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,
+          </p>
+          <footer
+            className="review__details"
+          >
+            <cite
+              className="review__author"
+            >
+              DIMI25
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-04-12T10:26:00"
+            >
+              12 апреля 2021 г., 10:26
+            </time>
+          </footer>
+        </blockquote>
+      </div>
+      <div
+        className="review"
+      >
+        <blockquote
+          className="review__quote"
+        >
+          <p
+            className="review__text"
+          >
+            Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты
+          </p>
+          <footer
+            className="review__details"
+          >
+            <cite
+              className="review__author"
+            >
+              an.varuhin
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-03-22T12:29:00"
+            >
+              22 марта 2021 г., 12:29
+            </time>
+          </footer>
+        </blockquote>
+      </div>
+      <div
+        className="review"
+      >
+        <blockquote
+          className="review__quote"
+        >
+          <p
+            className="review__text"
+          >
+            За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным
+          </p>
+          <footer
+            className="review__details"
+          >
+            <cite
+              className="review__author"
+            >
+              Ruslan Avdonin
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-03-10T15:04:00"
+            >
+              10 марта 2021 г., 15:04
+            </time>
+          </footer>
+        </blockquote>
+      </div>
+      <div
+        className="review"
+      >
+        <blockquote
+          className="review__quote"
+        >
+          <p
+            className="review__text"
+          >
+            Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба
+          </p>
+          <footer
+            className="review__details"
+          >
+            <cite
+              className="review__author"
+            >
+              Egorche23
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-03-03T19:48:00"
+            >
+              3 марта 2021 г., 19:48
+            </time>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+`;

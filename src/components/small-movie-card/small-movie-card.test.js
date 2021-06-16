@@ -9,7 +9,7 @@ import history from "../../history";
 import SmallMovieCard from "./small-movie-card";
 import films from "../../mocks/films.json";
 
-describe.only("SmallMovieCard component", () => {
+describe("SmallMovieCard component", () => {
   describe("with init props", () => {
     const props = {
       film: films[2],

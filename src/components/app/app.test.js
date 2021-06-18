@@ -3,9 +3,16 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import ShallowRenderer from "react-test-renderer/shallow";
+import TestRenderer from "react-test-renderer";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import { reducer } from "../../reducer";
+import { Router } from "react-router";
+import history from "../../history";
 
 import { App } from "./app";
 import films from "../../mocks/films.json";
+import { ALL_GENRES } from "../../helpers/const";
 
 describe("App component", () => {
   const propsInit = {
@@ -63,6 +70,58 @@ describe("App component", () => {
       expect(result.props.children[1].props.children.length).toEqual(
         routesCount
       );
+    });
+  });
+
+  describe("snapshot", () => {
+    const initState = {
+      films,
+      awaitFilm: films[2],
+      currentFilm: null,
+      hoveredFilm: null,
+      activeGenre: ALL_GENRES,
+      genresList: null,
+      tk: null,
+      reviews: null,
+      staff: null,
+      hoveredVideoData: null,
+    };
+    const store = createStore(reducer, initState);
+
+    describe("no props", () => {
+      const props = {
+        films: null,
+        awaitFilm: null,
+      };
+      const Trenderer = TestRenderer.create(
+        <Provider store={store}>
+          <Router history={history}>
+            <App {...props} />
+          </Router>
+        </Provider>
+      );
+
+      it("renders correctly", () => {
+        expect(Trenderer.toJSON()).toMatchSnapshot();
+      });
+    });
+
+    describe("with props", () => {
+      const props = {
+        films,
+        awaitFilm: films[1],
+      };
+      const Trenderer = TestRenderer.create(
+        <Provider store={store}>
+          <Router history={history}>
+            <App {...props} />
+          </Router>
+        </Provider>
+      );
+
+      it("renders correctly", () => {
+        expect(Trenderer.toJSON()).toMatchSnapshot();
+      });
     });
   });
 });

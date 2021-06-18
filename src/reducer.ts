@@ -50,6 +50,7 @@ const ActionType = {
   SET_GENRES_LIST: `SET_GENRES_LIST`,
   SET_TK: `SET_TK`,
   SET_FILMS: `SET_FILMS`,
+  SET_CURRENT_FILM: `SET_CURRENT_FILM`,
   SET_AWAIT_FILM: `SET_AWAIT_FILM`,
   SET_HOVERED_FILM: `SET_HOVERED_FILM`,
   REMOVE_HOVERED_FILM: `REMOVE_HOVERED_FILM`,
@@ -75,6 +76,10 @@ const ActionCreator = {
   setFilms: (films: MovieType[]): ActionCreatorInterface => ({
     type: ActionType.SET_FILMS,
     payload: films,
+  }),
+  setCurrentFilm: (film: MovieType): ActionCreatorInterface => ({
+    type: ActionType.SET_CURRENT_FILM,
+    payload: film,
   }),
   setAwaitFilm: (awaitFilm: MovieType): ActionCreatorInterface => ({
     type: ActionType.SET_AWAIT_FILM,
@@ -130,6 +135,11 @@ const reducer = (
       return {
         ...state,
         films: action.payload as MovieType[],
+      };
+    case ActionType.SET_CURRENT_FILM:
+      return {
+        ...state,
+        currentFilm: action.payload as MovieType,
       };
     case ActionType.SET_AWAIT_FILM:
       return {

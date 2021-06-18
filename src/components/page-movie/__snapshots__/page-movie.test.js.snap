@@ -1,0 +1,531 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageMovie component renders correctly 1`] = `
+Array [
+  <section
+    className="movie-card movie-card--full"
+  >
+    <div
+      className="movie-card__hero"
+    >
+      <div
+        className="movie-card__bg"
+      >
+        <img
+          alt="Соединённые Штаты против Билли Холидей"
+          src="https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg"
+        />
+      </div>
+      <h1
+        className="visually-hidden"
+      >
+        WTW
+      </h1>
+      <header
+        className="page-header movie-card__head"
+      >
+        <div
+          className="logo"
+        >
+          <a
+            className="logo__link "
+            href="/"
+            onClick={[Function]}
+          >
+            <span
+              className="logo__letter logo__letter--1"
+            >
+              W
+            </span>
+            <span
+              className="logo__letter logo__letter--2"
+            >
+              T
+            </span>
+            <span
+              className="logo__letter logo__letter--3"
+            >
+              W
+            </span>
+          </a>
+        </div>
+        <div
+          className="user-block"
+        >
+          <a
+            className="user-block__link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Sign in
+          </a>
+        </div>
+      </header>
+      <div
+        className="movie-card__wrap"
+      >
+        <div
+          className="movie-card__desc"
+        >
+          <h2
+            className="movie-card__title"
+          >
+            Соединённые Штаты против Билли Холидей
+          </h2>
+          <p
+            className="movie-card__meta"
+          >
+            <span
+              className="movie-card__genre"
+            >
+              драма
+            </span>
+            <span
+              className="movie-card__genre"
+            >
+              биография
+            </span>
+            <span
+              className="movie-card__genre"
+            >
+              музыка
+            </span>
+            <span
+              className="movie-card__year"
+            >
+              2021
+            </span>
+          </p>
+          <div
+            className="movie-card__buttons"
+          >
+            <button
+              className="btn btn--play movie-card__button"
+              type="button"
+            >
+              <svg
+                height="19"
+                viewBox="0 0 19 19"
+                width="19"
+              >
+                <use
+                  xlinkHref="#play-s"
+                />
+              </svg>
+              <span>
+                Play
+              </span>
+            </button>
+            <button
+              className="btn btn--list movie-card__button"
+              type="button"
+            >
+              <svg
+                height="20"
+                viewBox="0 0 19 20"
+                width="19"
+              >
+                <use
+                  xlinkHref="#add"
+                />
+              </svg>
+              <span>
+                My list
+              </span>
+            </button>
+            <a
+              className="btn movie-card__button"
+              href="add-review.html"
+            >
+              Add review
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="movie-card__wrap movie-card__translate-top"
+    >
+      <div
+        className="movie-card__info"
+      >
+        <div
+          className="movie-card__poster movie-card__poster--big"
+        >
+          <img
+            alt="Соединённые Штаты против Билли Холидей"
+            height="327"
+            src="https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg"
+            width="218"
+          />
+        </div>
+        <div
+          className="movie-card__desc"
+        >
+          <nav
+            className="movie-nav movie-card__nav"
+          >
+            <ul
+              className="movie-nav__list"
+            >
+              <li
+                className="movie-nav__item movie-nav__item--active"
+              >
+                <a
+                  className="movie-nav__link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  Описание
+                </a>
+              </li>
+              <li
+                className="movie-nav__item"
+              >
+                <a
+                  className="movie-nav__link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  Информация
+                </a>
+              </li>
+              <li
+                className="movie-nav__item"
+              >
+                <a
+                  className="movie-nav__link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  Отзывы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            className="movie-rating"
+          >
+            <div
+              className="movie-rating__score"
+            >
+              5.8
+            </div>
+            <p
+              className="movie-rating__meta"
+            >
+              <span
+                className="movie-rating__level"
+              >
+                Хорошо
+              </span>
+              <span
+                className="movie-rating__count"
+              >
+                586
+                 голосов
+              </span>
+            </p>
+          </div>
+          <div
+            className="movie-card__text"
+          >
+            <p>
+              В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.
+            </p>
+            <p
+              className="movie-card__director"
+            >
+              <strong>
+                Режиссер: 
+                Ли Дэниелс
+              </strong>
+            </p>
+            <p
+              className="movie-card__starring"
+            >
+              <strong>
+                В ролях: 
+                Андра Дэй, 
+                Гаррет Хедлунд, 
+                Наташа Лионн, 
+                Тайлер Джеймс Уильямс, 
+                Треванте Роудс и другие
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <div
+    className="page-content"
+  >
+    <section
+      className="catalog"
+    >
+      <h2
+        className="catalog__title visually-hidden"
+      >
+        Catalog
+      </h2>
+      <h2
+        className="catalog__title"
+      >
+        Похожие фильмы
+      </h2>
+      <div
+        className="catalog__movies-list"
+      >
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Соединённые Штаты против Билли Холидей"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/1302121"
+              onClick={[Function]}
+            >
+              Соединённые Штаты против Билли Холидей
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Бесстыжие (сериал)"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/571335.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/571335"
+              onClick={[Function]}
+            >
+              Бесстыжие (сериал)
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Happy End (сериал)"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/1328036.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/1328036"
+              onClick={[Function]}
+            >
+              Happy End (сериал)
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Родные"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/1274271.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/1274271"
+              onClick={[Function]}
+            >
+              Родные
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Фарго (сериал)"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/767379.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/767379"
+              onClick={[Function]}
+            >
+              Фарго (сериал)
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Чикатило (сериал)"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/1437860.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/1437860"
+              onClick={[Function]}
+            >
+              Чикатило (сериал)
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="В её глазах (мини-сериал)"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/1291310.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/1291310"
+              onClick={[Function]}
+            >
+              В её глазах (мини-сериал)
+            </a>
+          </h3>
+        </article>
+        <article
+          className="small-movie-card catalog__movies-card"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <div
+            className="small-movie-card__image"
+          >
+            <img
+              alt="Грань времени"
+              src="https://kinopoiskapiunofficial.tech/images/posters/kp/1193013.jpg"
+            />
+          </div>
+          <h3
+            className="small-movie-card__title"
+          >
+            <a
+              className="small-movie-card__link"
+              href="/film/1193013"
+              onClick={[Function]}
+            >
+              Грань времени
+            </a>
+          </h3>
+        </article>
+      </div>
+      <div
+        className="catalog__more"
+      >
+        <button
+          className="catalog__button"
+          onClick={[Function]}
+          type="button"
+        >
+          Больше
+        </button>
+      </div>
+    </section>
+    <footer
+      className="page-footer"
+    >
+      <div
+        className="logo"
+      >
+        <a
+          className="logo__link logo__link--light"
+          href="/"
+          onClick={[Function]}
+        >
+          <span
+            className="logo__letter logo__letter--1"
+          >
+            W
+          </span>
+          <span
+            className="logo__letter logo__letter--2"
+          >
+            T
+          </span>
+          <span
+            className="logo__letter logo__letter--3"
+          >
+            W
+          </span>
+        </a>
+      </div>
+      <div
+        className="copyright"
+      >
+        <p>
+          © 2021 What to watch Ltd.
+        </p>
+      </div>
+    </footer>
+  </div>,
+]
+`;

@@ -28,7 +28,7 @@ const initState = {
 
 const store = createStore(reducer, initState);
 
-describe.only("Catalog component", () => {
+describe("Catalog component", () => {
   const props = { pageName: "main" };
   const Trenderer = TestRenderer.create(
     <Provider store={store}>

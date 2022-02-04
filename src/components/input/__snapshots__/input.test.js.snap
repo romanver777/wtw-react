@@ -2,7 +2,6 @@
 
 exports[`Input component renders correctly 1`] = `
 <input
-  className="sign-in__input"
   id="user-pass"
   name="user-password"
   placeholder="Пароль"

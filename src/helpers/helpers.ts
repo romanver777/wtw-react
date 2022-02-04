@@ -69,3 +69,11 @@ export const convertUrl = (oldUrl: string): string =>
     URL.PATTERN_YT,
     ""
   )}?autoplay=1&mute=1&controls=0`;
+
+export const validateEmail = (str: string): RegExpExecArray | null => {
+  const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  return reg.exec(str);
+};
+export const validatePass = (str: string, min = 4, max = 15): boolean =>
+  str.length >= min && str.length < max;

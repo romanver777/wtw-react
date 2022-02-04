@@ -26,6 +26,7 @@ const Form: React.FC = () => {
           delete inputErrors[name];
         } else {
           inputErrors[name] = "Введите правильный email";
+          if (errorUser) setErrorUser(false);
         }
         break;
       case "pass":
@@ -34,6 +35,7 @@ const Form: React.FC = () => {
           delete inputErrors[name];
         } else {
           inputErrors[name] = "Введите пароль длиной от 3 до 15 символов";
+          if (errorUser) setErrorUser(false);
         }
         break;
       default:

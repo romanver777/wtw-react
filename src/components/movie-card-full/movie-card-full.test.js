@@ -11,6 +11,7 @@ import films from "../../mocks/films.json";
 
 describe("MovieCardFull component", () => {
   const props = {
+    isAuth: false,
     film: films[0],
     reviews: films[0].reviews,
     staff: films[0].staff,

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import { PAGE, LOGO_POSITION, TABSNAME } from "../../helpers/const";
+import { PAGE, LOGO_POSITION, TABSNAME, APP_ROUTE } from "../../helpers/const";
 import { MovieType, ReviewType, StaffType } from "../../types/types";
 
 import Header from "../header/header";
@@ -9,12 +10,18 @@ import UserBlock from "../user-block/user-block";
 import Tabs from "../tabs/tabs";
 
 interface PropsType {
+  isAuth: boolean;
   film: MovieType;
   reviews: ReviewType[];
   staff: StaffType[];
 }
 
-const MovieCardFull: React.FC<PropsType> = ({ film, reviews, staff }) => {
+const MovieCardFull: React.FC<PropsType> = ({
+  isAuth,
+  film,
+  reviews,
+  staff,
+}) => {
   return (
     <section className="movie-card movie-card--full">
       <div className="movie-card__hero">
@@ -44,27 +51,33 @@ const MovieCardFull: React.FC<PropsType> = ({ film, reviews, staff }) => {
             </p>
 
             <div className="movie-card__buttons">
-              <button
+              <Link
+                to={!isAuth ? APP_ROUTE.LOGIN : ""}
                 className="btn btn--play movie-card__button"
                 type="button"
               >
                 <svg viewBox="0 0 19 19" width="19" height="19">
                   <use xlinkHref="#play-s"></use>
                 </svg>
-                <span>Play</span>
-              </button>
-              <button
+                <span>Смотреть</span>
+              </Link>
+              <Link
+                to={!isAuth ? APP_ROUTE.LOGIN : ""}
                 className="btn btn--list movie-card__button"
                 type="button"
               >
                 <svg viewBox="0 0 19 20" width="19" height="20">
                   <use xlinkHref="#add"></use>
                 </svg>
-                <span>My list</span>
-              </button>
-              <a href="add-review.html" className="btn movie-card__button">
-                Add review
-              </a>
+                <span>Сохранить</span>
+              </Link>
+              <Link
+                to={!isAuth ? APP_ROUTE.LOGIN : ""}
+                className="btn movie-card__button"
+                type="button"
+              >
+                Написать отзыв
+              </Link>
             </div>
           </div>
         </div>

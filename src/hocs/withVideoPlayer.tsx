@@ -1,5 +1,5 @@
-import React, { ComponentType, ReactElement, useState } from "react";
-import { connect, ConnectedComponent } from "react-redux";
+import React, { ReactElement, useState, useRef, useEffect } from "react";
+import { connect } from "react-redux";
 
 import createApi from "../api";
 import { MovieType, VideoType } from "../types/types";
@@ -38,6 +38,13 @@ const WithVideoPlayer = <P extends WrapComponentProps>(
   const Hoc = (props: HocProps): ReactElement<InjectedProps & HocProps> => {
     const [isOpen, setIsOpen] = useState(false);
     const [data, setData] = useState<null | VideoType>(null);
+    const mountedRef = useRef(true);
+
+    useEffect(() => {
+      return () => {
+        mountedRef.current = false;
+      };
+    });
 
     const getData = (id: number) => {
       createApi()
@@ -46,14 +53,20 @@ const WithVideoPlayer = <P extends WrapComponentProps>(
             "X-API-KEY": props.tk,
           },
         })
-        .then((response) => setData(response.data))
-        .catch((error) => console.log(error.toJSON()));
+        .then((response) => {
+          if (!mountedRef.current) return null;
+          setData(response.data);
+          setIsOpen(true);
+        })
+        .catch((error) => {
+          if (!mountedRef.current) return null;
+          console.log(error.toJSON());
+        });
     };
 
     let timer: NodeJS.Timeout;
     const handleMouseEnter = () => {
       timer = setTimeout(() => {
-        setIsOpen(true);
         getData(props.film.filmId);
       }, 1000);
     };

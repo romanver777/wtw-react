@@ -11,6 +11,7 @@ import Footer from "../footer/footer";
 import { Operation, ActionCreator } from "../../reducer";
 
 interface StateProps {
+  isAuth: boolean;
   films: MovieType[];
   currentFilm: MovieType;
   reviews: ReviewType[];
@@ -22,6 +23,7 @@ interface OwnProps {
 }
 
 interface MapProps {
+  isAuth: boolean;
   film: MovieType;
   prevFilm: MovieType;
   films: MovieType[];
@@ -36,7 +38,7 @@ interface DispatchProps {
 type Props = MapProps & DispatchProps;
 
 const PageMovie = (props: Props): JSX.Element => {
-  const { film, prevFilm, loadFilmData, reviews, staff } = props;
+  const { isAuth, film, prevFilm, loadFilmData, reviews, staff } = props;
 
   useEffect(() => {
     if (film !== prevFilm) loadFilmData(film);
@@ -46,7 +48,12 @@ const PageMovie = (props: Props): JSX.Element => {
     <React.Fragment>
       {reviews && staff && (
         <React.Fragment>
-          <MovieCardFull film={film} reviews={reviews} staff={staff} />
+          <MovieCardFull
+            isAuth={isAuth}
+            film={film}
+            reviews={reviews}
+            staff={staff}
+          />
           <div className="page-content">
             <Catalog pageName={PAGE_NAME[1]} />
             <Footer />
@@ -63,6 +70,7 @@ const mapStateToProps = (
 ) => {
   const { id } = ownProps.match.params;
   return {
+    isAuth: state.isAuth,
     id,
     film: getMovieById(state.films, id) as MovieType,
     prevFilm: state.currentFilm,

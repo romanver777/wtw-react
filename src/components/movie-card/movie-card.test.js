@@ -9,7 +9,7 @@ import { MovieCard } from "./movie-card";
 import films from "../../mocks/films.json";
 
 describe("MovieCard component", () => {
-  const props = { film: films[0] };
+  const props = { isAuth: false, film: films[0] };
   const Trenderer = TestRenderer.create(
     <Router history={history}>
       <MovieCard {...props} />

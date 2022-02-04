@@ -7,6 +7,7 @@ import { AnyAction } from "redux";
 import { AxiosInstance } from "axios";
 
 interface InitStateInterface {
+  isAuth: boolean;
   films: null | MovieType[];
   awaitFilm: null | MovieType;
   currentFilm: null | MovieType;
@@ -33,6 +34,7 @@ interface ActionCreatorInterface {
 }
 
 const InitialState: InitStateInterface = {
+  isAuth: false,
   films: null,
   awaitFilm: null,
   currentFilm: null,

@@ -1,24 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { PAGE } from "../../helpers/const";
+import { PAGE, APP_ROUTE } from "../../helpers/const";
 import { MovieType } from "../../types/types";
 import Header from "../header/header";
 import Logo from "../logo/logo";
 import UserBlock from "../user-block/user-block";
 
 interface StateProps {
+  isAuth: boolean;
   awaitFilm: MovieType;
 }
 
 interface MapProps {
+  isAuth: boolean;
   film: MovieType;
 }
 
 type Props = MapProps;
 
 const MovieCard = (props: Props): JSX.Element => {
-  const { film } = props;
+  const { isAuth, film } = props;
 
   return (
     <section className="movie-card">
@@ -58,24 +61,26 @@ const MovieCard = (props: Props): JSX.Element => {
             </p>
 
             <div className="movie-card__buttons">
-              <button
+              <Link
+                to={!isAuth ? APP_ROUTE.LOGIN : APP_ROUTE.ROOT}
                 className="btn btn--play movie-card__button"
                 type="button"
               >
                 <svg viewBox="0 0 19 19" width="19" height="19">
                   <use xlinkHref="#play-s"></use>
                 </svg>
-                <span>Play</span>
-              </button>
-              <button
+                <span>Смотреть</span>
+              </Link>
+              <Link
+                to={!isAuth ? APP_ROUTE.LOGIN : APP_ROUTE.ROOT}
                 className="btn btn--list movie-card__button"
                 type="button"
               >
                 <svg viewBox="0 0 19 20" width="19" height="20">
                   <use xlinkHref="#add"></use>
                 </svg>
-                <span>My list</span>
-              </button>
+                <span>Сохранить</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -85,6 +90,7 @@ const MovieCard = (props: Props): JSX.Element => {
 };
 
 const mapStateToProps = (state: StateProps) => ({
+  isAuth: state.isAuth,
   film: state.awaitFilm,
 });
 

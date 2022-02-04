@@ -1,10 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import { APP_ROUTE } from "../../helpers/const";
 
-const UserBlock: React.FC = () => {
-  const isAuth = false;
+interface StateProps {
+  isAuth: boolean;
+}
+
+type Props = StateProps;
+
+const UserBlock = (props: Props): JSX.Element => {
+  const { isAuth } = props;
+
   return (
     <div className="user-block">
       {isAuth ? (
@@ -13,11 +21,16 @@ const UserBlock: React.FC = () => {
         </div>
       ) : (
         <Link to={APP_ROUTE.LOGIN} className="user-block__link">
-          Sign in
+          Вход
         </Link>
       )}
     </div>
   );
 };
 
-export default UserBlock;
+const mapStateToProps = (state: StateProps) => ({
+  isAuth: state.isAuth,
+});
+
+export { UserBlock };
+export default connect(mapStateToProps)(UserBlock);

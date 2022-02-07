@@ -4,7 +4,7 @@ export interface MovieType {
   nameEn: string | null;
   year: string;
   filmLength: string | null;
-  description: string;
+  description?: string;
   countries: { country: string }[];
   genres: { genre: string }[];
   rating: string | null;

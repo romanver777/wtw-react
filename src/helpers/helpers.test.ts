@@ -3,6 +3,17 @@ import * as helpers from "./helpers";
 const input = [
   {
     filmId: 1,
+    nameRu: "Соединённые Штаты против Билли Холидей",
+    nameEn: "The United States vs. Billie Holiday",
+    year: "2021",
+    filmLength: "2:10",
+    description:
+      "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.",
+    countries: [
+      {
+        country: "США",
+      },
+    ],
     genres: [
       {
         genre: "фантастика",
@@ -14,9 +25,72 @@ const input = [
         genre: "боевик",
       },
     ],
+    rating: "5.8",
+    ratingVoteCount: 586,
+    posterUrl:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg",
+    posterUrlPreview:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1302121.jpg",
+    ratingChange: null,
+    reviews: [
+      {
+        reviewId: 3016116,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T19:01:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "SlavaLim",
+        reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+        reviewDescription:
+          "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+      },
+      {
+        reviewId: 3015986,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T10:26:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "DIMI25",
+        reviewTitle: "Странные плоды",
+        reviewDescription:
+          "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+      },
+    ],
+    staff: [
+      {
+        staffId: 1210,
+        nameRu: "Ли Дэниелс",
+        nameEn: "Lee Daniels",
+        description: null,
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        professionText: "Режиссеры",
+        professionKey: "DIRECTOR",
+      },
+      {
+        staffId: 4173614,
+        nameRu: "Андра Дэй",
+        nameEn: "Andra Day",
+        description: "Billie Holiday",
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        professionText: "Актеры",
+        professionKey: "ACTOR",
+      },
+    ],
   },
   {
     filmId: 2,
+    nameRu: "Неуязвимый (сериал)",
+    nameEn: "Invincible",
+    year: "2021-...",
+    filmLength: null,
+    description: "Неуязвимый (сериал)",
+    countries: [
+      {
+        country: "США",
+      },
+    ],
     genres: [
       {
         genre: "мультфильм",
@@ -28,9 +102,64 @@ const input = [
         genre: "боевик",
       },
     ],
+    rating: "8.1",
+    ratingVoteCount: 1549,
+    posterUrl:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
+    posterUrlPreview:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
+    ratingChange: null,
+    reviews: [
+      {
+        reviewId: 3016116,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T19:01:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "SlavaLim",
+        reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+        reviewDescription:
+          "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+      },
+    ],
+    staff: [
+      {
+        staffId: 1210,
+        nameRu: "Ли Дэниелс",
+        nameEn: "Lee Daniels",
+        description: null,
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        professionText: "Режиссеры",
+        professionKey: "DIRECTOR",
+      },
+      {
+        staffId: 4173614,
+        nameRu: "Андра Дэй",
+        nameEn: "Andra Day",
+        description: "Billie Holiday",
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        professionText: "Актеры",
+        professionKey: "ACTOR",
+      },
+    ],
   },
   {
     filmId: 3,
+    nameRu: "Невероятные (сериал)",
+    nameEn: "The Nevers",
+    year: "2021-...",
+    filmLength: null,
+    description: "Невероятные (сериал)",
+    countries: [
+      {
+        country: "Великобритания",
+      },
+      {
+        country: "США",
+      },
+    ],
     genres: [
       {
         genre: "драма",
@@ -39,15 +168,131 @@ const input = [
         genre: "комедия",
       },
     ],
+    rating: "7.0",
+    ratingVoteCount: 882,
+    posterUrl:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg",
+    posterUrlPreview:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245486.jpg",
+    ratingChange: null,
+    reviews: [
+      {
+        reviewId: 3015986,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T10:26:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "DIMI25",
+        reviewTitle: "Странные плоды",
+        reviewDescription:
+          "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+      },
+      {
+        reviewId: 3001374,
+        reviewType: "NEUTRAL",
+        reviewData: "2021-03-03T19:48:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "Egorche23",
+        reviewTitle: null,
+        reviewDescription:
+          "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба",
+      },
+    ],
+    staff: [
+      {
+        staffId: 1210,
+        nameRu: "Ли Дэниелс",
+        nameEn: "Lee Daniels",
+        description: null,
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        professionText: "Режиссеры",
+        professionKey: "DIRECTOR",
+      },
+      {
+        staffId: 4173614,
+        nameRu: "Андра Дэй",
+        nameEn: "Andra Day",
+        description: "Billie Holiday",
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        professionText: "Актеры",
+        professionKey: "ACTOR",
+      },
+    ],
   },
   {
     filmId: 4,
+    nameRu: "Райя и последний дракон",
+    nameEn: "Raya and the Last Dragon",
+    year: "2021",
+    filmLength: "1:47",
+    description: "Райя и последний дракон",
+    countries: [
+      {
+        country: "США",
+      },
+    ],
     genres: [
       {
         genre: "драма",
       },
       {
         genre: "комедия",
+      },
+    ],
+    rating: "7.6",
+    ratingVoteCount: 43386,
+    posterUrl:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp/1015471.jpg",
+    posterUrlPreview:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1015471.jpg",
+    ratingChange: null,
+    reviews: [
+      {
+        reviewId: 3016116,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T19:01:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "SlavaLim",
+        reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+        reviewDescription:
+          "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+      },
+      {
+        reviewId: 3015986,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T10:26:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "DIMI25",
+        reviewTitle: "Странные плоды",
+        reviewDescription:
+          "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+      },
+    ],
+    staff: [
+      {
+        staffId: 1210,
+        nameRu: "Ли Дэниелс",
+        nameEn: "Lee Daniels",
+        description: null,
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        professionText: "Режиссеры",
+        professionKey: "DIRECTOR",
+      },
+      {
+        staffId: 4173614,
+        nameRu: "Андра Дэй",
+        nameEn: "Andra Day",
+        description: "Billie Holiday",
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        professionText: "Актеры",
+        professionKey: "ACTOR",
       },
     ],
   },
@@ -124,6 +369,17 @@ describe("func getMoviesByGenre", () => {
   const fantastic = [
     {
       filmId: 1,
+      nameRu: "Соединённые Штаты против Билли Холидей",
+      nameEn: "The United States vs. Billie Holiday",
+      year: "2021",
+      filmLength: "2:10",
+      description:
+        "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "фантастика",
@@ -133,6 +389,59 @@ describe("func getMoviesByGenre", () => {
         },
         {
           genre: "боевик",
+        },
+      ],
+      rating: "5.8",
+      ratingVoteCount: 586,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1302121.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
         },
       ],
     },
@@ -140,6 +449,17 @@ describe("func getMoviesByGenre", () => {
   const fantasy = [
     {
       filmId: 1,
+      nameRu: "Соединённые Штаты против Билли Холидей",
+      nameEn: "The United States vs. Billie Holiday",
+      year: "2021",
+      filmLength: "2:10",
+      description:
+        "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "фантастика",
@@ -151,9 +471,72 @@ describe("func getMoviesByGenre", () => {
           genre: "боевик",
         },
       ],
+      rating: "5.8",
+      ratingVoteCount: 586,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1302121.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
+        },
+      ],
     },
     {
       filmId: 2,
+      nameRu: "Неуязвимый (сериал)",
+      nameEn: "Invincible",
+      year: "2021-...",
+      filmLength: null,
+      description: "Неуязвимый (сериал)",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "мультфильм",
@@ -163,6 +546,48 @@ describe("func getMoviesByGenre", () => {
         },
         {
           genre: "боевик",
+        },
+      ],
+      rating: "8.1",
+      ratingVoteCount: 1549,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
         },
       ],
     },
@@ -170,6 +595,17 @@ describe("func getMoviesByGenre", () => {
   const action = [
     {
       filmId: 1,
+      nameRu: "Соединённые Штаты против Билли Холидей",
+      nameEn: "The United States vs. Billie Holiday",
+      year: "2021",
+      filmLength: "2:10",
+      description:
+        "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "фантастика",
@@ -181,9 +617,72 @@ describe("func getMoviesByGenre", () => {
           genre: "боевик",
         },
       ],
+      rating: "5.8",
+      ratingVoteCount: 586,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1302121.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1302121.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
+        },
+      ],
     },
     {
       filmId: 2,
+      nameRu: "Неуязвимый (сериал)",
+      nameEn: "Invincible",
+      year: "2021-...",
+      filmLength: null,
+      description: "Неуязвимый (сериал)",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "мультфильм",
@@ -193,6 +692,48 @@ describe("func getMoviesByGenre", () => {
         },
         {
           genre: "боевик",
+        },
+      ],
+      rating: "8.1",
+      ratingVoteCount: 1549,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
         },
       ],
     },
@@ -200,6 +741,16 @@ describe("func getMoviesByGenre", () => {
   const cartoon = [
     {
       filmId: 2,
+      nameRu: "Неуязвимый (сериал)",
+      nameEn: "Invincible",
+      year: "2021-...",
+      filmLength: null,
+      description: "Неуязвимый (сериал)",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "мультфильм",
@@ -211,11 +762,66 @@ describe("func getMoviesByGenre", () => {
           genre: "боевик",
         },
       ],
+      rating: "8.1",
+      ratingVoteCount: 1549,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
+        },
+      ],
     },
   ];
   const drama = [
     {
       filmId: 3,
+      nameRu: "Невероятные (сериал)",
+      nameEn: "The Nevers",
+      year: "2021-...",
+      filmLength: null,
+      description: "Невероятные (сериал)",
+      countries: [
+        {
+          country: "Великобритания",
+        },
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "драма",
@@ -224,15 +830,131 @@ describe("func getMoviesByGenre", () => {
           genre: "комедия",
         },
       ],
+      rating: "7.0",
+      ratingVoteCount: 882,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245486.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+        {
+          reviewId: 3001374,
+          reviewType: "NEUTRAL",
+          reviewData: "2021-03-03T19:48:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "Egorche23",
+          reviewTitle: null,
+          reviewDescription:
+            "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
+        },
+      ],
     },
     {
       filmId: 4,
+      nameRu: "Райя и последний дракон",
+      nameEn: "Raya and the Last Dragon",
+      year: "2021",
+      filmLength: "1:47",
+      description: "Райя и последний дракон",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "драма",
         },
         {
           genre: "комедия",
+        },
+      ],
+      rating: "7.6",
+      ratingVoteCount: 43386,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1015471.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1015471.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
         },
       ],
     },
@@ -240,6 +962,19 @@ describe("func getMoviesByGenre", () => {
   const comedy = [
     {
       filmId: 3,
+      nameRu: "Невероятные (сериал)",
+      nameEn: "The Nevers",
+      year: "2021-...",
+      filmLength: null,
+      description: "Невероятные (сериал)",
+      countries: [
+        {
+          country: "Великобритания",
+        },
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "драма",
@@ -248,15 +983,131 @@ describe("func getMoviesByGenre", () => {
           genre: "комедия",
         },
       ],
+      rating: "7.0",
+      ratingVoteCount: 882,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1245486.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1245486.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+        {
+          reviewId: 3001374,
+          reviewType: "NEUTRAL",
+          reviewData: "2021-03-03T19:48:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "Egorche23",
+          reviewTitle: null,
+          reviewDescription:
+            "Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
+        },
+      ],
     },
     {
       filmId: 4,
+      nameRu: "Райя и последний дракон",
+      nameEn: "Raya and the Last Dragon",
+      year: "2021",
+      filmLength: "1:47",
+      description: "Райя и последний дракон",
+      countries: [
+        {
+          country: "США",
+        },
+      ],
       genres: [
         {
           genre: "драма",
         },
         {
           genre: "комедия",
+        },
+      ],
+      rating: "7.6",
+      ratingVoteCount: 43386,
+      posterUrl:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp/1015471.jpg",
+      posterUrlPreview:
+        "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1015471.jpg",
+      ratingChange: null,
+      reviews: [
+        {
+          reviewId: 3016116,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T19:01:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "SlavaLim",
+          reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+          reviewDescription:
+            "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+        },
+        {
+          reviewId: 3015986,
+          reviewType: "POSITIVE",
+          reviewData: "2021-04-12T10:26:00",
+          userPositiveRating: null,
+          userNegativeRating: null,
+          reviewAutor: "DIMI25",
+          reviewTitle: "Странные плоды",
+          reviewDescription:
+            "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+        },
+      ],
+      staff: [
+        {
+          staffId: 1210,
+          nameRu: "Ли Дэниелс",
+          nameEn: "Lee Daniels",
+          description: null,
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+          professionText: "Режиссеры",
+          professionKey: "DIRECTOR",
+        },
+        {
+          staffId: 4173614,
+          nameRu: "Андра Дэй",
+          nameEn: "Andra Day",
+          description: "Billie Holiday",
+          posterUrl:
+            "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+          professionText: "Актеры",
+          professionKey: "ACTOR",
         },
       ],
     },
@@ -297,6 +1148,16 @@ describe("func getMoviesByGenre", () => {
 describe("func getMovieById", () => {
   const outputId2 = {
     filmId: 2,
+    nameRu: "Неуязвимый (сериал)",
+    nameEn: "Invincible",
+    year: "2021-...",
+    filmLength: null,
+    description: "Неуязвимый (сериал)",
+    countries: [
+      {
+        country: "США",
+      },
+    ],
     genres: [
       {
         genre: "мультфильм",
@@ -308,15 +1169,120 @@ describe("func getMovieById", () => {
         genre: "боевик",
       },
     ],
+    rating: "8.1",
+    ratingVoteCount: 1549,
+    posterUrl:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp/1171895.jpg",
+    posterUrlPreview:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1171895.jpg",
+    ratingChange: null,
+    reviews: [
+      {
+        reviewId: 3016116,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T19:01:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "SlavaLim",
+        reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+        reviewDescription:
+          "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+      },
+    ],
+    staff: [
+      {
+        staffId: 1210,
+        nameRu: "Ли Дэниелс",
+        nameEn: "Lee Daniels",
+        description: null,
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        professionText: "Режиссеры",
+        professionKey: "DIRECTOR",
+      },
+      {
+        staffId: 4173614,
+        nameRu: "Андра Дэй",
+        nameEn: "Andra Day",
+        description: "Billie Holiday",
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        professionText: "Актеры",
+        professionKey: "ACTOR",
+      },
+    ],
   };
   const outputId4 = {
     filmId: 4,
+    nameRu: "Райя и последний дракон",
+    nameEn: "Raya and the Last Dragon",
+    year: "2021",
+    filmLength: "1:47",
+    description: "Райя и последний дракон",
+    countries: [
+      {
+        country: "США",
+      },
+    ],
     genres: [
       {
         genre: "драма",
       },
       {
         genre: "комедия",
+      },
+    ],
+    rating: "7.6",
+    ratingVoteCount: 43386,
+    posterUrl:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp/1015471.jpg",
+    posterUrlPreview:
+      "https://kinopoiskapiunofficial.tech/images/posters/kp_small/1015471.jpg",
+    ratingChange: null,
+    reviews: [
+      {
+        reviewId: 3016116,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T19:01:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "SlavaLim",
+        reviewTitle: "В этом плоде найдется и вкус и приятное послевкусие.",
+        reviewDescription:
+          "Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. \r\nНе относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.",
+      },
+      {
+        reviewId: 3015986,
+        reviewType: "POSITIVE",
+        reviewData: "2021-04-12T10:26:00",
+        userPositiveRating: null,
+        userNegativeRating: null,
+        reviewAutor: "DIMI25",
+        reviewTitle: "Странные плоды",
+        reviewDescription:
+          "В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.\r\nБилли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,",
+      },
+    ],
+    staff: [
+      {
+        staffId: 1210,
+        nameRu: "Ли Дэниелс",
+        nameEn: "Lee Daniels",
+        description: null,
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1210.jpg",
+        professionText: "Режиссеры",
+        professionKey: "DIRECTOR",
+      },
+      {
+        staffId: 4173614,
+        nameRu: "Андра Дэй",
+        nameEn: "Andra Day",
+        description: "Billie Holiday",
+        posterUrl:
+          "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/4173614.jpg",
+        professionText: "Актеры",
+        professionKey: "ACTOR",
       },
     ],
   };
@@ -388,5 +1354,45 @@ describe("func convertUrl", () => {
 
   it("should be newUrl", () => {
     expect(helpers.convertUrl(oldUrl)).toBe(newUrl);
+  });
+});
+
+// validateEmail
+describe("func validateEmail", () => {
+  const email1 = "qwer23@to.to";
+  const email2 = "qwer23@toto";
+  const email3 = "qwer23to.to";
+  const email4 = "qwer23@t@o.to";
+  // const result = ['qwer23@to.to', index: 0, input: 'qwer23@to.to', groups: undefined];
+
+  it("should be array with 1 element is email1", () => {
+    const result = helpers.validateEmail(email1);
+    expect(result?.input).toEqual(email1);
+  });
+  it("should be null", () => {
+    expect(helpers.validateEmail(email2)).toEqual(null);
+  });
+  it("should be null", () => {
+    expect(helpers.validateEmail(email3)).toEqual(null);
+  });
+  it("should be null", () => {
+    expect(helpers.validateEmail(email4)).toEqual(null);
+  });
+});
+
+// validatePass
+describe("func validatePass", () => {
+  const pass1 = "er1";
+  const pass2 = "er1wergkrhvbhd7rgfvbfyf";
+  const pass3 = "euhuhk7";
+
+  it("should be false", () => {
+    expect(helpers.validatePass(pass1)).toBeFalsy();
+  });
+  it("should be false", () => {
+    expect(helpers.validatePass(pass2)).toBeFalsy();
+  });
+  it("should be false", () => {
+    expect(helpers.validatePass(pass3)).toBeTruthy();
   });
 });

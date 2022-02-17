@@ -67,7 +67,11 @@ const WithVideoPlayer = <P extends WrapComponentProps>(
     let timer: NodeJS.Timeout;
     const handleMouseEnter = () => {
       timer = setTimeout(() => {
-        getData(props.film.filmId);
+        if (!data) {
+          getData(props.film.filmId);
+        } else {
+          setIsOpen(true);
+        }
       }, 1000);
     };
     const handleMouseLeave = () => {

@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import history from "../../history";
 
 import { PAGE, APP_ROUTE } from "../../helpers/const";
 import { MovieType } from "../../types/types";
 import Header from "../header/header";
 import Logo from "../logo/logo";
 import UserBlock from "../user-block/user-block";
+import MovieCardButtonsList from "../movie-card-buttons-list/movie-card-buttons-list";
+import MovieCardButton from "../movie-card-button/movie-card-button";
 
 interface StateProps {
   isAuth: boolean;
@@ -22,6 +24,10 @@ type Props = MapProps;
 
 const MovieCard = (props: Props): JSX.Element => {
   const { isAuth, film } = props;
+
+  const handleClick = () => {
+    if (!isAuth) history.push(APP_ROUTE.LOGIN);
+  };
 
   return (
     <section className="movie-card">
@@ -60,28 +66,20 @@ const MovieCard = (props: Props): JSX.Element => {
               <span className="movie-card__year">{film.year}</span>
             </p>
 
-            <div className="movie-card__buttons">
-              <Link
-                to={!isAuth ? APP_ROUTE.LOGIN : APP_ROUTE.ROOT}
-                className="btn btn--play movie-card__button"
-                type="button"
-              >
-                <svg viewBox="0 0 19 19" width="19" height="19">
-                  <use xlinkHref="#play-s"></use>
-                </svg>
-                <span>Смотреть</span>
-              </Link>
-              <Link
-                to={!isAuth ? APP_ROUTE.LOGIN : APP_ROUTE.ROOT}
-                className="btn btn--list movie-card__button"
-                type="button"
-              >
-                <svg viewBox="0 0 19 20" width="19" height="20">
-                  <use xlinkHref="#add"></use>
-                </svg>
-                <span>Сохранить</span>
-              </Link>
-            </div>
+            <MovieCardButtonsList handleClick={() => handleClick()}>
+              <MovieCardButton
+                xlink="#play-s"
+                title="Смотреть"
+                className="btn--play"
+                onHandleClick={() => handleClick()}
+              />
+              <MovieCardButton
+                xlink="#add"
+                title="Сохранить"
+                className="btn--list"
+                onHandleClick={() => handleClick()}
+              />
+            </MovieCardButtonsList>
           </div>
         </div>
       </div>

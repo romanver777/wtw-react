@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCardButtonsList component renders correctly 1`] = `
+<div
+  className="movie-card__buttons"
+>
+  <div
+    className="className"
+  />
+  <div
+    className="another className"
+  />
+</div>
+`;

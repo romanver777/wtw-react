@@ -3,11 +3,29 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import MovieCardFull from "./movie-card-full";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import { reducer } from "../../reducer";
 import { Router } from "react-router";
 import history from "../../history";
 
+import MovieCardFull from "./movie-card-full";
 import films from "../../mocks/films.json";
+
+const initState = {
+  films,
+  awaitFilm: null,
+  currentFilm: films[0],
+  hoveredFilm: null,
+  activeGenre: "",
+  genresList: null,
+  tk: null,
+  reviews: null,
+  staff: null,
+  hoveredVideoData: null,
+};
+
+const store = createStore(reducer, initState);
 
 describe("MovieCardFull component", () => {
   const props = {
@@ -17,9 +35,11 @@ describe("MovieCardFull component", () => {
     staff: films[0].staff,
   };
   const Trenderer = TestRenderer.create(
-    <Router history={history}>
-      <MovieCardFull {...props} />
-    </Router>
+    <Provider store={store}>
+      <Router history={history}>
+        <MovieCardFull {...props} />
+      </Router>
+    </Provider>
   );
 
   it("renders correctly", () => {

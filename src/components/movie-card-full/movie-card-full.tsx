@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import history from "../../history";
 
 import { PAGE, LOGO_POSITION, TABSNAME, APP_ROUTE } from "../../helpers/const";
 import { MovieType, ReviewType, StaffType } from "../../types/types";
@@ -8,6 +8,8 @@ import Header from "../header/header";
 import Logo from "../logo/logo";
 import UserBlock from "../user-block/user-block";
 import Tabs from "../tabs/tabs";
+import MovieCardButtonsList from "../movie-card-buttons-list/movie-card-buttons-list";
+import MovieCardButton from "../movie-card-button/movie-card-button";
 
 interface PropsType {
   isAuth: boolean;
@@ -22,6 +24,10 @@ const MovieCardFull: React.FC<PropsType> = ({
   reviews,
   staff,
 }) => {
+  const handleClick = () => {
+    if (!isAuth) history.push(APP_ROUTE.LOGIN);
+  };
+
   return (
     <section className="movie-card movie-card--full">
       <div className="movie-card__hero">
@@ -51,33 +57,26 @@ const MovieCardFull: React.FC<PropsType> = ({
             </p>
 
             <div className="movie-card__buttons">
-              <Link
-                to={!isAuth ? APP_ROUTE.LOGIN : ""}
-                className="btn btn--play movie-card__button"
-                type="button"
-              >
-                <svg viewBox="0 0 19 19" width="19" height="19">
-                  <use xlinkHref="#play-s"></use>
-                </svg>
-                <span>Смотреть</span>
-              </Link>
-              <Link
-                to={!isAuth ? APP_ROUTE.LOGIN : ""}
-                className="btn btn--list movie-card__button"
-                type="button"
-              >
-                <svg viewBox="0 0 19 20" width="19" height="20">
-                  <use xlinkHref="#add"></use>
-                </svg>
-                <span>Сохранить</span>
-              </Link>
-              <Link
-                to={!isAuth ? APP_ROUTE.LOGIN : ""}
-                className="btn movie-card__button"
-                type="button"
-              >
-                Написать отзыв
-              </Link>
+              <MovieCardButtonsList handleClick={() => handleClick()}>
+                <MovieCardButton
+                  xlink="#play-s"
+                  title="Смотреть"
+                  className="btn--play"
+                  onHandleClick={() => handleClick()}
+                />
+                <MovieCardButton
+                  xlink="#add"
+                  title="Сохранить"
+                  className="btn--list"
+                  onHandleClick={() => handleClick()}
+                />
+                <MovieCardButton
+                  xlink=""
+                  title="Написать отзыв"
+                  className=""
+                  onHandleClick={() => handleClick()}
+                />
+              </MovieCardButtonsList>
             </div>
           </div>
         </div>

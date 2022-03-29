@@ -1,34 +1,47 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ComponentType } from "react";
 import { connect } from "react-redux";
 
 import { MovieType } from "../types/types";
 import { getMoviesByGenre } from "../helpers/helpers";
 import { MOVIES_PER_MAIN_PAGE, PAGE_NAME } from "../helpers/const";
 
-interface StateProps {
+type StateProps = {
   films: MovieType[];
   currentFilm: MovieType;
   activeGenre: string;
-}
+};
 
-interface OwnProps {
+type WrapComponentProps = {
   pageName: string;
-}
+};
 
-interface WrapComponentProps {
-  filteredFilms: MovieType[];
-}
-
-interface InjectedProps {
+type InjectedProps = {
   films: MovieType[];
   handleClick: () => void;
   isShowMore: boolean;
-}
+};
+type MapProps = ReturnType<typeof mapStateToProps>;
+type AllProps = MapProps & WrapComponentProps & InjectedProps;
+type HocProps = MapProps & WrapComponentProps;
 
-const withShowMore = <P extends WrapComponentProps>(
-  Component: React.ComponentType<P>
-): React.FC<P & InjectedProps> => {
-  const Hoc = (props: WrapComponentProps) => {
+const mapStateToProps = (state: StateProps, ownProps: WrapComponentProps) => {
+  if (ownProps.pageName === PAGE_NAME[0]) {
+    return {
+      filteredFilms: getMoviesByGenre(state.films, state.activeGenre),
+    };
+  }
+  return {
+    filteredFilms: getMoviesByGenre(
+      state.films,
+      state.currentFilm.genres[0].genre
+    ),
+  };
+};
+
+const withShowMore = <T extends AllProps>(
+  Component: ComponentType<T>
+): ComponentType<Omit<T, keyof InjectedProps | "filteredFilms">> => {
+  const Hoc = (props: HocProps) => {
     const [prevFilmsList, setFilmsList] = useState(props.filteredFilms);
     const [clickCount, setClickCount] = useState(1);
 
@@ -48,26 +61,12 @@ const withShowMore = <P extends WrapComponentProps>(
 
     return (
       <Component
-        {...props}
+        {...(props as T)}
         films={visibleFilms}
         handleClick={handleClick}
         isShowMore={prevFilmsList.length !== visibleFilms.length}
       />
     );
-  };
-
-  const mapStateToProps = (state: StateProps, ownProps: OwnProps) => {
-    if (ownProps.pageName === PAGE_NAME[0]) {
-      return {
-        filteredFilms: getMoviesByGenre(state.films, state.activeGenre),
-      };
-    }
-    return {
-      filteredFilms: getMoviesByGenre(
-        state.films,
-        state.currentFilm.genres[0].genre
-      ),
-    };
   };
 
   return connect(mapStateToProps)(Hoc);

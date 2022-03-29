@@ -6,6 +6,7 @@ import { MovieType, VideoType } from "../../types/types";
 import VideoPlayer from "../video-player/video-player";
 
 type PropsType = {
+  tk: string;
   film: MovieType;
   handleMouseEnter: () => void;
   handleMouseLeave: () => void;
@@ -38,7 +39,7 @@ const SmallMovieCard: React.FC<PropsType> = ({
             {film.nameRu}
           </Link>
         </h3>
-        {isOpen && data && <VideoPlayer data={data} isFullScreen={false} />}
+        {isOpen && <VideoPlayer data={data} isFullScreen={false} />}
       </article>
     </React.Fragment>
   );

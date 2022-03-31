@@ -22,7 +22,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1302121"
+        href="#/film/1302121"
         onClick={[Function]}
       >
         Соединённые Штаты против Билли Холидей
@@ -47,7 +47,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1171895"
+        href="#/film/1171895"
         onClick={[Function]}
       >
         Неуязвимый (сериал)
@@ -72,7 +72,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1245486"
+        href="#/film/1245486"
         onClick={[Function]}
       >
         Невероятные (сериал)
@@ -97,7 +97,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1015471"
+        href="#/film/1015471"
         onClick={[Function]}
       >
         Райя и последний дракон
@@ -122,7 +122,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/571335"
+        href="#/film/571335"
         onClick={[Function]}
       >
         Бесстыжие (сериал)
@@ -147,7 +147,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1328036"
+        href="#/film/1328036"
         onClick={[Function]}
       >
         Happy End (сериал)
@@ -172,7 +172,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1045583"
+        href="#/film/1045583"
         onClick={[Function]}
       >
         Конёк-Горбунок
@@ -197,7 +197,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1274271"
+        href="#/film/1274271"
         onClick={[Function]}
       >
         Родные
@@ -222,7 +222,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/767379"
+        href="#/film/767379"
         onClick={[Function]}
       >
         Фарго (сериал)
@@ -247,7 +247,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1245524"
+        href="#/film/1245524"
         onClick={[Function]}
       >
         Зависнуть в Палм-Спрингс
@@ -272,7 +272,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/4430018"
+        href="#/film/4430018"
         onClick={[Function]}
       >
         Абсолютное доказательство
@@ -297,7 +297,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1437860"
+        href="#/film/1437860"
         onClick={[Function]}
       >
         Чикатило (сериал)
@@ -322,7 +322,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1005008"
+        href="#/film/1005008"
         onClick={[Function]}
       >
         Майор Гром
@@ -347,7 +347,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1291310"
+        href="#/film/1291310"
         onClick={[Function]}
       >
         В её глазах (мини-сериал)
@@ -372,7 +372,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1038789"
+        href="#/film/1038789"
         onClick={[Function]}
       >
         Охотник на монстров
@@ -397,7 +397,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1248786"
+        href="#/film/1248786"
         onClick={[Function]}
       >
         Аферистка
@@ -422,7 +422,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1193013"
+        href="#/film/1193013"
         onClick={[Function]}
       >
         Грань времени
@@ -447,7 +447,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/958500"
+        href="#/film/958500"
         onClick={[Function]}
       >
         Охотник за разумом (сериал)
@@ -472,7 +472,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1347194"
+        href="#/film/1347194"
         onClick={[Function]}
       >
         Звездный рубеж
@@ -497,7 +497,7 @@ exports[`MoviesList component no video renders correctly 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="/film/1236082"
+        href="#/film/1236082"
         onClick={[Function]}
       >
         Ассасин: Битва миров
@@ -530,7 +530,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1302121"
+          href="#/film/1302121"
           onClick={[Function]}
         >
           Соединённые Штаты против Билли Холидей
@@ -555,7 +555,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1171895"
+          href="#/film/1171895"
           onClick={[Function]}
         >
           Неуязвимый (сериал)
@@ -580,7 +580,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1245486"
+          href="#/film/1245486"
           onClick={[Function]}
         >
           Невероятные (сериал)
@@ -605,7 +605,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1015471"
+          href="#/film/1015471"
           onClick={[Function]}
         >
           Райя и последний дракон
@@ -630,7 +630,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/571335"
+          href="#/film/571335"
           onClick={[Function]}
         >
           Бесстыжие (сериал)
@@ -655,7 +655,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1328036"
+          href="#/film/1328036"
           onClick={[Function]}
         >
           Happy End (сериал)
@@ -680,7 +680,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1045583"
+          href="#/film/1045583"
           onClick={[Function]}
         >
           Конёк-Горбунок
@@ -705,7 +705,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1274271"
+          href="#/film/1274271"
           onClick={[Function]}
         >
           Родные
@@ -730,7 +730,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/767379"
+          href="#/film/767379"
           onClick={[Function]}
         >
           Фарго (сериал)
@@ -755,7 +755,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1245524"
+          href="#/film/1245524"
           onClick={[Function]}
         >
           Зависнуть в Палм-Спрингс
@@ -780,7 +780,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/4430018"
+          href="#/film/4430018"
           onClick={[Function]}
         >
           Абсолютное доказательство
@@ -805,7 +805,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1437860"
+          href="#/film/1437860"
           onClick={[Function]}
         >
           Чикатило (сериал)
@@ -830,7 +830,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1005008"
+          href="#/film/1005008"
           onClick={[Function]}
         >
           Майор Гром
@@ -855,7 +855,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1291310"
+          href="#/film/1291310"
           onClick={[Function]}
         >
           В её глазах (мини-сериал)
@@ -880,7 +880,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1038789"
+          href="#/film/1038789"
           onClick={[Function]}
         >
           Охотник на монстров
@@ -905,7 +905,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1248786"
+          href="#/film/1248786"
           onClick={[Function]}
         >
           Аферистка
@@ -930,7 +930,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1193013"
+          href="#/film/1193013"
           onClick={[Function]}
         >
           Грань времени
@@ -955,7 +955,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/958500"
+          href="#/film/958500"
           onClick={[Function]}
         >
           Охотник за разумом (сериал)
@@ -980,7 +980,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1347194"
+          href="#/film/1347194"
           onClick={[Function]}
         >
           Звездный рубеж
@@ -1005,7 +1005,7 @@ Array [
       >
         <a
           className="small-movie-card__link"
-          href="/film/1236082"
+          href="#/film/1236082"
           onClick={[Function]}
         >
           Ассасин: Битва миров

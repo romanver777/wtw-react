@@ -9,7 +9,7 @@ exports[`Header component renders correctly 1`] = `
   >
     <a
       className="logo__link undefined"
-      href="/"
+      href="#/"
       onClick={[Function]}
     >
       <span
@@ -40,7 +40,7 @@ exports[`Header component renders correctly 1`] = `
       >
         <a
           className="logo__link "
-          href="/"
+          href="#/"
           onClick={[Function]}
         >
           <span
@@ -143,7 +143,7 @@ exports[`Header component renders correctly 1`] = `
       >
         <a
           className="logo__link logo__link--light"
-          href="/"
+          href="#/"
           onClick={[Function]}
         >
           <span

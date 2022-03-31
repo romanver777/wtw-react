@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
@@ -9,7 +9,6 @@ import { compose } from "recompose";
 import "./style/style.css";
 import App from "./components/app/app";
 import { reducer, Operation } from "./reducer";
-import history from "./history";
 import createApi from "./api";
 
 const store = createStore(
@@ -26,9 +25,9 @@ store.dispatch(Operation.loadAwaitFilm());
 
 render(
   <Provider store={store}>
-    <Router history={history}>
+    <HashRouter>
       <App />
-    </Router>
+    </HashRouter>
   </Provider>,
   document.getElementById("root")
 );

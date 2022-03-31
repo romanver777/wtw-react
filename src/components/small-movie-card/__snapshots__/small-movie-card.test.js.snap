@@ -19,7 +19,7 @@ exports[`SmallMovieCard component with Video props renders correctly 1`] = `
   >
     <a
       className="small-movie-card__link"
-      href="/film/1245486"
+      href="#/film/1245486"
       onClick={[Function]}
     >
       Невероятные (сериал)
@@ -61,7 +61,7 @@ exports[`SmallMovieCard component with init props renders correctly 1`] = `
   >
     <a
       className="small-movie-card__link"
-      href="/film/1245486"
+      href="#/film/1245486"
       onClick={[Function]}
     >
       Невероятные (сериал)

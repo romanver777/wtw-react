@@ -6,7 +6,7 @@ exports[`Logo component renders correctly 1`] = `
 >
   <a
     className="logo__link newClassName"
-    href="/"
+    href="#/"
     onClick={[Function]}
   >
     <span

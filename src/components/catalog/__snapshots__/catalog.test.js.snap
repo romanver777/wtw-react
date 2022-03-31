@@ -30,7 +30,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1302121"
+          href="#/film/1302121"
           onClick={[Function]}
         >
           Соединённые Штаты против Билли Холидей
@@ -55,7 +55,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1171895"
+          href="#/film/1171895"
           onClick={[Function]}
         >
           Неуязвимый (сериал)
@@ -80,7 +80,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1245486"
+          href="#/film/1245486"
           onClick={[Function]}
         >
           Невероятные (сериал)
@@ -105,7 +105,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1015471"
+          href="#/film/1015471"
           onClick={[Function]}
         >
           Райя и последний дракон
@@ -130,7 +130,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/571335"
+          href="#/film/571335"
           onClick={[Function]}
         >
           Бесстыжие (сериал)
@@ -155,7 +155,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1328036"
+          href="#/film/1328036"
           onClick={[Function]}
         >
           Happy End (сериал)
@@ -180,7 +180,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1045583"
+          href="#/film/1045583"
           onClick={[Function]}
         >
           Конёк-Горбунок
@@ -205,7 +205,7 @@ exports[`Catalog component renders correctly 1`] = `
       >
         <a
           className="small-movie-card__link"
-          href="/film/1274271"
+          href="#/film/1274271"
           onClick={[Function]}
         >
           Родные

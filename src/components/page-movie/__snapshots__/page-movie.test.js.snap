@@ -29,7 +29,7 @@ Array [
         >
           <a
             className="logo__link "
-            href="/"
+            href="#/"
             onClick={[Function]}
           >
             <span
@@ -54,7 +54,7 @@ Array [
         >
           <a
             className="user-block__link"
-            href="/login"
+            href="#/login"
             onClick={[Function]}
           >
             Вход
@@ -305,7 +305,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/1302121"
+              href="#/film/1302121"
               onClick={[Function]}
             >
               Соединённые Штаты против Билли Холидей
@@ -330,7 +330,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/571335"
+              href="#/film/571335"
               onClick={[Function]}
             >
               Бесстыжие (сериал)
@@ -355,7 +355,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/1328036"
+              href="#/film/1328036"
               onClick={[Function]}
             >
               Happy End (сериал)
@@ -380,7 +380,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/1274271"
+              href="#/film/1274271"
               onClick={[Function]}
             >
               Родные
@@ -405,7 +405,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/767379"
+              href="#/film/767379"
               onClick={[Function]}
             >
               Фарго (сериал)
@@ -430,7 +430,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/1437860"
+              href="#/film/1437860"
               onClick={[Function]}
             >
               Чикатило (сериал)
@@ -455,7 +455,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/1291310"
+              href="#/film/1291310"
               onClick={[Function]}
             >
               В её глазах (мини-сериал)
@@ -480,7 +480,7 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="/film/1193013"
+              href="#/film/1193013"
               onClick={[Function]}
             >
               Грань времени
@@ -508,7 +508,7 @@ Array [
       >
         <a
           className="logo__link logo__link--light"
-          href="/"
+          href="#/"
           onClick={[Function]}
         >
           <span

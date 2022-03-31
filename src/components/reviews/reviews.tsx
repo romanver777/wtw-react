@@ -21,7 +21,6 @@ const Reviews: React.FC<PropsType> = ({ reviews }) => {
     visibleReviews(reviews, ITEMS_PER_PAGE, page)
   );
   const [isShow, setIsShow] = useState(!!reviews.length);
-  console.log(reviews);
 
   useEffect(() => {
     if (page + 1 > Math.ceil(reviews.length / ITEMS_PER_PAGE)) {

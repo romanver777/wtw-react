@@ -34,7 +34,7 @@ const Form: React.FC = () => {
           setUser({ ...user, pass: value });
           delete inputErrors[name];
         } else {
-          inputErrors[name] = "Введите пароль длиной от 3 до 15 символов";
+          inputErrors[name] = "Введите пароль длиной от 4 до 15 символов";
           if (errorUser) setErrorUser(false);
         }
         break;

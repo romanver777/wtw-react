@@ -9,7 +9,7 @@ exports[`Footer component renders correctly 1`] = `
   >
     <a
       className="logo__link logo__link--light"
-      href="/"
+      href="#/"
       onClick={[Function]}
     >
       <span

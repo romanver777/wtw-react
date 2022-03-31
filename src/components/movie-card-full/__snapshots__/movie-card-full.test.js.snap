@@ -28,7 +28,7 @@ exports[`MovieCardFull component renders correctly 1`] = `
       >
         <a
           className="logo__link "
-          href="/"
+          href="#/"
           onClick={[Function]}
         >
           <span
@@ -53,7 +53,7 @@ exports[`MovieCardFull component renders correctly 1`] = `
       >
         <a
           className="user-block__link"
-          href="/login"
+          href="#/login"
           onClick={[Function]}
         >
           Вход

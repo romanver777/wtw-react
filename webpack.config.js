@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -38,5 +39,6 @@ module.exports = {
       template: "./src/index.html",
       favicon: "./src/style/icons/favikon32.png",
     }),
+    new CssMinimizerPlugin(),
   ],
 };

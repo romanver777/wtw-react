@@ -28,7 +28,7 @@ describe("App component", () => {
     awaitFilm: films[0],
   };
   const loading = "Loading...";
-  const routesCount = 3;
+  const routesCount = 4;
 
   const renderer = new ShallowRenderer();
 

@@ -17,6 +17,7 @@ export const USER_PAGE_TITLE = {
   SIGN_IN: "Выполните вход",
   MY_LIST: "Мой список",
   SIMILAR_MOVIES: "Похожие фильмы",
+  ERROR: "Ошибка",
 };
 
 export const APP_ROUTE = {
@@ -24,6 +25,7 @@ export const APP_ROUTE = {
   FILM: "/film/",
   FILM_ID: "/film/:id",
   LOGIN: "/login",
+  ERROR: "*",
 };
 
 export const LOGO_POSITION = {

@@ -298,9 +298,15 @@ exports[`Tabs component with active tab - Reviews renders correctly 1`] = `
         >
           <p
             className="review__text"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
           >
             Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. 
-Не относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.
+Не относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM. ...
           </p>
           <footer
             className="review__details"
@@ -327,9 +333,15 @@ exports[`Tabs component with active tab - Reviews renders correctly 1`] = `
         >
           <p
             className="review__text"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
           >
             В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.
-Билли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,
+Билли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959, ...
           </p>
           <footer
             className="review__details"
@@ -356,8 +368,14 @@ exports[`Tabs component with active tab - Reviews renders correctly 1`] = `
         >
           <p
             className="review__text"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
           >
-            Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты
+            Биографическая драма Ли Дэниелса рассказывает о звезде 40—50-х годов, джазовой певице Билли Холидей. Основной акцент фильма делается на противостоянии Билли Холидей и ФБР. Бюро решило во что бы то ни стало запретить певице исполнять антирасистскую песню о судах Линча над чернокожими. И для этого агенты ...
           </p>
           <footer
             className="review__details"
@@ -384,8 +402,14 @@ exports[`Tabs component with active tab - Reviews renders correctly 1`] = `
         >
           <p
             className="review__text"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
           >
-            За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным
+            За пару лет BLM набрало обороты столь быстрые и беспощадные, что пора уже всем сушить сухари. В Голливуде установились четкие правила: ни дня без кино на тему расовой дискриминации. Сладкие сны Спайка Ли реализовались. Не то чтобы это было категорически плохо, но уж больно попахивает конъектурой и социальным ...
           </p>
           <footer
             className="review__details"
@@ -404,35 +428,18 @@ exports[`Tabs component with active tab - Reviews renders correctly 1`] = `
           </footer>
         </blockquote>
       </div>
-      <div
-        className="review"
-      >
-        <blockquote
-          className="review__quote"
-        >
-          <p
-            className="review__text"
-          >
-            Одаренный режиссер Ли Дэниелс (автор «Сокровища», «Газетчика» и «Дворецкого») решил воплотить на экране жизнь дивы, настоящей иконы для американских чернокожих — Билли Холидей. Кинолента представляет собой достаточно прямой биографический фильм, раскрывающий последнее десятилетие жизни леди Дей: борьба
-          </p>
-          <footer
-            className="review__details"
-          >
-            <cite
-              className="review__author"
-            >
-              Egorche23
-            </cite>
-            <time
-              className="review__date"
-              dateTime="2021-03-03T19:48:00"
-            >
-              3 марта 2021 г., 19:48
-            </time>
-          </footer>
-        </blockquote>
-      </div>
     </div>
+  </div>
+  <div
+    className="catalog__more"
+  >
+    <button
+      className="catalog__button catalog__button-dark"
+      onClick={[Function]}
+      type="button"
+    >
+      Больше
+    </button>
   </div>
 </div>
 `;

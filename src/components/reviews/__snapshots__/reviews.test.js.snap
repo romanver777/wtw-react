@@ -1,70 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Reviews component renders correctly 1`] = `
-<div
-  className="movie-card__reviews movie-card__row"
->
+Array [
   <div
-    className="movie-card__reviews-col"
+    className="movie-card__reviews movie-card__row"
   >
     <div
-      className="review"
+      className="movie-card__reviews-col"
     >
-      <blockquote
-        className="review__quote"
+      <div
+        className="review"
       >
-        <p
-          className="review__text"
+        <blockquote
+          className="review__quote"
         >
-          Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. 
-Не относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM.
-        </p>
-        <footer
-          className="review__details"
+          <p
+            className="review__text"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+          >
+            Весьма рекомендую к просмотру фильм с очаровательной Андрой Дэй «Соединённые Штаты против Билли Холидей» (The United States vs. Billie Holiday, 2021) режиссера Ли Дэниелса. 
+Не относитесь к нему, как к кино-шедевру, но и не сочтите его за грязную пропаганду BLM. ...
+          </p>
+          <footer
+            className="review__details"
+          >
+            <cite
+              className="review__author"
+            >
+              SlavaLim
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-04-12T19:01:00"
+            >
+              12 апреля 2021 г., 19:01
+            </time>
+          </footer>
+        </blockquote>
+      </div>
+      <div
+        className="review"
+      >
+        <blockquote
+          className="review__quote"
         >
-          <cite
-            className="review__author"
+          <p
+            className="review__text"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
           >
-            SlavaLim
-          </cite>
-          <time
-            className="review__date"
-            dateTime="2021-04-12T19:01:00"
+            В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.
+Билли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959, ...
+          </p>
+          <footer
+            className="review__details"
           >
-            12 апреля 2021 г., 19:01
-          </time>
-        </footer>
-      </blockquote>
+            <cite
+              className="review__author"
+            >
+              DIMI25
+            </cite>
+            <time
+              className="review__date"
+              dateTime="2021-04-12T10:26:00"
+            >
+              12 апреля 2021 г., 10:26
+            </time>
+          </footer>
+        </blockquote>
+      </div>
     </div>
-    <div
-      className="review"
+  </div>,
+  <div
+    className="catalog__more"
+  >
+    <button
+      className="catalog__button catalog__button-dark"
+      onClick={[Function]}
+      type="button"
     >
-      <blockquote
-        className="review__quote"
-      >
-        <p
-          className="review__text"
-        >
-          В 1940-х правительство США начинает войну против наркотиков. Ведомые предубеждениями против цветного населения чиновники выбирают своей целью популярную певицу Билли Холидей.
-Билли Холидей (англ. Billie Holiday), настоящее имя Элеанора Фейган (англ. Eleanora Fagan; 7 апреля 1915, Балтимор — 17 июля 1959,
-        </p>
-        <footer
-          className="review__details"
-        >
-          <cite
-            className="review__author"
-          >
-            DIMI25
-          </cite>
-          <time
-            className="review__date"
-            dateTime="2021-04-12T10:26:00"
-          >
-            12 апреля 2021 г., 10:26
-          </time>
-        </footer>
-      </blockquote>
-    </div>
-  </div>
-</div>
+      Больше
+    </button>
+  </div>,
+]
 `;

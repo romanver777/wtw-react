@@ -12,17 +12,20 @@ import { MovieType } from "../../types/types";
 interface StateProps {
   films: MovieType[];
   awaitFilm: MovieType;
+  isLoading: boolean;
+  isInitError: boolean;
 }
 
 type PropsType = StateProps;
 
 const App = (props: PropsType): JSX.Element => {
-  const { films, awaitFilm } = props;
+  const { isLoading, isInitError } = props;
 
   return (
     <React.Fragment>
-      {(!films || !awaitFilm) && <div>Loading...</div>}
-      {films && awaitFilm && (
+      {isInitError && <ErrorPage text="Что-то пошло не так." />}
+      {isLoading && <div>Loading...</div>}
+      {!isLoading && !isInitError && (
         <Switch>
           <Route exact path={APP_ROUTE.ROOT} component={PageMain} />
           <Route path={APP_ROUTE.FILM_ID} component={PageMovie} />
@@ -37,6 +40,8 @@ const App = (props: PropsType): JSX.Element => {
 const mapStateToProps = (state: StateProps) => ({
   films: state.films,
   awaitFilm: state.awaitFilm,
+  isLoading: state.isLoading,
+  isInitError: state.isInitError,
 });
 
 export { App };

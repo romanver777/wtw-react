@@ -20,9 +20,7 @@ const store = createStore(
   )
 );
 
-store.dispatch(Operation.loadTk());
-store.dispatch(Operation.loadFilms());
-store.dispatch(Operation.loadAwaitFilm());
+store.dispatch(Operation.init());
 
 render(
   <Provider store={store}>

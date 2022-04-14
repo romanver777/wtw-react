@@ -46,7 +46,9 @@ exports[`ErrorPage component renders correctly 1`] = `
       }
     }
   >
-    Страница не найдена.
+    <span>
+      Страница не найдена.
+    </span>
   </div>
   <footer
     className="page-footer"

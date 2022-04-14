@@ -1,4 +1,3 @@
-// import movies from "./mocks/films.json";
 import { MovieType, ReviewType, StaffType, VideoType } from "./types/types";
 import { ALL_GENRES } from "./helpers/const";
 import { getAllGenres, getRandomNumber } from "./helpers/helpers";
@@ -18,6 +17,9 @@ interface InitStateInterface {
   reviews: null | ReviewType[];
   staff: null | StaffType[];
   hoveredVideoData: null | VideoType;
+  isLoading: boolean;
+  isInitError: boolean;
+  isMovieError: boolean;
 }
 
 interface ActionCreatorInterface {
@@ -30,7 +32,8 @@ interface ActionCreatorInterface {
     | MovieType
     | ReviewType[]
     | StaffType[]
-    | VideoType;
+    | VideoType
+    | boolean;
 }
 
 const InitialState: InitStateInterface = {
@@ -45,6 +48,9 @@ const InitialState: InitStateInterface = {
   reviews: null,
   staff: null,
   hoveredVideoData: null,
+  isLoading: false,
+  isInitError: false,
+  isMovieError: false,
 };
 
 const ActionType = {
@@ -60,6 +66,9 @@ const ActionType = {
   SET_STAFF: `SET_STAFF`,
   SET_HOVERED_VIDEO_DATA: `SET_HOVERED_VIDEO_DATA`,
   REMOVE_HOVERED_VIDEO_DATA: `REMOVE_HOVERED_VIDEO_DATA`,
+  SET_IS_LOADING: `SET_IS_LOADING`,
+  SET_IS_INIT_ERROR: `SET_IS_INIT_ERROR`,
+  SET_IS_MOVIE_ERROR: `SET_IS_MOVIE_ERROR`,
 };
 
 const ActionCreator = {
@@ -110,6 +119,18 @@ const ActionCreator = {
   removeHoveredVideoData: (): ActionCreatorInterface => ({
     type: ActionType.REMOVE_HOVERED_VIDEO_DATA,
     payload: null,
+  }),
+  setIsLoading: (data: boolean): ActionCreatorInterface => ({
+    type: ActionType.SET_IS_LOADING,
+    payload: data,
+  }),
+  setIsInitError: (data: boolean): ActionCreatorInterface => ({
+    type: ActionType.SET_IS_INIT_ERROR,
+    payload: data,
+  }),
+  setIsMovieError: (data: boolean): ActionCreatorInterface => ({
+    type: ActionType.SET_IS_MOVIE_ERROR,
+    payload: data,
   }),
 };
 
@@ -177,7 +198,22 @@ const reducer = (
       return {
         ...state,
         hoveredVideoData: action.payload as null,
-      }
+      };
+    case ActionType.SET_IS_LOADING:
+      return {
+        ...state,
+        isLoading: action.payload as boolean,
+      };
+    case ActionType.SET_IS_INIT_ERROR:
+      return {
+        ...state,
+        isInitError: action.payload as boolean,
+      };
+    case ActionType.SET_IS_MOVIE_ERROR:
+      return {
+        ...state,
+        isMovieError: action.payload as boolean,
+      };
     default:
       return state;
   }
@@ -191,65 +227,66 @@ type TInstance = {
   kp: AxiosInstance;
 };
 type TPromise = Promise<unknown>;
+type TAction = ThunkAction<TPromise, TAppState, any, ActionCreatorInterface>;
 
 const Operation = {
+  init:
+    (): TAction =>
+    (dispatch: TDispatch): TPromise => {
+      dispatch(ActionCreator.setIsLoading(true));
+      Promise.all([
+        dispatch(Operation.loadTk()),
+        dispatch(Operation.loadAwaitFilm()),
+        dispatch(Operation.loadFilms()),
+      ])
+        .then(() => dispatch(ActionCreator.setIsLoading(false)))
+        .catch(() => {
+          dispatch(ActionCreator.setIsInitError(true));
+          dispatch(ActionCreator.setIsLoading(false));
+        });
+    },
   loadTk:
-    (): ThunkAction<
-      TPromise, // thunk return type
-      TAppState, // state type
-      any, // extra argument, (not used)
-      ActionCreatorInterface // action type
-    > =>
+    (): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
       api.main
         .get("/06db2989-a3bc-4e63-a64e-9caf54eaa7d5")
-        .then((response) => dispatch(ActionCreator.setTk(response.data)))
-        .catch((error) => console.log(error)),
+        .then((response) => dispatch(ActionCreator.setTk(response.data))),
   loadFilms:
-    (): ThunkAction<
-      TPromise, // thunk return type
-      TAppState, // state type
-      any, // extra argument, (not used)
-      ActionCreatorInterface // action type
-    > =>
+    (): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
-      api.main
-        .get("/e8bda8ad-de3b-4feb-ad2f-63e300f795b8")
-        .then((response) => {
-          dispatch(ActionCreator.setFilms(response.data.films));
-          dispatch(
-            ActionCreator.setGenresList(getAllGenres(response.data.films))
-          );
-        })
-        .catch((error) => console.log(error)),
+      api.main.get("/e8bda8ad-de3b-4feb-ad2f-63e300f795b8").then((response) => {
+        dispatch(ActionCreator.setFilms(response.data.films));
+        dispatch(
+          ActionCreator.setGenresList(getAllGenres(response.data.films))
+        );
+      }),
   loadAwaitFilm:
-    (): ThunkAction<
-      TPromise, // thunk return type
-      TAppState, // state type
-      any, // extra argument, (not used)
-      ActionCreatorInterface // action type
-    > =>
+    (): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
-      api.main
-        .get("/d6462fb1-1290-45c0-8082-0db40626ef8e")
-        .then((response) => {
-          const awaitFilms = response.data.films;
-          return dispatch(
-            ActionCreator.setAwaitFilm(
-              awaitFilms[getRandomNumber(0, awaitFilms.length - 1)]
-            )
-          );
-        })
-        .catch((error) => console.log(error)),
+      api.main.get("/d6462fb1-1290-45c0-8082-0db40626ef8e").then((response) => {
+        const awaitFilms = response.data.films;
+        return dispatch(
+          ActionCreator.setAwaitFilm(
+            awaitFilms[getRandomNumber(0, awaitFilms.length - 1)]
+          )
+        );
+      }),
+  loadPageMovieData:
+    (id: number): TAction =>
+    (dispatch: TDispatch): TPromise => {
+      dispatch(ActionCreator.setIsLoading(true));
+      Promise.all([
+        dispatch(Operation.loadReviews(id)),
+        dispatch(Operation.loadStaff(id)),
+      ])
+        .then(() => dispatch(ActionCreator.setIsLoading(false)))
+        .catch(() => {
+          dispatch(ActionCreator.setIsMovieError(true));
+          dispatch(ActionCreator.setIsLoading(false));
+        });
+    },
   loadReviews:
-    (
-      id: number
-    ): ThunkAction<
-      TPromise, // thunk return type
-      TAppState, // state type
-      any, // extra argument, (not used)
-      ActionCreatorInterface // action type
-    > =>
+    (id: number): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
       api.kp
         .get(`/v1/reviews?filmId=${id}&page=1`, {
@@ -259,17 +296,9 @@ const Operation = {
         })
         .then((response) =>
           dispatch(ActionCreator.setReviews(response.data.reviews))
-        )
-        .catch((error) => console.log(error.toJSON())),
+        ),
   loadStaff:
-    (
-      id: number
-    ): ThunkAction<
-      TPromise, // thunk return type
-      TAppState, // state type
-      any, // extra argument, (not used)
-      ActionCreatorInterface // action type
-    > =>
+    (id: number): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
       api.kp
         .get(`/v1/staff?filmId=${id}`, {
@@ -277,17 +306,9 @@ const Operation = {
             "X-API-KEY": getState().tk,
           },
         })
-        .then((response) => dispatch(ActionCreator.setStaff(response.data)))
-        .catch((error) => console.log(error.toJSON())),
+        .then((response) => dispatch(ActionCreator.setStaff(response.data))),
   loadVideoData:
-    (
-      id: number
-    ): ThunkAction<
-      TPromise, // thunk return type
-      TAppState, // state type
-      any, // extra argument, (not used)
-      ActionCreatorInterface // action type
-    > =>
+    (id: number): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
       api.kp
         .get(`/v2.1/films/${id}/videos`, {
@@ -295,8 +316,10 @@ const Operation = {
             "X-API-KEY": getState().tk,
           },
         })
-        .then((response) => dispatch(ActionCreator.setHoveredVideoData(response.data)))
-        .catch((error) => console.log(error.toJSON())),
+        .then((response) =>
+          dispatch(ActionCreator.setHoveredVideoData(response.data))
+        )
+        .catch((error) => console.log(error)),
 };
 
 export { reducer, ActionCreator, Operation };

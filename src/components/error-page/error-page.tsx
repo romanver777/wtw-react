@@ -5,7 +5,11 @@ import Footer from "../footer/footer";
 import UserPageTitle from "../user-page-title/user-page-title";
 import { PAGE, LOGO_POSITION, USER_PAGE_TITLE } from "../../helpers/const";
 
-const ErrorPage = (): JSX.Element => {
+type ErrorPageType = {
+  text?: string;
+};
+
+const ErrorPage = (props: ErrorPageType): JSX.Element => {
   return (
     <div className="user-page">
       <Header page={PAGE.USER_PAGE}>
@@ -17,7 +21,8 @@ const ErrorPage = (): JSX.Element => {
         className="sign-in user-page__content"
         style={{ textAlign: "center" }}
       >
-        Страница не найдена.
+        {props.text && <span>{props.text}</span>}
+        {!props.text && <span>Страница не найдена.</span>}
       </div>
       <Footer />
     </div>

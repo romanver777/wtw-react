@@ -8,6 +8,7 @@ import { getMovieById } from "../../helpers/helpers";
 import MovieCardFull from "../movie-card-full/movie-card-full";
 import Catalog from "../catalog/catalog";
 import Footer from "../footer/footer";
+import ErrorPage from "../error-page/error-page";
 import { Operation, ActionCreator } from "../../reducer";
 
 interface StateProps {
@@ -16,6 +17,7 @@ interface StateProps {
   currentFilm: MovieType;
   reviews: ReviewType[];
   staff: StaffType[];
+  isMovieError: boolean;
 }
 
 interface OwnProps {
@@ -29,6 +31,7 @@ interface MapProps {
   films: MovieType[];
   reviews: ReviewType[];
   staff: StaffType[];
+  isMovieError: boolean;
 }
 
 interface DispatchProps {
@@ -38,16 +41,19 @@ interface DispatchProps {
 type Props = MapProps & DispatchProps;
 
 const PageMovie = (props: Props): JSX.Element => {
-  const { isAuth, film, prevFilm, loadFilmData, reviews, staff } = props;
+  const { isAuth, film, prevFilm, loadFilmData, reviews, staff, isMovieError } =
+    props;
 
   useEffect(() => {
-    if (film !== prevFilm) loadFilmData(film);
+    if (film && film !== prevFilm) loadFilmData(film);
   });
 
+  if (!film) return <ErrorPage />;
   return (
-    <React.Fragment>
-      {reviews && staff && (
-        <React.Fragment>
+    <>
+      {isMovieError && <ErrorPage text="Что-то пошло не так." />}
+      {!isMovieError && reviews && staff && (
+        <>
           <MovieCardFull
             isAuth={isAuth}
             film={film}
@@ -58,9 +64,9 @@ const PageMovie = (props: Props): JSX.Element => {
             <Catalog pageName={PAGE_NAME[1]} />
             <Footer />
           </div>
-        </React.Fragment>
+        </>
       )}
-    </React.Fragment>
+    </>
   );
 };
 
@@ -77,14 +83,14 @@ const mapStateToProps = (
     films: state.films,
     reviews: state.reviews,
     staff: state.staff,
+    isMovieError: state.isMovieError,
   };
 };
 
 const mapDispatchToProps = (dispatch) => ({
   loadFilmData(film: MovieType) {
     dispatch(ActionCreator.setCurrentFilm(film));
-    dispatch(Operation.loadReviews(film.filmId));
-    dispatch(Operation.loadStaff(film.filmId));
+    dispatch(Operation.loadPageMovieData(film.filmId));
   },
 });
 

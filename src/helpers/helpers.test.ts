@@ -1,6 +1,7 @@
 import * as helpers from "./helpers";
+import { MovieType } from "../types/types";
 
-const input = [
+const input: MovieType[] = [
   {
     filmId: 1,
     nameRu: "Соединённые Штаты против Билли Холидей",
@@ -1113,36 +1114,26 @@ describe("func getMoviesByGenre", () => {
     },
   ];
 
-  test("it should filter by 'фантастика'", () => {
-    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic);
-  });
-  test("it should filter by 'Фантастика'", () => {
-    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic);
-  });
-  test("it should filter by 'ФАНТАСТИКА'", () => {
-    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic);
-  });
-  test("it should filter by 'фантАстика'", () => {
-    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic);
-  });
-  test("it should filter by 'фэнтези'", () => {
-    expect(helpers.getMoviesByGenre(input, "фэнтези")).toEqual(fantasy);
-  });
-  test("it should filter by 'боевик'", () => {
-    expect(helpers.getMoviesByGenre(input, "боевик")).toEqual(action);
-  });
-  test("it should filter by 'мультфильм'", () => {
-    expect(helpers.getMoviesByGenre(input, "мультфильм")).toEqual(cartoon);
-  });
-  test("it should filter by 'драма'", () => {
-    expect(helpers.getMoviesByGenre(input, "драма")).toEqual(drama);
-  });
-  test("it should filter by 'комедия'", () => {
-    expect(helpers.getMoviesByGenre(input, "комедия")).toEqual(comedy);
-  });
-  test("it should filter by 'все жанры'", () => {
-    expect(helpers.getMoviesByGenre(input, "все жанры")).toEqual(input);
-  });
+  test("it should filter by 'фантастика'", () =>
+    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic));
+  test("it should filter by 'Фантастика'", () =>
+    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic));
+  test("it should filter by 'ФАНТАСТИКА'", () =>
+    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic));
+  test("it should filter by 'фантАстика'", () =>
+    expect(helpers.getMoviesByGenre(input, "фантастика")).toEqual(fantastic));
+  test("it should filter by 'фэнтези'", () =>
+    expect(helpers.getMoviesByGenre(input, "фэнтези")).toEqual(fantasy));
+  test("it should filter by 'боевик'", () =>
+    expect(helpers.getMoviesByGenre(input, "боевик")).toEqual(action));
+  test("it should filter by 'мультфильм'", () =>
+    expect(helpers.getMoviesByGenre(input, "мультфильм")).toEqual(cartoon));
+  test("it should filter by 'драма'", () =>
+    expect(helpers.getMoviesByGenre(input, "драма")).toEqual(drama));
+  test("it should filter by 'комедия'", () =>
+    expect(helpers.getMoviesByGenre(input, "комедия")).toEqual(comedy));
+  test("it should filter by 'все жанры'", () =>
+    expect(helpers.getMoviesByGenre(input, "все жанры")).toEqual(input));
 });
 
 describe("func getMovieById", () => {
@@ -1287,18 +1278,14 @@ describe("func getMovieById", () => {
     ],
   };
 
-  test("it should filter by id 2", () => {
-    expect(helpers.getMovieById(input, "2")).toEqual(outputId2);
-  });
-  test("it should filter by id 2", () => {
-    expect(helpers.getMovieById(input, 2)).toEqual(outputId2);
-  });
-  test("it should filter by id 4", () => {
-    expect(helpers.getMovieById(input, 4)).toEqual(outputId4);
-  });
-  test("it should filter by id 48, it`s undefined", () => {
-    expect(helpers.getMovieById(input, 48)).toBeUndefined();
-  });
+  test("it should filter by id 2", () =>
+    expect(helpers.getMovieById(input, "2")).toEqual(outputId2));
+  test("it should filter by id 2", () =>
+    expect(helpers.getMovieById(input, 2)).toEqual(outputId2));
+  test("it should filter by id 4", () =>
+    expect(helpers.getMovieById(input, 4)).toEqual(outputId4));
+  test("it should filter by id 48, it`s undefined", () =>
+    expect(helpers.getMovieById(input, 48)).toBeUndefined());
 });
 
 describe("func getAllGenres", () => {
@@ -1312,30 +1299,23 @@ describe("func getAllGenres", () => {
     "Комедия",
   ];
 
-  test("it should get all genres and add default to start", () => {
-    expect(helpers.getAllGenres(input)).toEqual(allGenres);
-  });
+  test("it should get all genres and add default to start", () =>
+    expect(helpers.getAllGenres(input)).toEqual(allGenres));
 });
 
 describe("func getMaxPagesCount", () => {
-  test("it should get pages count by 1 items per page", () => {
-    expect(helpers.getMaxPagesCount(input, 1)).toBe(4);
-  });
-  test("it should get pages count by '1' items per page", () => {
-    expect(helpers.getMaxPagesCount(input, "1")).toBe(4);
-  });
-  test("it should get pages count by 2 items per page", () => {
-    expect(helpers.getMaxPagesCount(input, 2)).toBe(2);
-  });
-  test("it should get pages count by 3 items per page", () => {
-    expect(helpers.getMaxPagesCount(input, 3)).toBe(2);
-  });
-  test("it should get pages count by 4 items per page", () => {
-    expect(helpers.getMaxPagesCount(input, 4)).toBe(1);
-  });
-  test("it should get pages count by 5 items per page", () => {
-    expect(helpers.getMaxPagesCount(input, 5)).toBe(1);
-  });
+  test("it should get pages count by 1 items per page", () =>
+    expect(helpers.getMaxPagesCount(input, 1)).toBe(4));
+  test("it should get pages count by '1' items per page", () =>
+    expect(helpers.getMaxPagesCount(input, "1")).toBe(4));
+  test("it should get pages count by 2 items per page", () =>
+    expect(helpers.getMaxPagesCount(input, 2)).toBe(2));
+  test("it should get pages count by 3 items per page", () =>
+    expect(helpers.getMaxPagesCount(input, 3)).toBe(2));
+  test("it should get pages count by 4 items per page", () =>
+    expect(helpers.getMaxPagesCount(input, 4)).toBe(1));
+  test("it should get pages count by 5 items per page", () =>
+    expect(helpers.getMaxPagesCount(input, 5)).toBe(1));
 });
 
 // getRandomNumber

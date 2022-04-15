@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Dispatch, Action } from "redux";
 import { Link } from "react-router-dom";
 
 import { MovieType } from "../../types/types";
@@ -63,7 +64,7 @@ const mapStateToProps = (state: StateProps) => ({
   activeGenre: state.activeGenre,
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch: Dispatch<Action>) => ({
   setGenre: (genre: string) => dispatch(ActionCreator.setGenre(genre)),
 });
 

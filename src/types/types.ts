@@ -17,7 +17,7 @@ export interface MovieType {
     reviewData: string;
     reviewDescription: string;
     reviewId: number;
-    reviewTitle: string;
+    reviewTitle: string | null;
     reviewType: string;
     userNegativeRating: null;
     userPositiveRating: null;
@@ -26,7 +26,7 @@ export interface MovieType {
     staffId: number;
     nameRu: string;
     nameEn: string;
-    description: null;
+    description: string | null;
     posterUrl: string;
     professionText: string;
     professionKey: string;

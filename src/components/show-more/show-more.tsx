@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {
   onHandleClick: () => void;
-  modName: string;
+  modName?: string;
 };
 
 const ShowMore = (props: Props): JSX.Element => {

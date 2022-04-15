@@ -220,21 +220,34 @@ const reducer = (
 };
 
 type TAppState = ReturnType<typeof reducer>;
-type TDispatch = ThunkDispatch<TAppState, void, AnyAction>;
+type TDispatch = ThunkDispatch<TAppState, TInstance, AnyAction>;
 type TGetState = () => TAppState;
 type TInstance = {
   main: AxiosInstance;
   kp: AxiosInstance;
 };
 type TPromise = Promise<unknown>;
-type TAction = ThunkAction<TPromise, TAppState, any, ActionCreatorInterface>;
+type TAction = ThunkAction<
+  TPromise,
+  TAppState,
+  TInstance,
+  ActionCreatorInterface
+>;
+
+type ResponseMovieType = {
+  films: MovieType[];
+};
+
+type ResponseReviewsType = {
+  reviews: ReviewType[];
+};
 
 const Operation = {
   init:
     (): TAction =>
     (dispatch: TDispatch): TPromise => {
       dispatch(ActionCreator.setIsLoading(true));
-      Promise.all([
+      return Promise.all([
         dispatch(Operation.loadTk()),
         dispatch(Operation.loadAwaitFilm()),
         dispatch(Operation.loadFilms()),
@@ -254,28 +267,32 @@ const Operation = {
   loadFilms:
     (): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
-      api.main.get("/e8bda8ad-de3b-4feb-ad2f-63e300f795b8").then((response) => {
-        dispatch(ActionCreator.setFilms(response.data.films));
-        dispatch(
-          ActionCreator.setGenresList(getAllGenres(response.data.films))
-        );
-      }),
+      api.main
+        .get<ResponseMovieType>("/e8bda8ad-de3b-4feb-ad2f-63e300f795b8")
+        .then((response) => {
+          dispatch(ActionCreator.setFilms(response.data.films));
+          dispatch(
+            ActionCreator.setGenresList(getAllGenres(response.data.films))
+          );
+        }),
   loadAwaitFilm:
     (): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
-      api.main.get("/d6462fb1-1290-45c0-8082-0db40626ef8e").then((response) => {
-        const awaitFilms = response.data.films;
-        return dispatch(
-          ActionCreator.setAwaitFilm(
-            awaitFilms[getRandomNumber(0, awaitFilms.length - 1)]
-          )
-        );
-      }),
+      api.main
+        .get<ResponseMovieType>("/d6462fb1-1290-45c0-8082-0db40626ef8e")
+        .then((response) => {
+          const awaitFilms = response.data.films;
+          return dispatch(
+            ActionCreator.setAwaitFilm(
+              awaitFilms[getRandomNumber(0, awaitFilms.length - 1)]
+            )
+          );
+        }),
   loadPageMovieData:
     (id: number): TAction =>
     (dispatch: TDispatch): TPromise => {
       dispatch(ActionCreator.setIsLoading(true));
-      Promise.all([
+      return Promise.all([
         dispatch(Operation.loadReviews(id)),
         dispatch(Operation.loadStaff(id)),
       ])
@@ -289,7 +306,7 @@ const Operation = {
     (id: number): TAction =>
     (dispatch: TDispatch, getState: TGetState, api: TInstance): TPromise =>
       api.kp
-        .get(`/v1/reviews?filmId=${id}&page=1`, {
+        .get<ResponseReviewsType>(`/v1/reviews?filmId=${id}&page=1`, {
           headers: {
             "X-API-KEY": getState().tk,
           },

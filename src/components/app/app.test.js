@@ -12,62 +12,69 @@ import history from "../../history";
 
 import { App } from "./app";
 import films from "../../mocks/films.json";
-import { ALL_GENRES } from "../../helpers/const";
+import ALL_GENRES from "../../helpers/const";
 
 describe("App component", () => {
-  const propsInit = {
-    films: null,
-    awaitFilm: null,
+  const loadingProps = {
+    isLoading: true,
+    isInitError: false,
   };
-  const propsHalf = {
-    films: films,
-    awaitFilm: null,
+  const errorProps = {
+    isLoading: true,
+    isInitError: true,
   };
-  const propsFull = {
-    films: films,
-    awaitFilm: films[0],
+  const loadedProps = {
+    isLoading: false,
+    isInitError: false,
   };
   const loading = "Loading...";
+  const error = "Что-то пошло не так.";
   const routesCount = 4;
 
   const renderer = new ShallowRenderer();
 
-  describe("renders correctly with init props", () => {
-    renderer.render(<App {...propsInit} />);
+  describe("renders correctly with loading props", () => {
+    renderer.render(<App {...loadingProps} />);
     const result = renderer.getRenderOutput();
 
-    it("renders 'Loading'", () => {
-      expect(result.props.children[0].props.children).toEqual(loading);
-    });
-
-    it("renders 'null'", () => {
-      expect(result.props.children[1]).toEqual(null);
-    });
-  });
-
-  describe("renders correctly with half props", () => {
-    renderer.render(<App {...propsHalf} />);
-    const result = renderer.getRenderOutput();
-
-    it("renders 'Loading'", () => {
-      expect(result.props.children[0].props.children).toEqual(loading);
-    });
-
-    it("renders 'null'", () => {
-      expect(result.props.children[1]).toEqual(null);
-    });
-  });
-
-  describe("renders correctly with full props", () => {
-    renderer.render(<App {...propsFull} />);
-    const result = renderer.getRenderOutput();
-
-    it("don't render 'Loading' ", () => {
+    it("renders errorPage - false", () => {
       expect(result.props.children[0]).toEqual(false);
     });
+    it("renders 'Loading'", () => {
+      expect(result.props.children[1].props.children).toEqual(loading);
+    });
+    it("renders app - false", () => {
+      expect(result.props.children[2]).toEqual(false);
+    });
+  });
 
-    it("renders ", () => {
-      expect(result.props.children[1].props.children.length).toEqual(
+  describe("renders correctly with error props", () => {
+    renderer.render(<App {...errorProps} />);
+    const result = renderer.getRenderOutput();
+
+    it("renders errorPage", () => {
+      expect(result.props.children[0].props.text).toEqual(error);
+    });
+    it("renders 'Loading'", () => {
+      expect(result.props.children[1].props.children).toEqual(loading);
+    });
+    it("renders app - false", () => {
+      expect(result.props.children[2]).toEqual(false);
+    });
+  });
+
+  describe("renders correctly with loaded props", () => {
+    renderer.render(<App {...loadedProps} />);
+    const result = renderer.getRenderOutput();
+
+    it("renders errorPage - false", () => {
+      expect(result.props.children[0]).toEqual(false);
+    });
+    it("renders 'Loading' - false", () => {
+      expect(result.props.children[1]).toEqual(false);
+    });
+    it("renders app", () => {
+      expect(result.props.children[2].props.children.length).toEqual(
         routesCount
       );
     });
@@ -77,7 +84,7 @@ describe("App component", () => {
     const initState = {
       films,
       awaitFilm: films[2],
-      currentFilm: null,
+      currentFilm: films[3],
       hoveredFilm: null,
       activeGenre: ALL_GENRES,
       genresList: null,
@@ -85,13 +92,16 @@ describe("App component", () => {
       reviews: null,
       staff: null,
       hoveredVideoData: null,
+      isLoading: true,
+      isInitError: false,
+      isMovieError: false,
     };
     const store = createStore(reducer, initState);
 
-    describe("no props", () => {
+    describe("loading", () => {
       const props = {
-        films: null,
-        awaitFilm: null,
+        isLoading: true,
+        isInitError: false,
       };
       const Trenderer = TestRenderer.create(
         <Provider store={store}>
@@ -106,10 +116,10 @@ describe("App component", () => {
       });
     });
 
-    describe("with props", () => {
+    describe("error", () => {
       const props = {
-        films,
-        awaitFilm: films[1],
+        isLoading: true,
+        isInitError: true,
       };
       const Trenderer = TestRenderer.create(
         <Provider store={store}>

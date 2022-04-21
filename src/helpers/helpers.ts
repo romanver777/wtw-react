@@ -77,3 +77,15 @@ export const validateEmail = (str: string): RegExpExecArray | null => {
 };
 export const validatePass = (str: string, min = 4, max = 15): boolean =>
   str.length >= min && str.length < max;
+
+export const getKeyByValue = (
+  obj: { [key: string]: string },
+  value: string
+): string => {
+  let genre = "";
+
+  Object.entries(obj).forEach((el) => {
+    if (obj[el[0]] === value) genre = el[0];
+  });
+  return genre;
+};

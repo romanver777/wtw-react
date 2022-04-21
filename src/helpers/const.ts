@@ -1,4 +1,31 @@
-export const ALL_GENRES = `все жанры`;
+export const ALL_GENRES = `Все жанры`;
+
+export const GENRES_RUS_TO_ENG: { [key: string]: string } = {
+  "Все жанры": "all-genres",
+  Драма: "drama",
+  Фэнтези: "fantasy",
+  Криминал: "crime",
+  Мелодрама: "melodrama",
+  Комедия: "comedy",
+  Биография: "bio",
+  История: "history",
+  Фантастика: "fantastic",
+  Боевик: "action",
+  Триллер: "thriller",
+  Mультфильм: "cartoon",
+  Мюзикл: "musical",
+  Приключения: "adventures",
+  Военный: "war",
+  Детектив: "detective",
+  Семейный: "family",
+  Аниме: "anime",
+  Вестерн: "western",
+  Музыка: "music",
+  Документальный: "documentary",
+  Спорт: "sport",
+  "Фильм-нуар": "noir",
+  Ужасы: "horror",
+};
 
 export const PAGE_NAME = ["main", "movie"];
 

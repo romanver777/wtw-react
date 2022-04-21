@@ -33,7 +33,7 @@ exports[`Footer component renders correctly 1`] = `
     className="copyright"
   >
     <p>
-      © 2021 What to watch Ltd.
+      © 2022 What to watch Ltd.
     </p>
   </div>
 </footer>

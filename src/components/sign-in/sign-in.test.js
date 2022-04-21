@@ -11,7 +11,6 @@ import Header from "../header/header.tsx";
 import Logo from "../logo/logo";
 import UserPageTitle from "../user-page-title/user-page-title";
 import Form from "../form/form";
-import Footer from "../footer/footer";
 
 describe("SignIn component", () => {
   const jsx = (
@@ -35,8 +34,5 @@ describe("SignIn component", () => {
   });
   it("find Form once", () => {
     expect(root.findAllByType(Form).length).toEqual(1);
-  });
-  it("find Footer once", () => {
-    expect(root.findAllByType(Footer).length).toEqual(1);
   });
 });

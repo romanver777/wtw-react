@@ -22,16 +22,36 @@ export const convertDateTime = (date: string): string => {
   });
 };
 
+type genresType = {
+  genre: string;
+};
+
 export const getMoviesByGenre = (
   movies: MovieType[],
-  genre: string
+  genre: string | genresType[]
 ): MovieType[] => {
-  if (genre.toLowerCase() === ALL_GENRES.toLowerCase()) {
-    return movies;
+  if (!Array.isArray(genre)) {
+    if (genre.toLowerCase() === ALL_GENRES.toLowerCase()) {
+      return movies;
+    } else {
+      return (
+        movies.filter((item) =>
+          item.genres.find(
+            (it) => it.genre.toLowerCase() === genre.toLowerCase()
+          )
+        ) || []
+      );
+    }
   } else {
-    return movies.filter((item) =>
-      item.genres.find((it) => it.genre.toLowerCase() === genre.toLowerCase())
-    );
+    let result = [...movies];
+    for (let i = 0; i < genre.length; i++) {
+      result = result.filter((item) =>
+        item.genres.find(
+          (it) => it.genre.toLowerCase() === genre[i].genre.toLowerCase()
+        )
+      );
+    }
+    return result;
   }
 };
 

@@ -9,7 +9,7 @@ exports[`GenresList component renders correctly 1`] = `
   >
     <a
       className="catalog__genres-link"
-      href="#/"
+      href="#/?genre=all-genres"
       onClick={[Function]}
     >
       Все жанры
@@ -20,7 +20,7 @@ exports[`GenresList component renders correctly 1`] = `
   >
     <a
       className="catalog__genres-link"
-      href="#/"
+      href="#/?genre=comedy"
       onClick={[Function]}
     >
       Комедия
@@ -31,7 +31,7 @@ exports[`GenresList component renders correctly 1`] = `
   >
     <a
       className="catalog__genres-link"
-      href="#/"
+      href="#/?genre=fantastic"
       onClick={[Function]}
     >
       Фантастика

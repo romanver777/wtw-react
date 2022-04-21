@@ -8,10 +8,10 @@ const Footer: React.FC = () => {
     <footer className="page-footer">
       <Logo clName={LOGO_POSITION.FOOTER} />
       <div className="copyright">
-        <p>© 2021 What to watch Ltd.</p>
+        <p>© 2022 What to watch Ltd.</p>
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default React.memo(Footer);

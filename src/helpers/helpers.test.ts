@@ -1,5 +1,6 @@
 import * as helpers from "./helpers";
 import { MovieType } from "../types/types";
+import { GENRES_RUS_TO_ENG } from "./const";
 
 const input: MovieType[] = [
   {
@@ -1374,5 +1375,18 @@ describe("func validatePass", () => {
   });
   it("should be false", () => {
     expect(helpers.validatePass(pass3)).toBeTruthy();
+  });
+});
+
+// getKeyByValue
+describe("func getKeyByValue", () => {
+  const value = "noir";
+  const value1 = "cartoon";
+
+  it("should be 'noir' => 'Фильм-нуар'", () => {
+    expect(helpers.getKeyByValue(GENRES_RUS_TO_ENG, value)).toBe("Фильм-нуар");
+  });
+  it("should be 'cartoon' => 'Мультфильм'", () => {
+    expect(helpers.getKeyByValue(GENRES_RUS_TO_ENG, value1)).toBe(`Mультфильм`);
   });
 });

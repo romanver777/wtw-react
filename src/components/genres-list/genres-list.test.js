@@ -11,7 +11,6 @@ describe("GenresList component", () => {
   const props = {
     genresList: ["Все жанры", "Комедия", "Фантастика"],
     activeGenre: "Комедия",
-    setGenre: () => {},
   };
   const Trenderer = TestRenderer.create(
     <Router history={history}>

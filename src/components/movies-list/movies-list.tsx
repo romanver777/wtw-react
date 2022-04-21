@@ -19,6 +19,7 @@ const MoviesList = (props: Props): JSX.Element => {
   return (
     <React.Fragment>
       <div className="catalog__movies-list">
+        {!films.length && <p>Не найдено</p>}
         {films.map((item) => (
           <CardWithVideoPlayer film={item} key={item.filmId} />
         ))}

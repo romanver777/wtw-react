@@ -30,12 +30,16 @@ const mapStateToProps = (state: StateProps, ownProps: WrapComponentProps) => {
       filteredFilms: getMoviesByGenre(state.films, state.activeGenre),
     };
   }
-  return {
-    filteredFilms: getMoviesByGenre(
-      state.films,
-      state.currentFilm.genres[0].genre
-    ),
-  };
+  const filtered = getMoviesByGenre(state.films, state.currentFilm.genres);
+  if (filtered.length) {
+    return {
+      filteredFilms: filtered.filter((el) => el !== state.currentFilm),
+    };
+  } else {
+    return {
+      filteredFilms: [],
+    };
+  }
 };
 
 const withShowMore = <T extends AllProps>(

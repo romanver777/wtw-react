@@ -43,15 +43,26 @@ export const getMoviesByGenre = (
       );
     }
   } else {
-    let result = [...movies];
+    const result = new Set();
     for (let i = 0; i < genre.length; i++) {
-      result = result.filter((item) =>
-        item.genres.find(
-          (it) => it.genre.toLowerCase() === genre[i].genre.toLowerCase()
+      const filtered = movies
+        .filter((item) =>
+          item.genres.find(
+            (it) => it.genre.toLowerCase() === genre[i].genre.toLowerCase()
+          )
         )
-      );
+        .filter((item) => {
+          if (i === genre.length - 1)
+            return item.genres.find(
+              (it) => it.genre.toLowerCase() === genre[0].genre.toLowerCase()
+            );
+          return item.genres.find(
+            (it) => it.genre.toLowerCase() === genre[i + 1].genre.toLowerCase()
+          );
+        });
+      filtered.forEach((el) => result.add(el));
     }
-    return result;
+    return Array.from(result) as MovieType[];
   }
 };
 

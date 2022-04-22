@@ -7,7 +7,6 @@ import thunk from "redux-thunk";
 import { compose } from "recompose";
 
 import "./style/style.css";
-import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
 import App from "./components/app/app";
 import { reducer, Operation } from "./reducer";
 import createApi from "./api";
@@ -25,7 +24,6 @@ store.dispatch(Operation.init());
 render(
   <Provider store={store}>
     <HashRouter>
-      <ScrollToTop />
       <App />
     </HashRouter>
   </Provider>,

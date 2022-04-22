@@ -376,7 +376,12 @@ describe("func getMoviesByGenre", () => {
   const comedy = [3, 4];
   const allGenres = [1, 2, 3, 4];
 
-  const genre = [
+  const genre1 = [
+    {
+      genre: "Мультфильм",
+    },
+  ];
+  const genre2 = [
     {
       genre: "Фэнтези",
     },
@@ -384,7 +389,7 @@ describe("func getMoviesByGenre", () => {
       genre: "Боевик",
     },
   ];
-  const genre1 = [
+  const genre2_1 = [
     {
       genre: "Комедия",
     },
@@ -392,8 +397,33 @@ describe("func getMoviesByGenre", () => {
       genre: "Драма",
     },
   ];
-  const result_genre = [1, 2];
-  const result_genre1 = [3, 4];
+  const genre3 = [
+    {
+      genre: "Комедия",
+    },
+    {
+      genre: "Драма",
+    },
+    {
+      genre: "Боевик",
+    },
+  ];
+  const genre3_1 = [
+    {
+      genre: "Фантастика",
+    },
+    {
+      genre: "Драма",
+    },
+    {
+      genre: "Фэнтези",
+    },
+  ];
+  const result_genre1 = [2];
+  const result_genre2 = [1, 2];
+  const result_genre2_1 = [3, 4];
+  const result_genre3 = [3, 4];
+  const result_genre3_1 = [1];
 
   test("it should filter by 'фантастика'", () =>
     expect(
@@ -436,14 +466,27 @@ describe("func getMoviesByGenre", () => {
       helpers.getMoviesByGenre(input, "все жанры").map((el) => el.filmId)
     ).toEqual(allGenres));
 
-  test("it should filter by genre array", () =>
-    expect(
-      helpers.getMoviesByGenre(input, genre).map((el) => el.filmId)
-    ).toEqual(result_genre));
-  test("it should filter by another genre array", () =>
+  test("it should filter by 1 genre array", () =>
     expect(
       helpers.getMoviesByGenre(input, genre1).map((el) => el.filmId)
     ).toEqual(result_genre1));
+  test("it should filter by 2 genres array", () =>
+    expect(
+      helpers.getMoviesByGenre(input, genre2).map((el) => el.filmId)
+    ).toEqual(result_genre2));
+  test("it should filter by 2 genres array", () =>
+    expect(
+      helpers.getMoviesByGenre(input, genre2_1).map((el) => el.filmId)
+    ).toEqual(result_genre2_1));
+
+  test("it should filter by 3 genres array", () =>
+    expect(
+      helpers.getMoviesByGenre(input, genre3).map((el) => el.filmId)
+    ).toEqual(result_genre3));
+  test("it should filter by 3 genres array", () =>
+    expect(
+      helpers.getMoviesByGenre(input, genre3_1).map((el) => el.filmId)
+    ).toEqual(result_genre3_1));
 });
 
 describe("func getMovieById", () => {

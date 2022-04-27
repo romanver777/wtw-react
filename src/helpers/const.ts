@@ -12,7 +12,7 @@ export const GENRES_RUS_TO_ENG: { [key: string]: string } = {
   Фантастика: "fantastic",
   Боевик: "action",
   Триллер: "thriller",
-  Mультфильм: "cartoon",
+  Мультфильм: "cartoon",
   Мюзикл: "musical",
   Приключения: "adventures",
   Военный: "war",

@@ -734,11 +734,13 @@ describe("func validatePass", () => {
 describe("func getKeyByValue", () => {
   const value = "noir";
   const value1 = "cartoon";
+  const valueTobe = "Мультфильм";
+  const valueTobe1 = "Фильм-нуар";
 
   it("should be 'noir' => 'Фильм-нуар'", () => {
-    expect(helpers.getKeyByValue(GENRES_RUS_TO_ENG, value)).toBe("Фильм-нуар");
+    expect(helpers.getKeyByValue(GENRES_RUS_TO_ENG, value)).toBe(valueTobe1);
   });
   it("should be 'cartoon' => 'Мультфильм'", () => {
-    expect(helpers.getKeyByValue(GENRES_RUS_TO_ENG, value1)).toBe(`Mультфильм`);
+    expect(helpers.getKeyByValue(GENRES_RUS_TO_ENG, value1)).toBe(valueTobe);
   });
 });

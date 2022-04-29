@@ -19,6 +19,7 @@ interface InitStateInterface {
   hoveredVideoData: null | VideoType;
   isLoading: boolean;
   isInitError: boolean;
+  isMovieLoading: boolean;
   isMovieError: boolean;
 }
 
@@ -50,6 +51,7 @@ const InitialState: InitStateInterface = {
   hoveredVideoData: null,
   isLoading: false,
   isInitError: false,
+  isMovieLoading: false,
   isMovieError: false,
 };
 
@@ -68,6 +70,7 @@ const ActionType = {
   REMOVE_HOVERED_VIDEO_DATA: `REMOVE_HOVERED_VIDEO_DATA`,
   SET_IS_LOADING: `SET_IS_LOADING`,
   SET_IS_INIT_ERROR: `SET_IS_INIT_ERROR`,
+  SET_IS_MOVIE_LOADING: `SET_IS_MOVIE_LOADING`,
   SET_IS_MOVIE_ERROR: `SET_IS_MOVIE_ERROR`,
 };
 
@@ -126,6 +129,10 @@ const ActionCreator = {
   }),
   setIsInitError: (data: boolean): ActionCreatorInterface => ({
     type: ActionType.SET_IS_INIT_ERROR,
+    payload: data,
+  }),
+  isMovieLoading: (data: boolean): ActionCreatorInterface => ({
+    type: ActionType.SET_IS_MOVIE_LOADING,
     payload: data,
   }),
   setIsMovieError: (data: boolean): ActionCreatorInterface => ({
@@ -209,6 +216,11 @@ const reducer = (
         ...state,
         isInitError: action.payload as boolean,
       };
+    case ActionType.SET_IS_MOVIE_LOADING:
+      return {
+        ...state,
+        isMovieLoading: action.payload as boolean,
+      };
     case ActionType.SET_IS_MOVIE_ERROR:
       return {
         ...state,
@@ -287,16 +299,16 @@ const Operation = {
         }),
   loadPageMovieData:
     (id: number): TAction =>
-    (dispatch: TDispatch): TPromise => {
-      dispatch(ActionCreator.setIsLoading(true));
-      return Promise.all([
-        dispatch(Operation.loadReviews(id)),
-        dispatch(Operation.loadStaff(id)),
-      ])
-        .then(() => dispatch(ActionCreator.setIsLoading(false)))
+    (dispatch: TDispatch, getState: TGetState): TPromise => {
+      if (getState().isMovieError)
+        dispatch(ActionCreator.setIsMovieError(false));
+      dispatch(ActionCreator.isMovieLoading(true));
+      return dispatch(Operation.loadReviews(id))
+        .then(() => dispatch(Operation.loadStaff(id)))
+        .then(() => dispatch(ActionCreator.isMovieLoading(false)))
         .catch(() => {
           dispatch(ActionCreator.setIsMovieError(true));
-          dispatch(ActionCreator.setIsLoading(false));
+          dispatch(ActionCreator.isMovieLoading(false));
         });
     },
   loadReviews:

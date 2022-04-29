@@ -1,97 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component snapshot error renders correctly 1`] = `
-Array [
-  <div
-    className="user-page"
+<div
+  className="user-page"
+>
+  <header
+    className="page-header user-page__head"
   >
-    <header
-      className="page-header user-page__head"
-    >
-      <div
-        className="logo"
-      >
-        <a
-          className="logo__link "
-          href="#/"
-          onClick={[Function]}
-        >
-          <span
-            className="logo__letter logo__letter--1"
-          >
-            W
-          </span>
-          <span
-            className="logo__letter logo__letter--2"
-          >
-            T
-          </span>
-          <span
-            className="logo__letter logo__letter--3"
-          >
-            W
-          </span>
-        </a>
-      </div>
-      <h1
-        className="page-title user-page__title"
-      >
-        Ошибка
-      </h1>
-    </header>
     <div
-      className="sign-in user-page__content"
-      style={
-        Object {
-          "textAlign": "center",
-        }
-      }
+      className="logo"
     >
-      <span>
-        Что-то пошло не так.
-      </span>
-    </div>
-    <footer
-      className="page-footer"
-    >
-      <div
-        className="logo"
+      <a
+        className="logo__link "
+        href="#/"
+        onClick={[Function]}
       >
-        <a
-          className="logo__link logo__link--light"
-          href="#/"
-          onClick={[Function]}
+        <span
+          className="logo__letter logo__letter--1"
         >
-          <span
-            className="logo__letter logo__letter--1"
-          >
-            W
-          </span>
-          <span
-            className="logo__letter logo__letter--2"
-          >
-            T
-          </span>
-          <span
-            className="logo__letter logo__letter--3"
-          >
-            W
-          </span>
-        </a>
-      </div>
-      <div
-        className="copyright"
+          W
+        </span>
+        <span
+          className="logo__letter logo__letter--2"
+        >
+          T
+        </span>
+        <span
+          className="logo__letter logo__letter--3"
+        >
+          W
+        </span>
+      </a>
+    </div>
+    <h1
+      className="page-title user-page__title"
+    >
+      Ошибка
+    </h1>
+  </header>
+  <div
+    className="sign-in user-page__content"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <span>
+      Что-то пошло не так.
+    </span>
+  </div>
+  <footer
+    className="page-footer"
+  >
+    <div
+      className="logo"
+    >
+      <a
+        className="logo__link logo__link--light"
+        href="#/"
+        onClick={[Function]}
       >
-        <p>
-          © 2022 What to watch Ltd.
-        </p>
-      </div>
-    </footer>
-  </div>,
-  <div>
-    Loading...
-  </div>,
-]
+        <span
+          className="logo__letter logo__letter--1"
+        >
+          W
+        </span>
+        <span
+          className="logo__letter logo__letter--2"
+        >
+          T
+        </span>
+        <span
+          className="logo__letter logo__letter--3"
+        >
+          W
+        </span>
+      </a>
+    </div>
+    <div
+      className="copyright"
+    >
+      <p>
+        © 2022 What to watch Ltd.
+      </p>
+    </div>
+  </footer>
+</div>
 `;
 
 exports[`App component snapshot loading renders correctly 1`] = `

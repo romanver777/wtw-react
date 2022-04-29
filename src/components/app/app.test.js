@@ -36,47 +36,25 @@ describe("App component", () => {
   describe("renders correctly with loading props", () => {
     renderer.render(<App {...loadingProps} />);
     const result = renderer.getRenderOutput();
-
-    it("renders errorPage - false", () => {
-      expect(result.props.children[0]).toEqual(false);
-    });
     it("renders 'Loading'", () => {
-      expect(result.props.children[1].props.children).toEqual(loading);
-    });
-    it("renders app - false", () => {
-      expect(result.props.children[2]).toEqual(false);
+      expect(result.props.children).toEqual(loading);
     });
   });
 
   describe("renders correctly with error props", () => {
     renderer.render(<App {...errorProps} />);
     const result = renderer.getRenderOutput();
-
     it("renders errorPage", () => {
-      expect(result.props.children[0].props.text).toEqual(error);
-    });
-    it("renders 'Loading'", () => {
-      expect(result.props.children[1].props.children).toEqual(loading);
-    });
-    it("renders app - false", () => {
-      expect(result.props.children[2]).toEqual(false);
+      expect(result.props.text).toEqual(error);
     });
   });
 
   describe("renders correctly with loaded props", () => {
     renderer.render(<App {...loadedProps} />);
     const result = renderer.getRenderOutput();
-
-    it("renders errorPage - false", () => {
-      expect(result.props.children[0]).toEqual(false);
-    });
-    it("renders 'Loading' - false", () => {
-      expect(result.props.children[1]).toEqual(false);
-    });
+    console.log(result.props.children.props.children.length);
     it("renders app", () => {
-      expect(result.props.children[2].props.children.length).toEqual(
-        routesCount
-      );
+      expect(result.props.children.props.children.length).toEqual(routesCount);
     });
   });
 

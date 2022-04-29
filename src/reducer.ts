@@ -247,15 +247,12 @@ const Operation = {
     (): TAction =>
     (dispatch: TDispatch): TPromise => {
       dispatch(ActionCreator.setIsLoading(true));
-      return Promise.all([
-        dispatch(Operation.loadTk()),
-        dispatch(Operation.loadAwaitFilm()),
-        dispatch(Operation.loadFilms()),
-      ])
+      return dispatch(Operation.loadTk())
+        .then(() => dispatch(Operation.loadAwaitFilm()))
+        .then(() => dispatch(Operation.loadFilms()))
         .then(() => dispatch(ActionCreator.setIsLoading(false)))
         .catch(() => {
           dispatch(ActionCreator.setIsInitError(true));
-          dispatch(ActionCreator.setIsLoading(false));
         });
     },
   loadTk:

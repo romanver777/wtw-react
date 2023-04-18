@@ -95,11 +95,24 @@ export const getMaxPagesCount = (
 export const getRandomNumber = (from: number, to: number): number =>
   Math.floor(Math.random() * (to - from + 1));
 
-export const convertUrl = (oldUrl: string): string =>
-  `https://youtube.com/embed/${oldUrl.replace(
-    URL.PATTERN_YT,
+export const convertUrl = (oldUrl: string): string => {
+  if (oldUrl.indexOf(URL.PATTERN_YT) > -1) {
+    return `https://youtube.com/embed${oldUrl.replace(
+      URL.PATTERN_YT,
+      ""
+    )}?autoplay=1&mute=1&controls=0`;
+  }
+  if (oldUrl.indexOf(URL.PATTERN_YTW) > -1) {
+    return `https://youtube.com/embed/${oldUrl.replace(
+      URL.PATTERN_YTW,
+      ""
+    )}?autoplay=1&mute=1&controls=0`;
+  }
+  return `https://youtube.com/embed${oldUrl.replace(
+    URL.PATTERN_YTB,
     ""
   )}?autoplay=1&mute=1&controls=0`;
+};
 
 export const validateEmail = (str: string): RegExpExecArray | null => {
   const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

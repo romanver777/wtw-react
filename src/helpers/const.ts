@@ -63,5 +63,7 @@ export const LOGO_POSITION = {
 export const URL = {
   KP_BASE: "https://kinopoiskapiunofficial.tech/api/",
   MAIN_BASE: "https://run.mocky.io/v3/",
-  PATTERN_YT: "https://www.youtube.com/watch?v=",
+  PATTERN_YT: "https://www.youtube.com/v",
+  PATTERN_YTW: "https://www.youtube.com/watch?v=",
+  PATTERN_YTB: "https://youtu.be",
 };

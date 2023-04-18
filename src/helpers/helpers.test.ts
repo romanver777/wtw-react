@@ -681,12 +681,26 @@ describe("func getRandomNumber", () => {
 
 // convertUrl
 describe("func convertUrl", () => {
-  const oldUrl = "https://www.youtube.com/watch?v=xFxgu0ScjJ0";
-  const newUrl =
+  const oldUrl_youtube_w = "https://www.youtube.com/watch?v=xFxgu0ScjJ0";
+  const newUrl_youtube_w =
     "https://youtube.com/embed/xFxgu0ScjJ0?autoplay=1&mute=1&controls=0";
 
-  it("should be newUrl", () => {
-    expect(helpers.convertUrl(oldUrl)).toBe(newUrl);
+  const oldUrl_youtube_v = "https://www.youtube.com/v/4HR_hk5I49c";
+  const newUrl_youtube_v =
+    "https://youtube.com/embed/4HR_hk5I49c?autoplay=1&mute=1&controls=0";
+
+  const oldUrl_youtu_be = "https://youtu.be/4HR_hk5I49c";
+  const newUrl_youtu_be =
+    "https://youtube.com/embed/4HR_hk5I49c?autoplay=1&mute=1&controls=0";
+
+  it("should be newUrl for youtube.com/watch", () => {
+    expect(helpers.convertUrl(oldUrl_youtube_w)).toBe(newUrl_youtube_w);
+  });
+  it("should be newUrl for youtube.com/v", () => {
+    expect(helpers.convertUrl(oldUrl_youtube_v)).toBe(newUrl_youtube_v);
+  });
+  it("should be newUrl for youtu.be", () => {
+    expect(helpers.convertUrl(oldUrl_youtu_be)).toBe(newUrl_youtu_be);
   });
 });
 

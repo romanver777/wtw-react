@@ -62,6 +62,15 @@ export interface FilmType {
   film: MovieType;
 }
 
+export interface VideoDataType {
+  items: {
+    url: string;
+    name: string;
+    site: string;
+  }[];
+  total: number;
+}
+
 export interface VideoType {
   trailers: [
     {

@@ -1,10 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VideoPlayer component should renders correct 1`] = `
+exports[`VideoPlayer component should renders correct with empty data 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "background": "rgba(23,2,2,0.9)",
+      "display": "flex",
+      "fontSize": "11px",
+      "height": "100%",
+      "justifyContent": "center",
+      "position": "absolute",
+      "top": 0,
+      "width": "100%",
+      "zIndex": 4,
+    }
+  }
+>
+  Видео не доступно..
+</div>
+`;
+
+exports[`VideoPlayer component should renders correct with full data 1`] = `
 <iframe
   allowFullScreen={false}
-  frameBorder="10"
-  src="https://youtube.com/embed/xFxgu0ScjJ0?autoplay=1&mute=1&controls=0"
+  frameBorder="0"
+  src="https://youtube.com/embed/mccs8Ql8m8o?autoplay=1&mute=1&controls=0"
   style={
     Object {
       "height": "100%",

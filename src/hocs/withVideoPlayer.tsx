@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import axios, { AxiosError, Canceler } from "axios";
 
 import createApi from "../api";
-import { MovieType, VideoType } from "../types/types";
+import { MovieType, VideoDataType } from "../types/types";
 
 type StateProps = {
   tk: string;
@@ -17,7 +17,7 @@ type InjectedProps = {
   handleMouseEnter: () => void;
   handleMouseLeave: () => void;
   isOpen: boolean;
-  data: VideoType | null;
+  data: VideoDataType | null;
 };
 
 type HocProps = {
@@ -39,14 +39,14 @@ const WithVideoPlayer = <T extends AllProps>(
   const Hoc = (props: HocProps): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false);
     const [isHover, setIsHover] = useState(false);
-    const [data, setData] = useState<null | VideoType>(null);
+    const [data, setData] = useState<null | VideoDataType>(null);
     const isMountedComponent = useRef(true);
 
     const CancelToken = axios.CancelToken;
     let cancel: Canceler | null;
 
     const getData = (id: number) => {
-      return createApi().kp.get(`/v2.1/films/${id}/videos`, {
+      return createApi().kp.get(`/v2.2/films/${id}/videos`, {
         cancelToken: new CancelToken(function executor(c) {
           cancel = c;
         }),
@@ -66,7 +66,10 @@ const WithVideoPlayer = <T extends AllProps>(
               setIsOpen(true);
             })
             .catch((error: AxiosError) => {
-              if (!axios.isCancel(error)) console.log(error);
+              if (!axios.isCancel(error)) {
+                setData(null);
+                setIsOpen(true);
+              }
             });
         } else {
           setIsOpen(true);

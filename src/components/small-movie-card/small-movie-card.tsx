@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { APP_ROUTE } from "../../helpers/const";
-import { MovieType, VideoType } from "../../types/types";
+import { MovieType, VideoDataType } from "../../types/types";
 import VideoPlayer from "../video-player/video-player";
 
 type PropsType = {
@@ -11,7 +11,7 @@ type PropsType = {
   handleMouseEnter: () => void;
   handleMouseLeave: () => void;
   isOpen: boolean;
-  data: VideoType;
+  data: VideoDataType | null;
 };
 
 const SmallMovieCard: React.FC<PropsType> = ({

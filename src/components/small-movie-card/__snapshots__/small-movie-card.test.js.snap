@@ -27,8 +27,8 @@ exports[`SmallMovieCard component with Video props renders correctly 1`] = `
   </h3>
   <iframe
     allowFullScreen={false}
-    frameBorder="10"
-    src="https://youtube.com/embed/someUrl?autoplay=1&mute=1&controls=0"
+    frameBorder="0"
+    src="https://youtube.com/embed/mccs8Ql8m8o?autoplay=1&mute=1&controls=0"
     style={
       Object {
         "height": "100%",

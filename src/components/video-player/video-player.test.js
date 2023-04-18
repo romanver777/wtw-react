@@ -7,32 +7,42 @@ import VideoPlayer from "./video-player";
 
 describe("VideoPlayer component", () => {
   const data = {
-    trailers: [
+    items: [
       {
-        url: "https://www.youtube.com/watch?v=xFxgu0ScjJ0",
-        name: "Французский blu-ray/dvd-ролик",
+        url: "https://www.youtube.com/watch?v=mccs8Ql8m8o",
+        name: "Французский трейлер",
         site: "YOUTUBE",
-        size: null,
-        type: "TRAILER",
       },
       {
-        url: "https://widgets.kinopoisk.ru/discovery/trailer/66627?onlyPlayer=1&autoplay=1&cover=1",
-        name: "Трейлер (русский язык)",
+        url: "https://widgets.kinopoisk.ru/discovery/trailer/13420?onlyPlayer=1&autoplay=1&cover=1",
+        name: "Фрагмент (содержит спойлер!) (дублированный)",
         site: "KINOPOISK_WIDGET",
-        size: null,
-        type: "TRAILER",
+      },
+      {
+        url: "https://www.youtube.com/v/NRT11KuW6L0",
+        name: "Немецкий трейлер",
+        site: "YOUTUBE",
       },
     ],
-    teasers: [],
+    total: 8,
   };
   const isFullScreen = false;
   const props = {
     data,
     isFullScreen,
   };
-  const TRenderer = TestRenderer.create(<VideoPlayer {...props} />);
+  const dataEmpty = {};
+  const propsEmpty = {
+    dataEmpty,
+    isFullScreen,
+  };
 
-  it("should renders correct", () => {
+  it("should renders correct with full data", () => {
+    const TRenderer = TestRenderer.create(<VideoPlayer {...props} />);
+    expect(TRenderer.toJSON()).toMatchSnapshot();
+  });
+  it("should renders correct with empty data", () => {
+    const TRenderer = TestRenderer.create(<VideoPlayer {...propsEmpty} />);
     expect(TRenderer.toJSON()).toMatchSnapshot();
   });
 });
